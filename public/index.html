@@ -1591,7 +1591,7 @@ BANKX.ml = [
     ["Activation function", 2, "activation"], ["Kernel / filter size", 1.5, "kernel", "filter"], ["Number of filters", 0.6, "filters", "channels"], ["Stride", 0.5], ["Padding", 0.3],
     ["Learning rate schedule", 1, "lr schedule", "learning schedule", "scheduler", "warmup", "learning decay", "lr decay"], ["Adam betas", 0.3, "beta1", "beta2", "betas"], ["Epsilon", 0.1, "eps"],
     ["Gradient clipping threshold", 0.3, "gradient clipping", "gradient clip", "gradient norm", "clip norm", "max grad norm"], ["Weight initialization", 0.4, "initialization", "init"], ["Embedding dimension", 0.3, "embedding dim", "embedding"],
-    ["Attention heads", 0.3, "heads"], ["Sequence / context length", 0.2, "sequence length", "context length"], ["Early-stopping patience", 0.2, "patience"]],
+    ["Attention heads", 0.3, "heads"], ["Sequence / context length", 0.2, "sequence length", "context length"], ["Early-stopping patience", 0.2, "patience"], ["Temperature", 0.4, "softmax temperature", "distillation temperature", "tau"], ["Label smoothing", 0.2, "label smoothing factor"], ["Gradient accumulation steps", 0.1, "gradient accumulation", "accumulation steps"]],
     hints: { "weights": "Weights are learned parameters, not hyperparameters.", "bias": "Biases are learned parameters, not hyperparameters.", "gradient": "Gradients are computed during training, not tuned." } },
 
   { p: "Name a well-known transformer-based language model (or model family).", know: 0.92, strip: ["model", "llm"], a: [

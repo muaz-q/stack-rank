@@ -1,6 +1,6 @@
 # CS Geek
 
-**Live:** https://stack-rank-one.vercel.app
+**Live:** https://stack-rank-one.vercel.app (CS Geek) · https://stack-rank-one.vercel.app/freeloader/ (Freeloader, the general-knowledge edition)
 
 A daily trivia game for CS students. Each day you get seven "Name a…" prompts on topics like OS, networks
 and databases. **The rarer your correct answer, the more it scores**, and at the end you see where you

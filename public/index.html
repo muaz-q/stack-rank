@@ -2584,7 +2584,7 @@ function reveal(idx, why, raw = "", fuzzy = false) {
   const tier = hit ? tierOf(hit.pop) : "miss", wrongs = Math.max(0, G.tries - 1), base = hit ? pts(hit.pop) : 0;
   const gain = hit ? Math.max(5, base - WRONG_COST * wrongs) : 0, m = metersOf(gain);
   G.answers[G.i] = { raw, idx, timeout: why === "timeout", tries: G.tries, fuzzy, pts: gain };
-  NET.report(s, G.answers[G.i], G.wrong || []);
+  if (typeof NET !== "undefined") NET.report(s, G.answers[G.i], G.wrong || []);   // only editions with a server have NET
   const sorted = [...q.a].sort((a, b) => b.pop - a.pop);
   const fmt = p => p < 1 ? p.toFixed(1) : Math.round(p);
   const most = hit

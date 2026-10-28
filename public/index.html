@@ -208,6 +208,7 @@ pre.share { margin: 0; font-family: var(--f-mono); font-size: 0.95rem; backgroun
 <div id="np" class="chip-x" hidden></div>
 <script>
 const EDITION = {"name":"STACK RANK","share":"Stack Rank","sub":"THE DAILY TRACE","round":"TRACE","key":"stackrank","joe":"CS Joes","joeLong":"average CS student","joeSim":"CS students","topics":[["os","Operating Systems","OS"],["net","Computer Networks","NET"],["dsa","Data Structures & Algorithms","DSA"],["db","Databases","DB"],["arch","Computer Architecture","ARCH"],["toc","Theory of Computation","TOC"],["sec","Security & Crypto","SEC"],["comp","Compilers & Languages","PL"],["dist","Distributed Systems & Cloud","DIST"],["swe","Software Engineering","SWE"],["ml","AI & Machine Learning","ML"],["math","Discrete Math & Probability","MATH"],["web","Web & Backend","WEB"],["tools","Dev Tools & Linux","TOOLS"]],"api":""};
+const MEASURED = {};
 const BANK = {
   os: [
     { p: "Name a CPU scheduling algorithm.", know: 0.9, strip: ["scheduling", "algorithm", "scheduler"], a: [
@@ -2052,6 +2053,10 @@ const tierOf = pop => pop >= 20 ? "common" : pop >= 8 ? "uncommon" : pop >= 2 ? 
 // normalise every question once: shares sum to 100, build alias + hint lookups
 for (const k in BANK) BANK[k] = BANK[k].filter(q => {
   try {
+    // published numbers (data/measure.js) replace the hand-written shares wherever they exist
+    const m = MEASURED[q.p];
+    if (m) q.a.forEach(x => x[1] = m.a[x[0]] ?? m.unlisted);
+    q.src = m ? m.src : null;
     const sum = q.a.reduce((s, x) => s + x[1], 0);
     q.strip = q.strip || [];
     q.sid = strHash(EDITION.key + "|" + q.p).toString(36);
@@ -2580,7 +2585,7 @@ function reveal(idx, why, raw = "", fuzzy = false) {
       ${hit ? `<div class="quote">“${esc(hit.name)}”</div>` : `<div class="quote">${why === "timeout" ? "Time's up" : "Passed"}</div>`}
       <div class="gain c-${tier}">+${gain} PTS <span>· sink ${m.toLocaleString()}m</span></div>
       ${hit && wrongs ? `<div class="flav c-miss">${base} − ${WRONG_COST * wrongs} for ${wrongs} wrong guess${wrongs > 1 ? "es" : ""}</div>` : ""}
-      <div class="flav">${hit ? `${fmt(hit.pop)}% of players said this. ${flav}` : flav}${q.players ? `<br><small>Based on ${q.players.toLocaleString()} real player${q.players > 1 ? "s" : ""}.</small>` : ""}</div>
+      <div class="flav">${hit ? `${fmt(hit.pop)}% of players said this. ${flav}` : flav}<br><small>${q.players ? `Based on ${q.players.toLocaleString()} real player${q.players > 1 ? "s" : ""}` : "No players yet"} · starting shares: ${q.src ? esc(q.src) : "estimated"}</small></div>
       <div class="most">${most}</div></div>`);
   if (hit) {
     SND.win(tier); if (m) T.add(setTimeout(() => SND.sink(m), 250));

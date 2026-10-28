@@ -1,10 +1,9 @@
-import { sql, ensureSchema, cors } from "./_db.js";
+import { sql, ensureSchema, route } from "./_db.js";
 
 const str = (v, n) => typeof v === "string" ? v.trim().slice(0, n) : "";
 const ID = /^[a-z0-9]{4,40}$/;
 
-export default async function handler(req, res) {
-  if (cors(req, res)) return;
+export default route(async (req, res) => {
   if (req.method !== "POST") return res.status(405).json({ error: "POST only" });
   const b = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
   const client = str(b.client, 40), sid = str(b.sid, 40);
@@ -18,4 +17,4 @@ export default async function handler(req, res) {
             VALUES (${client}, ${sid}, ${answer}, ${str(b.raw, 60).toLowerCase()}, ${wrong}, ${tries}, ${mode}, ${day})
             ON CONFLICT (client, sid) DO NOTHING`;
   res.status(204).end();
-}
+});

@@ -1,8 +1,7 @@
-import { sql, ensureSchema, cors } from "./_db.js";
+import { sql, ensureSchema, route } from "./_db.js";
 
 // Real answer counts for every question: { sid: { n, passed, answers: { name: count } } }
-export default async function handler(req, res) {
-  if (cors(req, res)) return;
+export default route(async (req, res) => {
   await ensureSchema();
   const rows = await sql`SELECT sid, answer, count(*)::int AS c FROM plays GROUP BY sid, answer`;
   const out = {};
@@ -13,4 +12,4 @@ export default async function handler(req, res) {
   }
   res.setHeader("Cache-Control", "public, s-maxage=120, stale-while-revalidate=600");
   res.status(200).json(out);
-}
+});

@@ -1,0 +1,513 @@
+[
+ {
+  "bank": "db",
+  "p": "Name a NoSQL database.",
+  "source": "Stack Overflow Developer Survey 2024 (Databases)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "MongoDB": 24.8,
+   "Redis": 20.0,
+   "Cassandra": 2.4,
+   "DynamoDB": 7.9,
+   "Neo4j": 1.9,
+   "Firebase / Firestore": 5.4,
+   "CouchDB": 1.0,
+   "Couchbase": 0.7,
+   "Elasticsearch": 12.5,
+   "Azure Cosmos DB": 3.3,
+   "InfluxDB": 2.5,
+   "RavenDB": 0.3
+  },
+  "note": "Firebase / Firestore mapped to the \"Cloud Firestore\" line (5.4); SO lists \"Firebase Realtime Database\" separately at 5.8. 2024 used over 2025 because 2025 dropped CouchDB/Couchbase/RavenDB."
+ },
+ {
+  "bank": "db",
+  "p": "Name a relational database management system (RDBMS).",
+  "source": "Stack Overflow Developer Survey 2024 (Databases)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "MySQL": 40.3,
+   "PostgreSQL": 48.7,
+   "Oracle Database": 10.1,
+   "Microsoft SQL Server": 25.3,
+   "SQLite": 33.1,
+   "MariaDB": 17.2,
+   "IBM Db2": 1.7,
+   "Microsoft Access": 4.2,
+   "CockroachDB": 1.0,
+   "Snowflake": 2.6,
+   "H2": 3.8,
+   "Firebird": 1.1,
+   "TiDB": 0.2
+  },
+  "note": "2024 used because 2025 dropped Firebird and TiDB."
+ },
+ {
+  "bank": "comp",
+  "p": "Name a language that is functional-first (not just multi-paradigm with lambdas).",
+  "source": "Stack Overflow Developer Survey 2024 (Programming, scripting, and markup languages)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Haskell": 2.0,
+   "Lisp / Common Lisp": 1.5,
+   "Scala": 2.6,
+   "Erlang": 0.9,
+   "Elixir": 2.1,
+   "Clojure": 1.2,
+   "OCaml": 0.8,
+   "F#": 0.9
+  },
+  "note": "2024 used because the 2025 survey dropped Haskell and Clojure. SO \"Lisp\" covers all Lisps, not only Common Lisp."
+ },
+ {
+  "bank": "comp",
+  "p": "Name a programming language that runs on the Java Virtual Machine (JVM).",
+  "source": "Stack Overflow Developer Survey 2024 (Programming, scripting, and markup languages)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Java": 30.3,
+   "Kotlin": 9.4,
+   "Scala": 2.6,
+   "Groovy": 3.3,
+   "Clojure": 1.2
+  },
+  "note": "2024 used because 2025 dropped Clojure. These are overall language usage figures, not JVM-specific ones (Kotlin, for example, includes Android/Native)."
+ },
+ {
+  "bank": "comp",
+  "p": "Name a dynamically typed programming language.",
+  "source": "Stack Overflow Developer Survey 2024 (Programming, scripting, and markup languages)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Python": 51.0,
+   "JavaScript": 62.3,
+   "Ruby": 5.2,
+   "PHP": 18.2,
+   "Perl": 2.5,
+   "Lua": 6.2,
+   "Lisp / Common Lisp": 1.5,
+   "Clojure": 1.2,
+   "Erlang": 0.9,
+   "Elixir": 2.1,
+   "R": 4.3,
+   "Julia": 1.1,
+   "MATLAB": 4.0,
+   "Groovy": 3.3,
+   "Prolog": 0.8,
+   "Bash / Shell": 33.9,
+   "PowerShell": 13.8
+  },
+  "note": "2024 used because 2025 dropped Clojure and Julia."
+ },
+ {
+  "bank": "comp",
+  "p": "Name a compiler or compiler toolchain.",
+  "source": "Stack Overflow Developer Survey 2024 (Embedded technologies)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work with it over the past year (asked in the 'embedded systems and technologies' question)",
+  "values": {
+   "GCC": 29.1,
+   "Clang / LLVM": 17.1,
+   "MSVC": 8.9
+  },
+  "note": "Ambiguous framing: these come from SO's embedded-technologies question, not a general compiler-usage question."
+ },
+ {
+  "bank": "dist",
+  "p": "Name a public cloud computing provider.",
+  "source": "Stack Overflow Developer Survey 2024 (Cloud platforms)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "AWS": 48.0,
+   "Microsoft Azure": 27.8,
+   "Google Cloud (GCP)": 25.1,
+   "IBM Cloud": 1.1,
+   "Oracle Cloud (OCI)": 2.9,
+   "DigitalOcean": 11.7,
+   "Alibaba Cloud": 1.2,
+   "Heroku": 8.2,
+   "Linode / Akamai": 3.1,
+   "Cloudflare": 15.1,
+   "Hetzner": 5.0,
+   "Vultr": 1.7,
+   "OVHcloud": 3.0
+  },
+  "note": "2024 used: it had a dedicated cloud-platform question; 2025 merged clouds into a tools list and dropped Oracle, Alibaba, Linode, Hetzner, Vultr, OVH."
+ },
+ {
+  "bank": "dist",
+  "p": "Name a container orchestration platform.",
+  "source": "Stack Overflow Developer Survey 2025 (Cloud development)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Kubernetes": 28.5
+  },
+  "note": "Only Kubernetes is measured."
+ },
+ {
+  "bank": "dist",
+  "p": "Name a container engine or runtime.",
+  "source": "Stack Overflow Developer Survey 2025 (Cloud development)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Docker": 71.1,
+   "Podman": 11.1
+  }
+ },
+ {
+  "bank": "dist",
+  "p": "Name a message broker or distributed messaging system.",
+  "source": "Stack Overflow Developer Survey 2024 (Other frameworks and libraries)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Apache Kafka": 9.4,
+   "RabbitMQ": 10.9
+  }
+ },
+ {
+  "bank": "dist",
+  "p": "Name an infrastructure-as-code (IaC) or configuration management tool.",
+  "source": "Stack Overflow Developer Survey 2024 (Other tools)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Terraform": 10.6,
+   "Ansible": 7.9,
+   "Pulumi": 0.9,
+   "Chef": 0.7,
+   "Puppet": 1.2
+  },
+  "note": "2024 used because 2025 lists only Terraform and Ansible."
+ },
+ {
+  "bank": "dist",
+  "p": "Name a distributed big-data processing framework or engine.",
+  "source": "Stack Overflow Developer Survey 2024 (Other frameworks and libraries)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Apache Spark": 4.4,
+   "Hadoop MapReduce": 2.3
+  },
+  "note": "SO measures \"Hadoop\" as a whole, not MapReduce specifically."
+ },
+ {
+  "bank": "ml",
+  "p": "Name a well-known transformer-based language model (or model family).",
+  "source": "Stack Overflow Developer Survey 2025 (AI models)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of respondents to the AI-models question who used it for development work in the past year",
+  "values": {
+   "GPT": 81.4,
+   "Claude": 42.8,
+   "Gemini": 35.3,
+   "LLaMA": 17.8,
+   "Mistral / Mixtral": 10.4,
+   "DeepSeek": 23.3,
+   "Grok": 11.1,
+   "Qwen": 5.2,
+   "Phi": 5.0
+  },
+  "note": "Families are split across lines in SO: Claude = \"Claude Sonnet\" only; Gemini = \"Gemini Flash\" (Gemini Reasoning 25.6 is a separate line); DeepSeek = \"DeepSeek Reasoning\" (DeepSeek General 14.3 is separate). Each value is one SO line, so it is a lower bound for the family. It also measures current dev use, which is a different thing from being well known; BERT, T5 etc. are unmeasured."
+ },
+ {
+  "bank": "swe",
+  "p": "Name a CI/CD platform or tool.",
+  "source": "JetBrains State of CI/CD 2025",
+  "url": "https://blog.jetbrains.com/teamcity/2025/10/the-state-of-cicd/",
+  "metric": "% of respondents: \"Which CI/CD tools are currently used in your organization?\"",
+  "values": {
+   "GitHub Actions": 41,
+   "GitLab CI": 34,
+   "Jenkins": 31,
+   "Azure Pipelines": 14,
+   "Bitbucket Pipelines": 7,
+   "TeamCity": 7,
+   "AWS CodePipeline": 6,
+   "Google Cloud Build": 4,
+   "CircleCI": 3,
+   "Bamboo": 2
+  },
+  "note": "JetBrains/TeamCity 'State of CI/CD 2025' survey (vendor-run; TeamCity is a JetBrains product). Values read from the published chart image state-of-cicd-tool-used-in-organizations-1.png in that post. Azure Pipelines mapped to 'Azure DevOps Server'."
+ },
+ {
+  "bank": "tools",
+  "p": "Name a CI/CD tool or service.",
+  "source": "JetBrains State of CI/CD 2025",
+  "url": "https://blog.jetbrains.com/teamcity/2025/10/the-state-of-cicd/",
+  "metric": "% of respondents: \"Which CI/CD tools are currently used in your organization?\"",
+  "values": {
+   "GitHub Actions": 41,
+   "GitLab CI/CD": 34,
+   "Jenkins": 31,
+   "Azure Pipelines": 14,
+   "Bitbucket Pipelines": 7,
+   "TeamCity": 7,
+   "AWS CodePipeline / CodeBuild": 6,
+   "Google Cloud Build": 4,
+   "CircleCI": 3,
+   "Bamboo": 2
+  },
+  "note": "JetBrains/TeamCity 'State of CI/CD 2025' survey (vendor-run; TeamCity is a JetBrains product). Values read from the published chart image state-of-cicd-tool-used-in-organizations-1.png in that post. Azure Pipelines mapped to 'Azure DevOps Server'."
+ },
+ {
+  "bank": "tools",
+  "p": "Name a text editor or source-code editor (not a full IDE).",
+  "source": "Stack Overflow Developer Survey 2024 (Integrated development environment)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "VS Code": 73.6,
+   "Vim": 21.6,
+   "Nano": 9.2,
+   "Emacs": 4.2,
+   "Notepad++ (Notepad Plus Plus)": 23.9,
+   "Sublime Text": 10.9,
+   "Neovim": 12.5,
+   "Kate": 1.8,
+   "Helix": 1.7,
+   "Geany": 1.0,
+   "BBEdit": 0.9
+  },
+  "note": "2024 used because 2025 dropped Emacs, Kate, Helix, Geany, BBEdit (2025 adds Cursor 17.9 and Zed 7.3, which this entry therefore lacks)."
+ },
+ {
+  "bank": "tools",
+  "p": "Name a build automation tool.",
+  "source": "Stack Overflow Developer Survey 2025 (Cloud development: package managers, build tools...)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Make": 23.2,
+   "Maven": 16.4,
+   "Gradle": 14.4,
+   "Ninja": 5.2,
+   "MSBuild": 11.0,
+   "Cargo": 14.4,
+   "webpack": 18.4,
+   "Vite": 25.4
+  },
+  "note": "CMake, Ant and Bazel are not in the 2025 list."
+ },
+ {
+  "bank": "tools",
+  "p": "Name a package manager.",
+  "source": "Stack Overflow Developer Survey 2025 (Cloud development: package managers, build tools...)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "npm": 56.8,
+   "pip": 40.9,
+   "apt": 18.4,
+   "Homebrew": 25.7,
+   "yarn": 21.1,
+   "cargo": 14.4,
+   "pnpm": 13.4,
+   "pacman": 8.7,
+   "NuGet": 18.9,
+   "Composer": 11.0,
+   "Chocolatey": 11.0,
+   "Poetry": 9.0,
+   "Bun": 5.5,
+   "Maven": 16.4
+  },
+  "note": "SO labels Maven \"Maven (build tool)\"; its usage is counted here too. Bun is a runtime as well as a package manager."
+ },
+ {
+  "bank": "tools",
+  "p": "Name a Linux distribution.",
+  "source": "Stack Overflow Developer Survey 2025 (Operating system)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of respondents naming it as an OS they use for personal use (SO 2025 operating-system question)",
+  "values": {
+   "Ubuntu": 27.8,
+   "Debian": 11.4,
+   "Fedora": 5.8,
+   "Arch Linux": 9.7,
+   "Red Hat Enterprise Linux": 1.8,
+   "Pop!_OS": 2.3,
+   "NixOS": 3.4,
+   "ChromeOS": 2.3,
+   "Android": 29.1
+  },
+  "note": "Personal-use column chosen; SO also reports professional use (e.g. Red Hat 5.7 professional vs 1.8 personal). ChromeOS and Android are included because the bank accepts them as answers."
+ },
+ {
+  "bank": "tools",
+  "p": "Name a version control system.",
+  "source": "Stack Overflow Developer Survey 2022 (Version control systems)",
+  "url": "https://survey.stackoverflow.co/2022/",
+  "metric": "% of all respondents who use it (2022 is the last SO survey that asked about VCS)",
+  "values": {
+   "Git": 93.87,
+   "SVN (Subversion)": 5.18,
+   "Mercurial": 1.13
+  }
+ },
+ {
+  "bank": "web",
+  "p": "Name a backend web framework.",
+  "source": "Stack Overflow Developer Survey 2025 (Web frameworks and technologies)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Express": 19.9,
+   "Django": 12.6,
+   "Flask": 14.4,
+   "Spring Boot": 14.7,
+   "Ruby on Rails": 5.9,
+   "Laravel": 8.9,
+   "ASP.NET Core": 19.7,
+   "FastAPI": 14.8,
+   "NestJS": 6.7,
+   "Next.js": 20.8,
+   "Phoenix": 2.4,
+   "Fastify": 2.9,
+   "Symfony": 4.0,
+   "Axum": 2.8
+  }
+ },
+ {
+  "bank": "web",
+  "p": "Name a frontend JavaScript framework or UI library.",
+  "source": "Stack Overflow Developer Survey 2025 (Web frameworks and technologies)",
+  "url": "https://survey.stackoverflow.co/2025/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "React": 44.7,
+   "Angular": 18.2,
+   "Vue": 17.6,
+   "Svelte": 7.2,
+   "jQuery": 23.4,
+   "Next.js": 20.8,
+   "Nuxt": 4.0,
+   "Astro": 4.5,
+   "Blazor": 7.0
+  },
+  "note": "SO lists AngularJS (7.2) separately from Angular; only \"Angular\" is used."
+ },
+ {
+  "bank": "web",
+  "p": "Name a web browser.",
+  "source": "StatCounter Global Stats, browser market share worldwide, Sept 2026 (all platforms)",
+  "url": "https://gs.statcounter.com/chart.php?device=Desktop%20%26%20Mobile%20%26%20Tablet%20%26%20Console&device_hidden=desktop%2Bmobile%2Btablet%2Bconsole&statType_hidden=browser&region_hidden=ww&granularity=monthly&statType=Browser&region=Worldwide&fromInt=202609&toInt=202609&fromMonthYear=2026-09&toMonthYear=2026-09&csv=1",
+  "metric": "% of worldwide page views (market share), September 2026",
+  "values": {
+   "Google Chrome": 66.45,
+   "Mozilla Firefox": 2.79,
+   "Safari": 18.2,
+   "Microsoft Edge": 6.02,
+   "Opera": 1.77,
+   "Brave": 0.45,
+   "Samsung Internet": 2.31,
+   "UC Browser": 0.47,
+   "Yandex Browser": 0.34,
+   "Pale Moon": 0.02
+  },
+  "note": "This is market share of page views, not % of people. Internet Explorer and others fall below StatCounter's reporting threshold."
+ },
+ {
+  "bank": "web",
+  "p": "Name a message broker or message queue system.",
+  "source": "Stack Overflow Developer Survey 2024 (Other frameworks and libraries)",
+  "url": "https://survey.stackoverflow.co/2024/technology",
+  "metric": "% of all respondents who did extensive development work in it over the past year",
+  "values": {
+   "Apache Kafka": 9.4,
+   "RabbitMQ": 10.9
+  }
+ },
+ {
+  "bank": "web",
+  "p": "Name a web server, application server or reverse proxy.",
+  "source": "W3Techs web server usage",
+  "url": "https://w3techs.com/technologies/overview/web_server",
+  "metric": "% of websites (whose web server is known) using it, W3Techs 28 Oct 2026",
+  "values": {
+   "Nginx": 30.1,
+   "Apache HTTP Server": 21.2,
+   "Microsoft IIS": 2.9,
+   "LiteSpeed": 13.8,
+   "Caddy": 1.2,
+   "Envoy": 0.5,
+   "Kestrel": 0.1,
+   "Tengine": 0.1
+  },
+  "note": "Measures public websites, not developer usage. Cloudflare Server (32.9%) and Node.js (7.4%) lead but are not bank answers. Tomcat, Gunicorn, Uvicorn etc. are only listed as <0.1% (no number)."
+ },
+ {
+  "bank": "web",
+  "p": "Name a JavaScript bundler, transpiler or build tool.",
+  "source": "State of JavaScript 2024 (Build tools)",
+  "url": "https://2024.stateofjs.com/en-US/libraries/build_tools/",
+  "metric": "State of JS 'usage' ratio x100: % of respondents to the item who have used it",
+  "values": {
+   "Webpack": 86.0,
+   "Vite": 78.0,
+   "Rollup": 43.0,
+   "Parcel": 23.0,
+   "esbuild": 49.0,
+   "TypeScript compiler (tsc)": 50.0,
+   "Turbopack": 19.0,
+   "SWC": 25.0,
+   "Rspack": 3.0,
+   "Rolldown": 1.0,
+   "tsup": 8.0
+  },
+  "note": "Babel, Gulp and Grunt are not in the 2024 build-tools list. Data read from the page's page-data.json."
+ },
+ {
+  "bank": "web",
+  "p": "Name an API style or protocol for client-server communication.",
+  "source": "Postman 2025 State of the API Report",
+  "url": "https://www.postman.com/state-of-api/2025/",
+  "metric": "% of respondents using each API architecture",
+  "values": {
+   "REST": 93,
+   "Webhooks": 50,
+   "WebSockets": 35,
+   "GraphQL": 33,
+   "SOAP": 25,
+   "gRPC": 14,
+   "Server-Sent Events": 12,
+   "MQTT": 8,
+   "AMQP": 5
+  }
+ },
+ {
+  "bank": "web",
+  "p": "Name an in-memory cache or key-value store used by web backends.",
+  "source": "DB-Engines Ranking of Key-value Stores, October 2026",
+  "url": "https://db-engines.com/en/ranking/key-value+store",
+  "metric": "DB-Engines popularity score (not a percentage; Redis = 156.09)",
+  "values": {
+   "Redis": 156.09,
+   "Memcached": 12.96,
+   "Hazelcast": 4.58,
+   "Ehcache": 2.74,
+   "Valkey": 2.86,
+   "Apache Ignite": 2.76,
+   "KeyDB": 0.72,
+   "Dragonfly": 0.58,
+   "Aerospike": 4.3,
+   "Infinispan": 1.8,
+   "Oracle Coherence": 1.58,
+   "Apache Geode": 1.25,
+   "Tarantool": 1.25,
+   "etcd": 7.35,
+   "Riak": 3.07,
+   "Voldemort": 0.23,
+   "Cloudflare Workers KV": 0.43
+  },
+  "note": "A score, not a share: it combines web mentions, search interest, jobs etc. on a different scale from the survey entries. Managed services (ElastiCache, Memorystore) are not ranked."
+ }
+]

@@ -1,0 +1,718 @@
+{
+ "survey": 27,
+ "wiki": 4,
+ "unmeasured": [
+  {
+   "p": "Name a CPU scheduling algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a page replacement algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name one of the four Coffman conditions for deadlock.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a Unix/Linux system call.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a synchronization primitive used to coordinate threads or processes.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a classic synchronization problem from operating systems courses.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a disk scheduling algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a state a process can be in.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a Unix/POSIX signal.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an inter-process communication (IPC) mechanism.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a memory allocation strategy for choosing where to place a block in free memory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type of operating system kernel architecture.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a real-time operating system (RTOS).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a piece of information stored in a process control block (PCB).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a hypervisor or virtual machine monitor.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a layer of the OSI model.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a TCP header flag.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an application protocol that typically runs over UDP.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a TCP congestion-control algorithm or mechanism.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a routing protocol.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a field in the IPv4 header.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a network topology.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a TCP port number used by a well-known service (just the number).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a DNS record type.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a piece of networking hardware.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a medium access control (MAC) / multiple access protocol.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an error-detecting or error-correcting code.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a VPN or tunneling protocol.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a wireless communication technology.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a network diagnostic or troubleshooting tool.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a physical transmission medium used in networks.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a self-balancing binary search tree.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a single-source or all-pairs shortest-path algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a hash-table collision resolution technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a non-comparison sorting algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a heap (priority queue) data structure variant.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a string-matching (substring search) algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an algorithm design paradigm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a probabilistic (randomized) data structure.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a classic dynamic programming problem.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an NP-complete problem.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a tree data structure used for range queries or spatial search.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an algorithm for searching an array (sorted or unsorted).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type or variant of linked list.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a classic problem solved by backtracking.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a greedy algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a transaction read phenomenon or isolation anomaly.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an SQL transaction isolation level.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a kind of SQL join.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a data structure used to implement database indexes.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a SQL aggregate function.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a clause of a SQL SELECT statement.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type of database key.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a database concurrency control protocol or technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a SQL column data type.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a dedicated SQL window function (not an aggregate used with OVER).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a relational algebra operation.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a technique a DBMS uses for crash recovery or durability.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an ORM (object-relational mapping) library or framework.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a pipeline hazard (a category, or a kind of data hazard).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type of cache miss.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a cache coherence protocol.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an instruction set architecture.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an instruction addressing mode.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a hardware or compiler technique for exploiting instruction-level parallelism (ILP).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a special-purpose CPU register.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a floating-point number format.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type of RAM (random-access memory).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a computer bus or hardware interconnect standard.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a RAID level.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a metric used to measure processor performance.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a named law, rule or scaling trend in computer architecture.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a way to represent integers in binary.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a logic gate.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a branch prediction scheme or predictor.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a language class from the Chomsky hierarchy.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an undecidable problem.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a model of computation.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a complexity class.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an operation under which the regular languages are closed.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a kind of finite automaton (acceptors, transducers and ω-automata all count).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a PSPACE-complete problem.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a theorem or lemma from computability or complexity theory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a natural problem in NP believed to be neither in P nor NP-complete (NP-intermediate candidate).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an algorithm or construction on finite automata or regular expressions.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a parsing algorithm or parsing technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a variant of the Turing machine.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a variant of the Boolean satisfiability problem (SAT).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a famous open problem or conjecture in complexity theory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type of reduction used in complexity or computability theory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a symmetric-key cipher.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a class of web application vulnerability.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a cryptographic hash function.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a public-key algorithm or scheme.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type of malware.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a block cipher mode of operation.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a social engineering attack.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an access control model.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a memory-corruption exploit mitigation.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a network attack.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a classical (pre-computer) cipher.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a cryptanalytic attack or technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a penetration testing or security tool.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a protocol that provides secure (encrypted) communication.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a famous computer worm, virus, or malware strain.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a phase (or pass) of a compiler.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a parsing algorithm or type of parser.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a compiler optimization.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a garbage collection technique or algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an intermediate representation (IR) used by compilers or virtual machines.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a programming paradigm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a kind of polymorphism.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a parameter-passing mechanism (evaluation strategy) in programming languages.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a lexer or parser generator tool.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a just-in-time (JIT) compiler or a runtime that uses one.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a distributed consensus algorithm or protocol.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a consistency model in distributed systems.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an AWS service.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a container orchestration platform.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a load balancing algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a logical clock or clock-synchronization algorithm used in distributed systems.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a data replication strategy or technique used in distributed databases.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a cloud service model (an \"as a Service\" model).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a distributed file system or distributed object store.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a creational design pattern.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a structural design pattern.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a behavioral design pattern.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a software design principle (e.g. one of SOLID, or another well-known one).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a software development process model or methodology.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type of software testing.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a UML diagram type.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a Scrum event, role, or artifact.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a code smell.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a software architecture style or pattern.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a git subcommand.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a version-control branching workflow.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a refactoring technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an activation function used in neural networks.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an optimizer used to train neural networks.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a loss function used in machine learning.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a supervised classification algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a clustering algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a neural network architecture family.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a well-known CNN architecture for image classification.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a regularization technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a state-space search algorithm from AI (uninformed, informed, local or adversarial).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an evaluation metric for classification models.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a dimensionality reduction technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a hyperparameter you tune when training a neural network.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a reinforcement learning algorithm.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a proof technique.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a discrete probability distribution.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a continuous probability distribution.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a type or family of graph in graph theory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a famous theorem or lemma in graph theory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a famous theorem in number theory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a law of logical equivalence or a rule of inference in propositional logic.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a property that a binary relation can have.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a famous number sequence or family of numbers used in combinatorics.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a counting principle or technique in combinatorics.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an operation on sets.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a famous paradox, puzzle or classic problem in probability.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a theorem, law or inequality from probability theory.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an unsolved (open) problem or conjecture in mathematics or theoretical CS.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an HTTP request method.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an HTTP 4xx (client error) status code.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name an HTTP header.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a browser rendering engine or JavaScript engine.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a way to authenticate users or clients of a web app or API.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a Cache-Control directive.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a git subcommand (as in git ___).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a Linux command that prints or pages a file's contents (not an editor).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a debugger.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a performance profiling tool.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a POSIX/Unix signal.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a Linux/Unix command for viewing or controlling processes.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a command-line shell.",
+   "why": "no published data; Wikipedia matching not reviewed"
+  },
+  {
+   "p": "Name a Unix command-line text-processing tool (filters text from files or stdin).",
+   "why": "no published data; Wikipedia matching not reviewed"
+  }
+ ]
+}

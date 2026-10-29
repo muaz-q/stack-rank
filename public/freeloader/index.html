@@ -9322,6 +9322,105 @@ BANKX.lang = [
     hints: {"kite":"The K in 'kite' is pronounced.","king":"The K in 'king' is pronounced.","kangaroo":"The K in 'kangaroo' is pronounced.","acknowledge":"The silent K is in the middle — the word must START with it."} }
 ];
 
+BANKX.lang = (BANKX.lang || []).concat([
+  { p: "Name a word that means something totally different in British vs American English (like 'pants').", know: 0.75, strip: ["a", "an"], a: [
+    ["Pants", 18], ["Chips", 16], ["Biscuit", 12], ["Football", 10], ["Rubber", 6], ["Jumper", 4], ["Boot", 4], ["Bonnet", 3], ["Pudding", 3], ["Vest", 3],
+    ["Purse", 2.5], ["Braces", 2], ["Pavement", 2], ["Jelly", 2], ["First floor", 2, "ground floor"], ["Flat", 1.5], ["Trolley", 1], ["Subway", 1.5], ["Suspenders", 1], ["Entree", 1],
+    ["Mad", 1], ["Quite", 1], ["Table (a motion)", 1, "table"], ["Momentarily", 1], ["Public school", 1], ["Garden", 1], ["Dummy", 1], ["Torch", 1], ["Cot", 1], ["Muffin", 1],
+    ["Bill", 1], ["Hood", 0.8], ["Homely", 0.8], ["Gas", 0.8], ["Knickers", 0.5], ["Scheme", 0.5], ["Wash up", 0.5], ["Chaps", 0.3], ["Fancy", 0.5], ["Tick", 0.3],
+    ["Mean", 0.3], ["Billion", 0.5], ["Bathroom", 0.5], ["Corn", 0.8], ["Lemonade", 0.8], ["Cracker", 0.5], ["Lift", 0.5], ["Graduate", 0.3], ["College", 0.5], ["Tea", 0.3],
+    ["Dinner", 0.3], ["Smart", 0.3], ["Quarter", 0.2], ["Pint", 0.3], ["Gallon", 0.3], ["Squash", 0.3], ["Scone", 0.2], ["Robin", 0.2]],
+    hints: {"colour": "That's just a spelling difference, not a meaning one. Guess again!", "color": "That's just a spelling difference, not a meaning one. Guess again!", "lorry": "The Americans say 'truck' for the same thing — same meaning, different word. Guess again!", "truck": "Same meaning, different word ('lorry'). We need ONE word with two meanings. Guess again!", "elevator": "Same thing, different word ('lift'). Guess again!", "aluminium": "Same metal, different spelling. Guess again!"} },
+
+  { p: "Name an English word that comes from Arabic (like 'algebra' or 'coffee').", know: 0.6, strip: ["a", "an"], a: [
+    ["Algebra", 16], ["Coffee", 12], ["Alcohol", 9], ["Algorithm", 7], ["Zero", 5], ["Sugar", 4], ["Cotton", 3], ["Sofa", 3], ["Safari", 3], ["Magazine", 2.5],
+    ["Giraffe", 2], ["Lemon", 2], ["Lime", 1], ["Orange", 1], ["Syrup", 1.5], ["Sherbet", 1, "sharbat"], ["Candy", 1], ["Admiral", 1.5], ["Arsenal", 1.5], ["Alchemy", 1.5],
+    ["Alkali", 1], ["Elixir", 1], ["Tariff", 1], ["Zenith", 1], ["Nadir", 0.8], ["Mattress", 1], ["Jar", 0.5], ["Hazard", 0.8], ["Carafe", 0.3], ["Monsoon", 1.5],
+    ["Assassin", 1.5], ["Sheikh", 0.8, "sheik"], ["Sultan", 1], ["Emir", 0.5, "amir"], ["Hummus", 1, "houmous"], ["Falafel", 0.8], ["Tahini", 0.3], ["Genie", 1.5, "jinn", "djinn"], ["Ghoul", 0.5], ["Saffron", 0.8],
+    ["Spinach", 0.3], ["Apricot", 0.3], ["Artichoke", 0.3], ["Tamarind", 0.5], ["Couscous", 0.3], ["Kohl", 0.3], ["Gazelle", 0.5], ["Albatross", 0.2], ["Crimson", 0.2], ["Azimuth", 0.2],
+    ["Cipher", 0.8, "cypher"], ["Amber", 0.3], ["Talc", 0.2], ["Imam", 0.3], ["Mosque", 0.3], ["Ramadan", 0.3], ["Wadi", 0.1], ["Sahara", 0.3], ["Checkmate", 0.5], ["Mohair", 0.1],
+    ["Muslin", 0.1], ["Damask", 0.1], ["Caliber", 0.2, "calibre"], ["Average", 0.2], ["Racket", 0.1, "racquet"], ["Mummy (Egyptian)", 0.2, "mummy"], ["Henna", 0.5], ["Jasmine", 0.3], ["Lute", 0.1], ["Tabbouleh", 0.1],
+    ["Harissa", 0.1], ["Kebab", 0.3], ["Halal", 0.5], ["Hijab", 0.3], ["Burqa", 0.2], ["Fakir", 0.1], ["Ghazal", 0.2], ["Qawwali", 0.2], ["Khalifa", 0.2, "caliph"]],
+    hints: {"tea": "Tea comes from Chinese! Guess again!", "shampoo": "That one's from Hindi! Guess again!", "pyjamas": "That one came through Hindi and Persian. Guess again!", "chocolate": "That's from Nahuatl (Aztec)! Guess again!", "tomato": "That's from Nahuatl (Aztec)! Guess again!"} },
+
+  { p: "Name a word that can mean its own OPPOSITE (like 'sanction': to allow, or to punish).", know: 0.5, strip: ["to"], a: [
+    ["Sanction", 12], ["Dust", 10], ["Left", 8], ["Fast", 8], ["Oversight", 7], ["Cleave", 6], ["Literally", 5], ["Bolt", 4], ["Screen", 4], ["Seed", 3.5],
+    ["Trim", 3], ["Weather", 3], ["Buckle", 3], ["Bound", 3], ["Clip", 3], ["Off", 2.5], ["Out", 2.5], ["Rent", 2], ["Table", 2], ["Transparent", 2],
+    ["Overlook", 2], ["Strike", 1.5], ["Fine", 1.5], ["Peer", 1], ["Temper", 1], ["Custom", 1], ["Garnish", 1], ["Hold up", 1, "holdup"], ["Finished", 1], ["Moot", 1],
+    ["Wind up", 1, "windup"], ["Consult", 0.5], ["Citation", 0.5], ["Handicap", 0.5], ["Lease", 1], ["Let", 0.5], ["Wear", 0.5], ["Resign", 0.5], ["Scan", 0.5], ["Stem", 0.3],
+    ["Trip", 0.3], ["Root", 0.3], ["Throw out", 0.3], ["Awful", 0.5], ["Terrific", 0.5], ["Wicked", 0.5], ["Bad", 0.5], ["Sick", 0.5], ["Quite", 0.3]],
+    hints: {"contronym": "Correct term, but we need an example! Guess again!", "irregardless": "That just means 'regardless' — not its own opposite. Guess again!", "flammable": "Flammable and inflammable mean the SAME thing — that's the twist. Guess again!", "inflammable": "Inflammable means the same as flammable, not the opposite. Guess again!"} },
+
+  { p: "Name a word that starts with a NUMBER in disguise, from Latin or Greek (like 'bicycle', 'triangle' or 'decade').", know: 0.8, strip: ["a", "an"], a: [
+    ["Bicycle", 14, "bike"], ["Triangle", 12], ["Tricycle", 5], ["Decade", 5], ["Century", 5], ["Unicorn", 4], ["Unicycle", 2], ["Uniform", 2], ["Octopus", 4], ["Centipede", 3],
+    ["Millipede", 2], ["Millennium", 2.5], ["Million", 1.5], ["Billion", 1], ["Trillion", 0.5], ["Pentagon", 3], ["Hexagon", 2.5], ["Octagon", 2.5], ["Decagon", 0.5], ["Nonagon", 0.3],
+    ["Heptagon", 0.5], ["Monopoly", 2], ["Monologue", 1], ["Monorail", 0.5], ["Monocle", 0.5], ["Monotone", 0.5], ["Monarch", 0.5], ["Monogamy", 0.3], ["Binary", 1.5], ["Binoculars", 1],
+    ["Bilingual", 0.8], ["Bisect", 0.5], ["Biceps", 0.5], ["Biscuit", 0.8], ["Duet", 1], ["Duo", 1], ["Dual", 1], ["Duplicate", 0.5], ["Decimal", 1], ["December", 1],
+    ["October", 1.5], ["September", 0.5], ["November", 0.5], ["Quadrilateral", 1], ["Quartet", 0.5], ["Quarter", 0.5], ["Quadruple", 0.3], ["Quintet", 0.3], ["Quintuplets", 0.3], ["Sextet", 0.2],
+    ["Septet", 0.1], ["Octave", 0.5], ["Trio", 1], ["Triple", 1], ["Trident", 1], ["Tripod", 1], ["Triathlon", 0.8], ["Trilogy", 1], ["Triceratops", 0.8], ["Triplets", 0.5],
+    ["Pentathlon", 0.3], ["Decathlon", 0.5], ["Heptathlon", 0.3], ["Biathlon", 0.2], ["Kilogram", 0.8, "kilo"], ["Kilometre", 0.8, "kilometer"], ["Centimetre", 0.5, "centimeter"], ["Millimetre", 0.5, "millimeter"], ["Hectare", 0.2], ["Pentagram", 0.2],
+    ["Unique", 0.5], ["Unite", 0.3], ["Union", 0.3], ["Unanimous", 0.3], ["Universe", 0.3], ["Tetris", 0.5], ["Tetrahedron", 0.3], ["Tetrapod", 0.1], ["Dodecagon", 0.1], ["Bicentennial", 0.1, "bicentenary"],
+    ["Centenary", 0.3, "centennial"], ["Triennial", 0.1], ["Biennial", 0.2], ["Biannual", 0.1], ["Trinity", 0.2], ["Hexagram", 0.1], ["Duodenum", 0.05], ["Diploma", 0.05]],
+    hints: {"monday": "Monday is the Moon's day, not 'mono'! Guess again!", "triumph": "Triumph has nothing to do with three. Guess again!", "unicef": "That's an acronym, not a number word. Guess again!"} },
+
+  { p: "Name a word that's said differently as a noun (or adjective) and as a verb (like REcord vs reCORD).", know: 0.6, strip: ["a", "an", "to"], a: [
+    ["Record", 18], ["Present", 14], ["Object", 7], ["Project", 6], ["Subject", 5], ["Contract", 5], ["Conduct", 4], ["Desert", 4], ["Produce", 4], ["Permit", 4],
+    ["Refuse", 3], ["Rebel", 3], ["Conflict", 2], ["Convict", 2], ["Contest", 2], ["Increase", 2], ["Decrease", 1.5], ["Insult", 2], ["Protest", 1.5], ["Export", 1.5],
+    ["Import", 1.5], ["Progress", 1.5], ["Suspect", 1.5], ["Address", 1], ["Discount", 0.8], ["Digest", 0.8], ["Extract", 0.8], ["Insert", 0.5], ["Upset", 0.5], ["Compound", 0.5],
+    ["Transport", 0.8], ["Transfer", 0.8], ["Survey", 0.5], ["Torment", 0.5], ["Reject", 0.5], ["Defect", 0.5], ["Escort", 0.5], ["Entrance", 0.5], ["Use", 1], ["House", 1],
+    ["Excuse", 1], ["Abuse", 0.8], ["Advocate", 0.5], ["Estimate", 0.5], ["Graduate", 0.5], ["Wind", 1], ["Live", 1], ["Tear", 1], ["Lead", 1], ["Close", 0.5],
+    ["Content", 0.5], ["Combat", 0.3], ["Console", 0.5], ["Construct", 0.3], ["Contrast", 0.5], ["Convert", 0.5], ["Frequent", 0.3], ["Perfect", 0.5], ["Separate", 0.5], ["Recall", 0.2],
+    ["Reprint", 0.1], ["Segment", 0.2], ["Proceeds", 0.1, "proceed"], ["Incline", 0.2], ["Intern", 0.2], ["Invite", 0.3], ["Mouth", 0.2], ["Associate", 0.3], ["Duplicate", 0.3]],
+    hints: {"read": "Read vs read is past and present tense of the same verb, not noun vs verb. Guess again!", "run": "Same sound for both. Guess again!", "play": "Same sound for both noun and verb. Guess again!"} },
+
+  { p: "Name a Latin word or phrase people use in everyday English (like 'etc.' or 'vice versa').", know: 0.8, strip: ["a", "an"], a: [
+    ["Etc.", 16, "et cetera", "etcetera"], ["Vice versa", 12], ["Versus", 6, "vs"], ["Status quo", 5], ["Per se", 4], ["Ad hoc", 4], ["Alibi", 3], ["Bona fide", 3], ["Agenda", 3], ["i.e.", 3, "id est"],
+    ["e.g.", 3, "exempli gratia"], ["Via", 2], ["Alma mater", 2.5], ["Alumni", 2.5, "alumnus"], ["CV", 2, "curriculum vitae"], ["De facto", 1.5], ["Carpe diem", 2], ["Quid pro quo", 1.5], ["Mea culpa", 1], ["Verbatim", 1.5],
+    ["Pro bono", 1], ["Post mortem", 1.5], ["Magnum opus", 1], ["a.m.", 1, "ante meridiem", "am"], ["p.m.", 1, "post meridiem", "pm"], ["AD", 0.8, "anno domini"], ["Alter ego", 1], ["Caveat", 0.8], ["Memo", 0.5, "memorandum"], ["Veto", 1],
+    ["Bonus", 0.8], ["Campus", 0.5], ["Exit", 0.5], ["Video", 0.5], ["Audio", 0.5], ["Ego", 0.8], ["Data", 0.5], ["Terra firma", 0.5], ["Rigor mortis", 0.5], ["Ad nauseam", 0.5],
+    ["Ipso facto", 0.3], ["Prima facie", 0.5], ["Et al.", 0.8, "et alia"], ["Sic", 0.2], ["NB", 0.3, "nota bene"], ["PS", 1, "post script", "postscript", "post scriptum"], ["Affidavit", 0.5], ["Quorum", 0.3], ["Interim", 0.5], ["Circa", 0.5, "ca"],
+    ["Modus operandi", 0.5, "mo"], ["QED", 0.3, "quod erat demonstrandum"], ["RIP", 0.8, "requiescat in pace", "rest in peace"], ["In vitro", 0.3], ["Ad infinitum", 0.5], ["Persona non grata", 0.5], ["Habeas corpus", 0.3], ["Sine die", 0.2], ["Per annum", 0.5], ["Per capita", 0.5],
+    ["Per cent", 0.5, "percent"], ["Extra", 0.3], ["Minimum", 0.3, "maximum"], ["Plus", 0.2, "minus"], ["Deficit", 0.3], ["Honorarium", 0.2], ["Item", 0.1], ["In situ", 0.2], ["Non sequitur", 0.3], ["Pro rata", 0.2],
+    ["Vox populi", 0.2], ["Deus ex machina", 0.1], ["Cum laude", 0.1, "summa cum laude", "magna cum laude"], ["Tabula rasa", 0.1], ["Ad lib", 0.3, "ad libitum"], ["Lb", 0.1, "libra"], ["Opus", 0.1], ["Stimulus", 0.1]],
+    hints: {"deja vu": "That's French, not Latin! Guess again!", "rsvp": "That one's French (répondez s'il vous plaît). Guess again!", "cafe": "French again! Guess again!", "fiance": "French, not Latin. Guess again!", "karma": "That's Sanskrit, not Latin. Guess again!"} },
+
+  { p: "Name a word made by blending two words together (like 'brunch' = breakfast + lunch).", know: 0.75, strip: ["a", "an"], a: [
+    ["Brunch", 18], ["Smog", 10], ["Motel", 6], ["Bollywood", 6], ["Emoticon", 4], ["Spork", 3], ["Brexit", 3], ["Podcast", 3], ["Webinar", 2.5], ["Hinglish", 3],
+    ["Frenemy", 3], ["Hangry", 2.5], ["Chillax", 2], ["Bromance", 2], ["Staycation", 1.5], ["Glamping", 1], ["Sitcom", 2], ["Infomercial", 1], ["Mockumentary", 1], ["Guesstimate", 1],
+    ["Edutainment", 0.5], ["Jeggings", 0.5], ["Labradoodle", 0.5], ["Cosplay", 0.8], ["Blog", 1.5], ["Vlog", 1], ["Modem", 0.5], ["Pixel", 0.5], ["Malware", 1], ["Netizen", 0.8],
+    ["Camcorder", 0.5], ["Chunnel", 0.3], ["Eurasia", 0.5], ["Liger", 1], ["Tigon", 0.3], ["Zorse", 0.2], ["Cyborg", 0.8], ["Electrocute", 0.5], ["Moped", 0.2], ["Telethon", 0.2],
+    ["Pokemon", 1], ["Spanglish", 0.8], ["Tanglish", 0.3], ["Wikipedia", 0.5], ["Bit", 0.2], ["Gerrymander", 0.2], ["Tollywood", 1], ["Kollywood", 0.5], ["Mollywood", 0.3], ["Dramedy", 0.3],
+    ["Skort", 0.2], ["Workaholic", 0.5], ["Shopaholic", 0.3], ["Netflix", 0.5], ["Slanguage", 0.1], ["Biopic", 0.3], ["Brangelina", 0.3], ["Bennifer", 0.1], ["Breathalyser", 0.1, "breathalyzer"], ["Docudrama", 0.2],
+    ["Fanzine", 0.1], ["Hazmat", 0.1], ["Interpol", 0.1], ["Jazzercise", 0.1], ["Mansplain", 0.3], ["Cineplex", 0.1], ["Mathlete", 0.1], ["Televangelist", 0.1], ["Squiggle", 0.1], ["Splatter", 0.1],
+    ["Animatronic", 0.1], ["Simulcast", 0.1], ["Romcom", 0.5, "rom com"], ["Mocktail", 1]],
+    hints: {"emoji": "Fun fact: 'emoji' is Japanese (e = picture, moji = character), not emotion + icon! Guess again!", "wifi": "Wi-Fi isn't actually short for anything — it's a made-up brand name. Guess again!", "breakfast": "That's a compound (break + fast), not a blend. Guess again!", "sunflower": "That's a simple compound — both words are kept whole. Guess again!"} },
+
+  { p: "Name a language that's written from RIGHT to LEFT (like Urdu).", know: 0.75, strip: ["language", "a"], a: [
+    ["Urdu", 30], ["Arabic", 30], ["Hebrew", 15], ["Persian", 8, "farsi"], ["Pashto", 2, "pushto", "pukhto"], ["Sindhi", 1.5], ["Kashmiri", 1], ["Yiddish", 1.5], ["Aramaic", 1], ["Syriac", 0.5],
+    ["Dari", 0.5], ["Kurdish (Sorani)", 0.5, "kurdish", "sorani"], ["Uyghur", 0.3, "uighur"], ["Balochi", 0.3, "baluchi"], ["Punjabi (Shahmukhi)", 0.8, "shahmukhi", "punjabi", "panjabi"], ["Dhivehi", 0.3, "divehi", "maldivian"], ["Saraiki", 0.2, "seraiki"], ["Ladino", 0.1, "judeo spanish"], ["Mandaic", 0.05], ["Samaritan", 0.05],
+    ["N'Ko", 0.05, "nko"], ["Adlam", 0.05], ["Phoenician", 0.2], ["Ottoman Turkish", 0.2, "ottoman"], ["Malay (Jawi)", 0.1, "jawi"], ["Brahui", 0.05], ["Hazaragi", 0.05], ["Azerbaijani (in Iran)", 0.05, "azeri", "azerbaijani"], ["Kharosthi", 0.1], ["Nabataean", 0.05],
+    ["Hausa (Ajami)", 0.05, "ajami"], ["Rohingya", 0.05], ["Lurish", 0.02, "luri"], ["Gilaki", 0.02], ["Mazandarani", 0.02], ["Burushaski", 0.02], ["Shina", 0.02], ["Hindko", 0.05]],
+    hints: {"hindi": "Devanagari runs left to right. Guess again!", "sanskrit": "Devanagari runs left to right. Guess again!", "tamil": "Tamil script runs left to right. Guess again!", "greek": "Greek runs left to right. Guess again!", "english": "Nope, left to right! Guess again!", "turkish": "Modern Turkish uses the Latin alphabet, left to right. Guess again!"} },
+
+  { p: "Name an invented language, from fiction or made up on purpose (like Klingon or Esperanto).", know: 0.6, strip: ["language", "the", "a"], a: [
+    ["Klingon", 18], ["Esperanto", 14], ["Elvish", 12, "elfish", "sindarin", "quenya"], ["Dothraki", 10], ["High Valyrian", 6, "valyrian"], ["Parseltongue", 7], ["Na'vi", 5, "navi"], ["Minionese", 5, "minion", "minions", "banana language"], ["Simlish", 4], ["Newspeak", 3],
+    ["Gobbledegook (goblin)", 0.5, "gobbledegook", "gobbledygook"], ["Mermish", 0.5], ["Huttese", 0.5], ["Shyriiwook (Wookiee)", 0.5, "shyriiwook", "wookiee", "wookie"], ["Droidspeak", 0.5, "binary", "droid"], ["Vulcan", 1], ["Romulan", 0.2], ["Gallifreyan", 0.3], ["Kryptonian", 0.5, "kryptonese"], ["Atlantean", 0.2],
+    ["Trigedasleng", 0.1], ["Furbish", 0.3], ["Black Speech", 0.3, "mordor"], ["Khuzdul (Dwarvish)", 0.2, "khuzdul", "dwarvish"], ["Entish", 0.1], ["Dovahzul (dragon tongue)", 0.3, "dovahzul", "dragon"], ["Mando'a", 0.1, "mandoa", "mandalorian"], ["Al Bhed", 0.1], ["Hylian", 0.2], ["Nadsat", 0.3],
+    ["Lapine", 0.1], ["Pig Latin", 3], ["Volapuk", 0.2], ["Interlingua", 0.2], ["Ido", 0.2], ["Lojban", 0.3], ["Toki Pona", 0.5], ["Solresol", 0.1], ["Lingua Ignota", 0.1], ["Pakuni", 0.1],
+    ["Ewokese", 0.2], ["Galactic Basic", 0.1], ["Kesh", 0.05], ["Ithkuil", 0.1], ["Lingwa de Planeta", 0.05, "lidepla"], ["Slovio", 0.05], ["Interslavic", 0.1], ["Goa'uld", 0.1, "goauld"], ["Gargish", 0.05], ["D'ni", 0.05, "dni"],
+    ["Ferengi", 0.1], ["Ubbi Dubbi", 0.2]],
+    hints: {"sanskrit": "Sanskrit is ancient, but very much a real natural language. Guess again!", "latin": "Latin evolved naturally — nobody invented it. Guess again!", "python": "That's a programming language — we mean ones for talking! Guess again!", "java": "That's a programming language — we mean ones for talking! Guess again!", "morse code": "Morse is a code for letters, not a language. Guess again!"} },
+
+  { p: "Name a phobia (its proper name, or 'fear of …' something).", know: 0.85, strip: [], a: [
+    ["Arachnophobia (spiders)", 22, "arachnophobia", "fear of spiders"], ["Claustrophobia (tight spaces)", 18, "claustrophobia", "fear of closed spaces", "fear of small spaces", "fear of tight spaces", "fear of enclosed spaces"], ["Acrophobia (heights)", 12, "acrophobia", "fear of heights", "altophobia"], ["Hydrophobia (water)", 6, "hydrophobia", "aquaphobia", "fear of water"], ["Agoraphobia (open/crowded spaces)", 4, "agoraphobia", "fear of open spaces", "fear of crowds", "ochlophobia", "enochlophobia", "demophobia"], ["Nyctophobia (the dark)", 4, "nyctophobia", "achluophobia", "scotophobia", "fear of darkness", "fear of the dark", "fear of dark"], ["Trypophobia (clusters of holes)", 3, "trypophobia", "fear of holes", "fear of clusters of holes"], ["Xenophobia (foreigners)", 2.5, "xenophobia", "fear of foreigners", "fear of strangers"], ["Glossophobia (public speaking)", 2, "glossophobia", "fear of public speaking"], ["Coulrophobia (clowns)", 2, "coulrophobia", "fear of clowns"],
+    ["Ophidiophobia (snakes)", 2, "ophidiophobia", "ophiophobia", "fear of snakes"], ["Cynophobia (dogs)", 1.5, "cynophobia", "fear of dogs"], ["Aerophobia (flying)", 1.5, "aerophobia", "aviophobia", "pteromerhanophobia", "fear of flying"], ["Mysophobia (germs)", 1.5, "mysophobia", "germophobia", "germaphobia", "fear of germs", "fear of dirt"], ["Nomophobia (no phone)", 1, "nomophobia", "fear of being without a phone", "fear of no phone"], ["Hemophobia (blood)", 1, "hemophobia", "haemophobia", "hematophobia", "fear of blood"], ["Trypanophobia (needles)", 1, "trypanophobia", "fear of needles", "fear of injections", "aichmophobia"], ["Thalassophobia (the deep sea)", 1, "thalassophobia", "fear of the sea", "fear of the ocean", "fear of deep water", "fear of the deep sea", "fear of sea", "fear of ocean"], ["Astraphobia (thunder & lightning)", 1, "astraphobia", "brontophobia", "fear of thunder", "fear of lightning", "fear of storms", "fear of thunderstorms"], ["Triskaidekaphobia (number 13)", 1, "triskaidekaphobia", "fear of 13", "fear of the number 13", "fear of thirteen"],
+    ["Hippopotomonstrosesquippedaliophobia (long words)", 1, "hippopotomonstrosesquippedaliophobia", "fear of long words", "sesquipedalophobia"], ["Technophobia (technology)", 0.5, "technophobia", "fear of technology"], ["Entomophobia (insects)", 0.5, "entomophobia", "insectophobia", "fear of insects", "fear of bugs"], ["Ailurophobia (cats)", 0.5, "ailurophobia", "felinophobia", "fear of cats"], ["Musophobia (mice)", 0.3, "musophobia", "murophobia", "fear of mice", "fear of rats", "fear of mouse"], ["Ornithophobia (birds)", 0.3, "ornithophobia", "fear of birds"], ["Necrophobia (dead things)", 0.3, "necrophobia", "fear of dead bodies", "fear of corpses"], ["Thanatophobia (death)", 0.5, "thanatophobia", "fear of death", "fear of dying"], ["Gamophobia (marriage)", 0.3, "gamophobia", "fear of marriage", "fear of commitment"], ["Philophobia (falling in love)", 0.3, "philophobia", "fear of love", "fear of falling in love"],
+    ["Atychiphobia (failure)", 0.5, "atychiphobia", "fear of failure", "kakorrhaphiophobia"], ["Autophobia (being alone)", 0.5, "autophobia", "monophobia", "isolophobia", "fear of being alone", "fear of loneliness"], ["Somniphobia (sleep)", 0.2, "somniphobia", "hypnophobia", "fear of sleep", "fear of sleeping"], ["Pyrophobia (fire)", 0.5, "pyrophobia", "fear of fire"], ["Chronophobia (time passing)", 0.1, "chronophobia", "fear of time"], ["Arachibutyrophobia (peanut butter sticking)", 0.3, "arachibutyrophobia", "fear of peanut butter"], ["Phobophobia (fear itself)", 0.3, "phobophobia", "fear of fear", "fear of phobias"], ["Ergophobia (work)", 0.2, "ergophobia", "fear of work"], ["Emetophobia (vomiting)", 0.3, "emetophobia", "fear of vomit", "fear of vomiting", "fear of throwing up"], ["Social phobia (people judging you)", 0.5, "social phobia", "sociophobia", "anthropophobia", "fear of people", "social anxiety"],
+    ["Ablutophobia (bathing)", 0.1, "ablutophobia", "fear of bathing", "fear of washing"], ["Dentophobia (dentists)", 0.3, "dentophobia", "odontophobia", "fear of dentists", "fear of the dentist"], ["Iatrophobia (doctors)", 0.1, "iatrophobia", "fear of doctors"], ["Ombrophobia (rain)", 0.1, "ombrophobia", "pluviophobia", "fear of rain"], ["Phasmophobia (ghosts)", 0.3, "phasmophobia", "spectrophobia", "fear of ghosts"], ["Selenophobia (the moon)", 0.05, "selenophobia", "fear of the moon"], ["Heliophobia (sunlight)", 0.05, "heliophobia", "fear of the sun", "fear of sunlight"], ["Photophobia (bright light)", 0.1, "photophobia", "fear of light"], ["Tokophobia (childbirth)", 0.05, "tokophobia", "fear of childbirth"], ["Scolionophobia (school)", 0.1, "scolionophobia", "didaskaleinophobia", "fear of school"],
+    ["Mageirocophobia (cooking)", 0.05, "mageirocophobia", "fear of cooking"], ["Ichthyophobia (fish)", 0.1, "ichthyophobia", "fear of fish"], ["Equinophobia (horses)", 0.05, "equinophobia", "hippophobia", "fear of horses"], ["Apiphobia (bees)", 0.2, "apiphobia", "melissophobia", "fear of bees", "spheksophobia", "fear of wasps"], ["Anatidaephobia (a duck watching you)", 0.3, "anatidaephobia", "fear of ducks", "fear of being watched by a duck"], ["Chiroptophobia (bats)", 0.05, "chiroptophobia", "fear of bats"], ["Lepidopterophobia (butterflies)", 0.05, "lepidopterophobia", "fear of butterflies", "fear of moths", "mottephobia"], ["Herpetophobia (reptiles)", 0.1, "herpetophobia", "fear of reptiles", "fear of lizards"], ["Bathophobia (depths)", 0.05, "bathophobia", "fear of depths"]],
+    hints: {"vertigo": "Vertigo is a dizzy feeling, not a fear — try acrophobia! Guess again!", "homesick": "That's a feeling, not a phobia. Guess again!"} }
+]);
+
 BANKX.movies = [
   { p: "Name a Marvel superhero.", know: 0.95, strip: ["the"], a: [
     ["Spider-Man", 22, "spiderman", "spidey", "peter parker", "spider man"], ["Iron Man", 20, "tony stark", "ironman"], ["Captain America", 12, "steve rogers", "cap"], ["Thor", 9], ["Hulk", 8, "incredible hulk", "bruce banner"], ["Black Panther", 5, "tchalla"], ["Black Widow", 4, "natasha romanoff", "natasha romanov"], ["Wolverine", 4, "logan"], ["Doctor Strange", 3, "dr strange", "stephen strange"], ["Deadpool", 3, "wade wilson"], ["Hawkeye", 2, "clint barton"], ["Captain Marvel", 2, "carol danvers"], ["Ant-Man", 2, "antman", "scott lang"], ["Scarlet Witch", 1.5, "wanda", "wanda maximoff"], ["Vision", 0.8], ["Groot", 1], ["Rocket", 0.8, "rocket raccoon"], ["Star-Lord", 0.8, "starlord", "peter quill"], ["Gamora", 0.6], ["Drax", 0.4, "drax the destroyer"], ["Mantis", 0.2], ["Falcon", 0.7, "sam wilson"], ["Winter Soldier", 0.6, "bucky", "bucky barnes"], ["War Machine", 0.4, "rhodey", "james rhodes"], ["Wasp", 0.4, "hope van dyne", "janet van dyne"], ["Shang-Chi", 0.4, "shangchi"], ["Ms. Marvel", 0.3, "kamala khan", "ms marvel"], ["She-Hulk", 0.3, "shehulk", "jennifer walters"], ["Moon Knight", 0.3], ["Daredevil", 0.5, "matt murdock"], ["Punisher", 0.3, "frank castle"], ["Luke Cage", 0.2], ["Iron Fist", 0.1, "danny rand"], ["Jessica Jones", 0.1], ["Ghost Rider", 0.3], ["Blade", 0.3], ["Storm", 0.4], ["Cyclops", 0.3, "scott summers"], ["Jean Grey", 0.3, "phoenix"], ["Professor X", 0.4, "charles xavier", "professor xavier"], ["Beast", 0.1, "hank mccoy"], ["Rogue", 0.2], ["Gambit", 0.2], ["Nightcrawler", 0.1], ["Colossus", 0.1], ["Iceman", 0.1], ["Psylocke", 0.05], ["Cable", 0.05], ["Quicksilver", 0.2, "pietro maximoff"], ["Mister Fantastic", 0.2, "mr fantastic", "reed richards"], ["Invisible Woman", 0.2, "sue storm"], ["Human Torch", 0.2, "johnny storm"], ["The Thing", 0.2, "thing", "ben grimm"], ["Silver Surfer", 0.2], ["Nick Fury", 0.3, "fury"], ["Miles Morales", 0.4], ["Spider-Gwen", 0.2, "spidergwen", "gwen stacy", "ghost spider"], ["Spider-Woman", 0.05, "spiderwoman"], ["Valkyrie", 0.1], ["Nova", 0.05], ["Adam Warlock", 0.05], ["Kate Bishop", 0.05], ["Yelena Belova", 0.05, "yelena"], ["Squirrel Girl", 0.05], ["Namor", 0.05], ["Hercules", 0.03], ["Sentry", 0.03], ["Elektra", 0.05], ["Captain Britain", 0.02], ["US Agent", 0.02, "john walker"]],
@@ -9388,6 +9487,157 @@ BANKX.movies = [
     hints: { "spiderman": "Spider-Man is Marvel, not DC.", "spider man": "Spider-Man is Marvel, not DC.", "iron man": "Iron Man is Marvel, not DC.", "captain america": "Captain America is Marvel, not DC.", "thor": "Thor is Marvel, not DC.", "hulk": "The Hulk is Marvel, not DC.", "wolverine": "Wolverine is Marvel, not DC.", "deadpool": "Deadpool is Marvel, not DC.", "joker": "The Joker is a villain, not a hero.", "harley quinn": "Harley Quinn is usually a villain or antihero.", "catwoman": "Catwoman is usually counted as a villain or antihero.", "black adam": "Black Adam is an antihero, usually a villain.", "lex luthor": "Lex Luthor is a villain." } }
 ];
 
+BANKX.movies = (BANKX.movies || []).concat([
+  { p: "Name a movie or TV show with a colour in its title (any language).", know: 0.9, strip: ["the", "movie", "film"], a: [
+    ["Black Panther", 14, "black panther wakanda forever"], ["Men in Black", 7, "mib"], ["The Green Mile", 6, "green mile"], ["Snow White", 6, "snow white and the seven dwarfs"], ["Pink (2016)", 5, "pink"],
+    ["Black Swan", 4], ["The Pink Panther", 4, "pink panther"], ["Fifty Shades of Grey", 3, "50 shades of grey", "fifty shades of gray"], ["White Chicks", 3], ["Black Widow", 3],
+    ["Rang De Basanti", 3], ["Green Book", 3], ["Laal Singh Chaddha", 2, "lal singh chaddha", "lal singh chadha", "laal singh chadha"], ["Black (2005)", 2, "black"], ["Black Mirror", 2],
+    ["Grey's Anatomy", 2, "greys anatomy"], ["Orange Is the New Black", 2, "oitnb"], ["Green Lantern", 2], ["Black Adam", 2], ["The Color Purple", 2, "colour purple", "color purple"],
+    ["Red Notice", 2], ["Black Friday (2004)", 1.5, "black friday"], ["Kaala", 1, "kala"], ["Goldfinger", 1], ["GoldenEye", 1, "golden eye"],
+    ["Gold (2018)", 1, "gold"], ["Silver Linings Playbook", 1, "silver linings"], ["A Clockwork Orange", 1, "clockwork orange"], ["Black Hawk Down", 1], ["Blue Beetle", 1],
+    ["The White Lotus", 1, "white lotus"], ["Yellowstone", 1], ["Blue Bloods", 0.5], ["The Blacklist", 0.5, "blacklist"], ["Red Dragon", 0.5],
+    ["Red Sparrow", 0.6], ["Red (2010)", 0.5, "red"], ["Red One", 0.4], ["Red Riding Hood", 0.4], ["The Hunt for Red October", 0.6, "hunt for red october"],
+    ["White House Down", 0.4], ["The Blue Lagoon", 0.4, "blue lagoon"], ["Blue Valentine", 0.3], ["Blue Is the Warmest Colour", 0.3, "blue is the warmest color"], ["Black Beauty", 0.4],
+    ["Kaala Patthar", 0.4, "kala patthar", "kaala pathar"], ["Kaalia", 0.3, "kalia"], ["Purple Rain", 0.2], ["Yellow Submarine", 0.2], ["Crimson Tide", 0.2],
+    ["Crimson Peak", 0.2], ["The Scarlet Letter", 0.2, "scarlet letter"], ["The Grey", 0.2, "grey"], ["The Green Knight", 0.2, "green knight"], ["Red Eye", 0.2],
+    ["Green Zone", 0.1], ["Blackadder", 0.2, "black adder"], ["The Golden Compass", 0.3, "golden compass"], ["Red Dwarf", 0.1]],
+    hints: { "shrek": "Shrek is green, but his title isn't — guess again!", "avatar": "The Na'vi are blue, but the title has no colour!", "hulk": "Hulk is green, but the word isn't in the title!", "incredible hulk": "Green guy, colourless title — guess again!", "minions": "Yellow characters, colourless title!", "smurfs": "Blue little guys, but no colour in the title!", "frozen": "Icy blue vibes, but no colour word!" } },
+
+  { p: "Name a movie or TV show with an animal in its title (any language).", know: 0.92, strip: ["the", "movie", "film"], a: [
+    ["The Lion King", 15, "lion king"], ["Kung Fu Panda", 10], ["Spider-Man", 8, "spiderman", "spider man", "spider man no way home", "into the spider verse"], ["Batman", 6, "batman begins"], ["Ek Tha Tiger", 5, "tiger"],
+    ["Animal (2023)", 4, "animal"], ["Black Panther", 4], ["The Wolf of Wall Street", 4, "wolf of wall street"], ["Ant-Man", 3, "antman", "ant man"], ["Slumdog Millionaire", 3],
+    ["101 Dalmatians", 3, "one hundred and one dalmatians", "hundred and one dalmatians"], ["Tiger Zinda Hai", 2], ["Tiger 3", 1, "tiger three"], ["The Silence of the Lambs", 2, "silence of the lambs"], ["Planet of the Apes", 2, "rise of the planet of the apes", "dawn of the planet of the apes", "war for the planet of the apes"],
+    ["The Pink Panther", 2, "pink panther"], ["Wolverine", 1, "the wolverine", "x men origins wolverine", "deadpool and wolverine"], ["Puss in Boots", 1], ["Catwoman", 1], ["Birdman", 1],
+    ["Fantastic Mr. Fox", 1, "fantastic mr fox", "mr fox"], ["Chicken Run", 1], ["Shark Tale", 1], ["Bee Movie", 1, "bee"], ["Anaconda", 1],
+    ["Eega / Makkhi", 1, "eega", "makkhi", "makhi"], ["Bhediya", 1, "bhediya"], ["Haathi Mere Saathi", 1, "hathi mere saathi", "hathi mere sathi"], ["Shershaah", 1, "sher shah"], ["Naagin", 1, "nagin"],
+    ["Black Swan", 1], ["Reservoir Dogs", 1], ["The Bear", 1, "bear"], ["Tiger King", 0.5], ["BoJack Horseman", 0.5, "bojack"],
+    ["Teen Wolf", 0.5], ["Monkey Man", 0.5], ["Isle of Dogs", 0.5], ["Snakes on a Plane", 0.5], ["War Horse", 0.5],
+    ["Raging Bull", 0.5], ["The Birds", 0.5, "birds"], ["Birds of Prey", 0.5], ["Cats", 0.4], ["Cats & Dogs", 0.3, "cats and dogs"],
+    ["Sherni", 0.4], ["Aadujeevitham (The Goat Life)", 0.4, "aadujeevitham", "goat life"], ["Penguins of Madagascar", 0.3], ["The Mighty Ducks", 0.3, "mighty ducks"], ["Kangaroo Jack", 0.2],
+    ["The Fly", 0.3, "fly"], ["Snake Eyes", 0.2], ["Rat Race", 0.2], ["Jaanwar", 0.3, "janwar"], ["Bichhoo", 0.2, "bichoo"],
+    ["Cobra (2022)", 0.2, "cobra"]],
+    hints: { "jaws": "Jaws are a body part — no animal word in that title!", "godzilla": "Godzilla's a monster name, not an animal word!", "king kong": "Kong's a name — no animal word there!", "bambi": "Bambi is a deer's name, not the word for one!", "finding nemo": "Nemo's a name — no animal word in the title!", "ratatouille": "That's a vegetable dish, not a rat — guess again!", "madagascar": "That's an island, not an animal!", "dumbo": "Dumbo is a name, not an animal word!" } },
+
+  { p: "Name a movie where the villain wins (or the bad guy gets away with it).", know: 0.6, strip: ["the", "movie", "film"], a: [
+    ["Avengers: Infinity War", 30, "infinity war", "avengers infinity war"], ["Se7en", 6, "seven"], ["The Empire Strikes Back", 5, "empire strikes back", "star wars episode 5", "star wars episode v"], ["The Usual Suspects", 4, "usual suspects"], ["Saw", 4],
+    ["Gone Girl", 4], ["Joker (2019)", 3, "joker"], ["Star Wars: Revenge of the Sith", 3, "revenge of the sith", "star wars episode 3", "star wars episode iii"], ["No Country for Old Men", 2], ["Don (2006)", 3, "don"],
+    ["Primal Fear", 2], ["Final Destination", 2], ["The Ring", 1, "ring"], ["Megamind", 1], ["Watchmen", 1],
+    ["Kaun? (1999)", 1, "kaun"], ["Ittefaq (2017)", 1, "ittefaq"], ["Hereditary", 1], ["Rosemary's Baby", 1, "rosemarys baby"], ["Chinatown", 1],
+    ["Sinister", 0.6], ["The Talented Mr. Ripley", 0.6, "talented mr ripley"], ["Nightcrawler", 0.6], ["Oldboy", 0.5, "old boy"], ["The Omen", 0.5, "omen"],
+    ["Halloween (1978)", 0.4, "halloween"], ["The Cabin in the Woods", 0.4, "cabin in the woods"], ["Funny Games", 0.2], ["The Wicker Man", 0.2, "wicker man"], ["Arlington Road", 0.2],
+    ["A Nightmare on Elm Street", 0.3, "nightmare on elm street"]],
+    hints: { "drishyam": "The family gets away with it — but they're the heroes, not villains!", "the dark knight": "The Joker loses the ferry bet — Batman's still standing!", "dark knight": "The Joker loses the ferry bet — Batman's still standing!", "knives out": "Ransom gets caught in the end!", "despicable me": "Gru wins, but by then he's gone good!", "endgame": "Thanos loses in Endgame — try the film before it!", "avengers endgame": "Thanos loses in Endgame — try the film before it!" } },
+
+  { p: "Name a movie set almost entirely in one room, building or vehicle.", know: 0.6, strip: ["the", "movie", "film"], a: [
+    ["12 Angry Men", 10, "twelve angry men"], ["Home Alone", 7], ["Die Hard", 6], ["Saw", 6], ["The Terminal", 5, "terminal"],
+    ["Titanic", 4], ["The Breakfast Club", 4, "breakfast club"], ["Room", 3], ["Phone Booth", 3], ["Panic Room", 3],
+    ["Speed", 3], ["Life of Pi", 2], ["Bheja Fry", 2], ["Murder on the Orient Express", 2, "orient express"], ["Train to Busan", 2],
+    ["The Shining", 2, "shining"], ["Rear Window", 2], ["Cube", 2], ["The Hateful Eight", 2, "hateful eight", "hateful 8"], ["Reservoir Dogs", 2],
+    ["Neerja", 2], ["Trapped (2016)", 2, "trapped"], ["Ek Ruka Hua Faisla", 1], ["Shaitaan (2024)", 1, "shaitaan", "shaitan"], ["Alien", 1],
+    ["127 Hours", 1, "one hundred and twenty seven hours"], ["Buried", 1], ["Rope", 1], ["10 Cloverfield Lane", 1, "ten cloverfield lane"], ["Don't Breathe", 1, "dont breathe"],
+    ["Snowpiercer", 1], ["Night at the Museum", 1], ["Misery", 0.6], ["Kaun? (1999)", 0.6, "kaun"], ["Raid (2018)", 0.5, "raid"],
+    ["Das Boot", 0.4], ["Locke", 0.4], ["The Lighthouse", 0.4, "lighthouse"], ["The Platform", 0.4, "platform"], ["Non-Stop", 0.4, "non stop"],
+    ["Air Force One", 0.4], ["Snakes on a Plane", 0.4], ["Carnage", 0.2], ["Lifeboat", 0.2], ["Dial M for Murder", 0.2],
+    ["Exam", 0.2], ["The Guilty", 0.2, "guilty"], ["Sleuth", 0.1], ["Clerks", 0.1], ["Free Fire", 0.1]],
+    hints: { "cast away": "A whole island is a bit roomy — think smaller!", "gravity": "All of space isn't one room — guess again!", "jumanji": "That jungle's huge — think smaller!", "inception": "Way too many dream levels for one room!" } },
+
+  { p: "Name a movie or TV show whose title is just a character's name (like 'Rocky' or 'Devdas').", know: 0.88, strip: ["the", "movie", "film"], a: [
+    ["Devdas", 6], ["Forrest Gump", 6], ["Rocky", 5], ["Shrek", 5], ["Baahubali", 5, "bahubali"],
+    ["Barbie", 4], ["Kabir Singh", 3], ["Pushpa", 3, "pushpa the rise", "pushpa 2"], ["Pathaan", 3, "pathan"], ["Sultan", 3],
+    ["Krrish", 3, "krish"], ["Joker", 3], ["Deadpool", 3], ["Oppenheimer", 3], ["John Wick", 3],
+    ["Moana", 3], ["Mulan", 3], ["Aladdin", 3], ["Cinderella", 3], ["Thor", 3],
+    ["Spider-Man", 2, "spiderman", "spider man"], ["Iron Man", 2, "ironman"], ["Batman", 2], ["Superman", 2], ["Venom", 2],
+    ["Wednesday", 2], ["Sherlock", 2], ["Shaktimaan", 2, "shaktiman"], ["Doraemon", 2], ["Naruto", 2],
+    ["Gangubai Kathiawadi", 2, "gangubai"], ["Bajirao Mastani", 2], ["Padmaavat", 2, "padmavat", "padmavati"], ["Neerja", 2], ["Mary Kom", 2],
+    ["M.S. Dhoni: The Untold Story", 2, "ms dhoni", "dhoni", "ms dhoni the untold story"], ["Sanju", 2], ["Raees", 2], ["Singham", 2], ["Amar Akbar Anthony", 2],
+    ["Coco", 2], ["Pinocchio", 2], ["Dumbo", 2], ["Bambi", 2], ["Matilda", 2],
+    ["Gandhi", 2], ["Karan Arjun", 1], ["Veer-Zaara", 1, "veer zaara"], ["Arjun Reddy", 1], ["Anand", 1],
+    ["Tanhaji", 1, "tanhaji the unsung warrior", "tanaji"], ["Manikarnika", 1, "manikarnika the queen of jhansi"], ["Paan Singh Tomar", 1], ["Shershaah", 1, "sher shah"], ["Ra.One", 1, "raone", "ra one"],
+    ["Kabali", 1], ["Leo", 1], ["Vikram", 1], ["Salaar", 1, "salar"], ["Chhota Bheem", 1, "chota bheem", "chhota bhim"],
+    ["Shinchan", 1, "shin chan", "crayon shin chan"], ["Ben 10", 1, "ben ten"], ["Mr. Bean", 1, "mr bean"], ["Peppa Pig", 1], ["Loki", 1],
+    ["Logan", 1], ["Wonka", 1], ["Maleficent", 1], ["Cruella", 1], ["Mufasa", 1],
+    ["Hercules", 1], ["Tarzan", 1], ["Annabelle", 1], ["Godzilla", 1], ["King Kong", 1],
+    ["Wonder Woman", 1], ["Aquaman", 1], ["Shazam!", 0.5, "shazam"], ["Hulk", 0.5, "incredible hulk"], ["Ant-Man", 0.5, "antman", "ant man"],
+    ["Captain Marvel", 0.5], ["Black Panther", 0.5], ["Catwoman", 0.3], ["Blade", 0.3], ["Morbius", 0.3],
+    ["Rambo", 1], ["Hancock", 1], ["Borat", 1], ["Ted", 1], ["Lucy", 1],
+    ["WALL-E", 1, "walle", "wall e"], ["Elvis", 1], ["Amélie", 0.5, "amelie"], ["Juno", 0.5], ["Carrie", 0.5],
+    ["Annie", 0.5], ["Rebecca", 0.3], ["Paddington", 0.5], ["Hugo", 0.3], ["Rango", 0.3],
+    ["Luca", 0.5], ["Pocahontas", 0.5], ["Garfield", 0.5], ["Hellboy", 0.5], ["Napoleon", 0.5],
+    ["Lincoln", 0.3], ["Jerry Maguire", 0.3], ["Erin Brockovich", 0.3], ["Donnie Darko", 0.3], ["Jack Reacher", 0.5],
+    ["Dracula", 0.4], ["Frankenstein", 0.4], ["M3GAN", 0.3, "megan"], ["Daredevil", 0.4], ["Dexter", 0.4],
+    ["Hannibal", 0.3], ["Merlin", 0.2], ["Hannah Montana", 0.4], ["Bluey", 0.3], ["Seinfeld", 0.3],
+    ["Bobby", 0.3], ["Ram Lakhan", 0.4], ["Seeta Aur Geeta", 0.3, "seeta or geeta", "sita aur gita"], ["Ram Aur Shyam", 0.2], ["Shakuntala Devi", 0.2],
+    ["Simran", 0.2], ["Rustom", 0.3], ["Shamshera", 0.3], ["Shivaay", 0.3, "shivay"], ["Sivaji", 0.3, "shivaji the boss", "sivaji the boss"],
+    ["Kalki 2898 AD", 0.3, "kalki"], ["Laila Majnu", 0.2], ["Heer Ranjha", 0.1], ["Chandni", 0.2], ["Sooryavanshi", 0.2, "suryavanshi"]],
+    hints: { "frozen": "Elsa's not in the title — guess again!", "tangled": "Rapunzel's not in that title!", "encanto": "Encanto's not a character name!", "ratatouille": "That's Remy's dish, not his name!", "dangal": "Dangal means wrestling match, not a name!", "jawan": "Jawan means soldier, not a name!", "lagaan": "Lagaan is a tax, not a person!", "up": "Up isn't anyone's name!", "zootopia": "That's a city, not a character!" } },
+
+  { p: "Name a movie that runs 3 hours or longer (theatrical or official extended cut).", know: 0.6, strip: ["the", "movie", "film"], a: [
+    ["Lagaan", 12], ["Titanic", 12], ["Avengers: Endgame", 10, "endgame", "avengers endgame"], ["Kabhi Khushi Kabhie Gham", 7, "k3g", "kabhi khushi kabhi gham"], ["Oppenheimer", 6],
+    ["Animal (2023)", 6, "animal"], ["Sholay", 4], ["Dilwale Dulhania Le Jayenge", 4, "ddlj"], ["Hum Aapke Hain Koun", 3, "hahk", "hum aapke hain kaun"], ["The Wolf of Wall Street", 3, "wolf of wall street"],
+    ["The Lord of the Rings: The Return of the King", 3, "return of the king", "lord of the rings return of the king"], ["The Lord of the Rings: The Fellowship of the Ring", 1, "fellowship of the ring", "lord of the rings fellowship of the ring"], ["The Lord of the Rings: The Two Towers", 1, "two towers", "lord of the rings two towers"], ["Pushpa 2: The Rule", 3, "pushpa 2", "pushpa two", "pushpa the rule"], ["RRR", 3, "rise roar revolt"],
+    ["Kal Ho Naa Ho", 2, "kal ho na ho"], ["Kuch Kuch Hota Hai", 2, "kkhh"], ["Mohabbatein", 2], ["Jodhaa Akbar", 2, "jodha akbar"], ["Swades", 2],
+    ["Veer-Zaara", 2, "veer zaara"], ["Kabhi Alvida Naa Kehna", 1, "kank", "kabhi alvida na kehna"], ["Devdas (2002)", 1, "devdas"], ["Hum Dil De Chuke Sanam", 1], ["Dil Chahta Hai", 1],
+    ["Mughal-e-Azam", 1, "mughal e azam"], ["Mera Naam Joker", 1], ["LOC Kargil", 1, "loc"], ["Sangam (1964)", 0.4, "sangam"], ["Kalki 2898 AD", 1, "kalki"],
+    ["Schindler's List", 2, "schindlers list"], ["The Godfather Part II", 2, "godfather part 2", "godfather 2", "godfather part two"], ["The Irishman", 1, "irishman"], ["Killers of the Flower Moon", 1], ["The Green Mile", 1, "green mile"],
+    ["Avatar: The Way of Water", 1, "avatar 2", "way of water", "avatar the way of water"], ["Zack Snyder's Justice League", 1, "snyder cut", "zack snyders justice league"], ["Gone with the Wind", 1], ["Lawrence of Arabia", 0.5], ["Ben-Hur (1959)", 0.5, "ben hur"],
+    ["The Ten Commandments (1956)", 0.4, "ten commandments"], ["Gandhi (1982)", 0.5, "gandhi"], ["Seven Samurai", 0.4], ["Once Upon a Time in America", 0.3], ["Dances with Wolves", 0.3],
+    ["Pearl Harbor", 0.5], ["Magnolia", 0.2], ["JFK", 0.2], ["Malcolm X", 0.2], ["Babylon (2022)", 0.2, "babylon"],
+    ["The Brutalist", 0.2, "brutalist"], ["Barry Lyndon", 0.1], ["Spartacus", 0.2], ["Cleopatra (1963)", 0.2, "cleopatra"], ["The Deer Hunter", 0.2, "deer hunter"],
+    ["Doctor Zhivago", 0.1], ["The Hateful Eight (roadshow cut)", 0.3, "hateful eight", "hateful 8"], ["King Kong (2005)", 0.3, "king kong"], ["Watchmen (director's cut)", 0.1, "watchmen"], ["Batman v Superman (Ultimate Edition)", 0.2, "batman v superman", "batman vs superman", "bvs"]],
+    hints: { "the godfather": "Part I is 2h55 — five minutes short! Part II counts though.", "godfather": "Part I is 2h55 — five minutes short! Part II counts though.", "interstellar": "2h49 — close, but not 3 hours!", "pushpa": "Which one? Pushpa 1 is 2h59 — one minute short! Type Pushpa 2.", "pushpa the rise": "2h59 — one agonising minute short!", "baahubali 2": "2h47 — not quite 3 hours!", "bahubali 2": "2h47 — not quite 3 hours!", "baahubali": "Neither Baahubali reaches 3 hours!", "kgf": "KGF 2 is 2h48 — not quite!", "kgf 2": "2h48 — not quite!", "gangs of wasseypur": "Each part is under 3 hours on its own!", "avatar": "The first Avatar is under 3 hours — the sequel counts though!", "braveheart": "2h58 — so close!", "heat": "2h50 — close, but no!", "dangal": "2h41 — not quite!", "padmaavat": "2h43 — not quite!", "infinity war": "2h29 — Endgame is the long one!", "avengers infinity war": "2h29 — Endgame is the long one!", "dune part two": "2h46 — close, but no!", "saving private ryan": "2h49 — close, but no!" } },
+
+  { p: "Name a movie with a food, drink or meal in its title.", know: 0.82, strip: ["the", "movie", "film"], a: [
+    ["Charlie and the Chocolate Factory", 12, "willy wonka and the chocolate factory", "chocolate factory"], ["American Pie", 8], ["Ratatouille", 8], ["Barfi!", 7, "barfi", "burfi"], ["Cloudy with a Chance of Meatballs", 5, "cloudy with a chance of meatball"],
+    ["Cheeni Kum", 4], ["The Lunchbox", 4, "lunchbox", "lunch box"], ["Cocktail", 4], ["The Breakfast Club", 3, "breakfast club"], ["Breakfast at Tiffany's", 3, "breakfast at tiffanys"],
+    ["Kesari", 3], ["Beetlejuice", 3, "beetle juice", "beetlejuice beetlejuice"], ["James and the Giant Peach", 3, "giant peach"], ["A Clockwork Orange", 2, "clockwork orange"], ["Pineapple Express", 2],
+    ["Garam Masala", 2], ["Chocolate (2005)", 2, "chocolate"], ["Chocolat", 2], ["Namak Halaal", 2, "namak halal"], ["Big Fish", 1],
+    ["Jalebi (2018)", 1, "jalebi"], ["Rajma Chawal", 1], ["Khichdi: The Movie", 1, "khichdi"], ["Pizza (2012/2014)", 1, "pizza"], ["Fried Green Tomatoes", 1],
+    ["Licorice Pizza", 1, "liquorice pizza"], ["Sausage Party", 1], ["Honey, I Shrunk the Kids", 1, "honey i shrunk the kids"], ["Chicken Run", 1], ["Salt", 1],
+    ["Milk", 0.5], ["Toast", 0.3], ["Like Water for Chocolate", 0.5], ["The Grapes of Wrath", 0.5, "grapes of wrath"], ["Bananas", 0.3],
+    ["Coffee and Cigarettes", 0.3], ["The Peanut Butter Falcon", 0.3, "peanut butter falcon"], ["Soul Food", 0.3], ["Dinner for Schmucks", 0.3], ["Guess Who's Coming to Dinner", 0.3, "guess whos coming to dinner"],
+    ["Daawat-e-Ishq", 0.5, "dawat e ishq", "daawat e ishq"], ["Aloo Chaat", 0.3], ["Paan Singh Tomar", 0.3], ["Vada Chennai", 0.3], ["Biriyani (2013)", 0.3, "biriyani", "biryani"],
+    ["Namak Haraam", 0.2, "namak haram"], ["Bean (1997)", 0.2, "bean", "mr beans holiday"], ["Mystic Pizza", 0.1], ["Cake (2014)", 0.1, "cake"], ["Tea with Mussolini", 0.1],
+    ["Juice (1992)", 0.1, "juice"], ["Hamburger Hill", 0.1], ["Chutney Popcorn", 0.05], ["The Cookout", 0.05, "cookout"], ["Orange County", 0.1]],
+    hints: { "eat pray love": "Lots of eating, but no actual food named!", "chef": "A cook isn't a food — guess again!", "julie and julia": "Cooking film, but no food in the title!", "pulp fiction": "That's paper pulp, not fruit pulp!", "bawarchi": "A cook isn't a food!", "ice age": "Ice isn't really food — guess again!", "khatta meetha": "Those are tastes, not a food — guess again!", "sharaabi": "That's a drinker, not a drink!" } },
+
+  { p: "Name a movie or TV show with time travel or a time loop in it.", know: 0.85, strip: ["the", "movie", "film"], a: [
+    ["Back to the Future", 25, "bttf", "back to the future 2", "back to the future 3"], ["Avengers: Endgame", 15, "endgame", "avengers endgame"], ["The Terminator", 6, "terminator", "terminator 2", "t2", "terminator 2 judgment day"], ["Interstellar", 6], ["Tenet", 5],
+    ["Harry Potter and the Prisoner of Azkaban", 4, "prisoner of azkaban", "harry potter 3"], ["Groundhog Day", 3], ["Dark", 3], ["Doctor Who", 3], ["Edge of Tomorrow", 2, "live die repeat"],
+    ["Looper", 2], ["Doctor Strange", 1], ["Loki", 1], ["X-Men: Days of Future Past", 1, "days of future past"], ["About Time", 1],
+    ["Action Replayy", 1, "action replay"], ["Looop Lapeta", 1, "loop lapeta"], ["Dobaaraa", 0.5, "dobara"], ["Love Story 2050", 0.3], ["Aditya 369", 0.5],
+    ["24 (2016 Tamil)", 0.5, "24", "twenty four"], ["Maanaadu", 0.3, "manadu"], ["Mark Antony (2023)", 0.3, "mark antony"], ["Indru Netru Naalai", 0.3], ["Oke Oka Jeevitham / Kanam", 0.2, "oke oka jeevitham", "kanam"],
+    ["Tokyo Revengers", 1], ["Steins;Gate", 0.5, "steins gate"], ["Your Name", 0.5, "kimi no na wa"], ["The Umbrella Academy", 0.5, "umbrella academy"], ["Outlander", 0.5],
+    ["Russian Doll", 0.3], ["Erased", 0.2, "boku dake ga inai machi"], ["The Flash", 1, "flash"], ["12 Monkeys", 0.5, "twelve monkeys"], ["Donnie Darko", 0.5],
+    ["The Butterfly Effect", 0.5, "butterfly effect"], ["Source Code", 0.5], ["Happy Death Day", 0.4], ["Palm Springs", 0.3], ["Bill & Ted's Excellent Adventure", 0.4, "bill and ted", "bill and teds excellent adventure"],
+    ["Hot Tub Time Machine", 0.4], ["The Time Machine", 0.4, "time machine"], ["The Time Traveler's Wife", 0.4, "time travelers wife", "time travellers wife"], ["Midnight in Paris", 0.3], ["Men in Black 3", 0.3, "mib 3"],
+    ["Primer", 0.2], ["Kate & Leopold", 0.1, "kate and leopold"], ["Meet the Robinsons", 0.3], ["Mr. Peabody & Sherman", 0.1, "mr peabody and sherman"], ["Star Trek IV: The Voyage Home", 0.1, "star trek 4", "voyage home"],
+    ["Superman (1978)", 0.1, "superman"], ["Deja Vu", 0.2, "dejavu"], ["Planet of the Apes (1968)", 0.1, "planet of the apes"], ["Avengers: Infinity War", 0.1, "infinity war"], ["Spider-Man: Across the Spider-Verse", 0.05, "across the spider verse"]],
+    hints: { "inception": "Dreams within dreams — but nobody travels in time!", "memento": "Told backwards, but nobody actually travels in time!", "the curious case of benjamin button": "Ageing backwards isn't time travel!", "benjamin button": "Ageing backwards isn't time travel!", "the matrix": "Simulated world, not time travel!", "matrix": "Simulated world, not time travel!" } },
+
+  { p: "Name a movie or TV show with a day of the week or a month in its title.", know: 0.75, strip: ["the", "movie", "film"], a: [
+    ["Wednesday", 20, "wednesday addams"], ["A Wednesday!", 10, "a wednesday"], ["Friday the 13th", 6, "friday the thirteenth"], ["Freaky Friday", 6], ["Black Friday (2004)", 4, "black friday"],
+    ["Saturday Night Live", 3, "snl"], ["Saturday Night Fever", 2], ["A Thursday", 2, "thursday"], ["October (2018)", 2, "october"], ["The Hunt for Red October", 2, "hunt for red october", "red october"],
+    ["Friday (1995)", 2, "friday"], ["Sunday (2008)", 1, "sunday"], ["August Rush", 1], ["Friday Night Lights", 1], ["What Happened to Monday", 0.5],
+    ["The Thursday Murder Club", 0.5, "thursday murder club"], ["Fryday", 0.4], ["Tuesdays and Fridays", 0.3, "tuesdays & fridays"], ["Tuesdays with Morrie", 0.3], ["Any Given Sunday", 0.4],
+    ["Bloody Sunday", 0.2], ["Friday Night Dinner", 0.2], ["His Girl Friday", 0.2], ["Sweet November", 0.4], ["October Sky", 0.3],
+    ["Born on the Fourth of July", 0.3, "fourth of july"], ["The Ides of March", 0.3, "ides of march"], ["March of the Penguins", 0.2], ["May December", 0.2], ["August: Osage County", 0.2, "august osage county"],
+    ["Seven Days in May", 0.1], ["April Fool's Day / April Fool", 0.2, "april fools day", "april fool"], ["15 August (2019)", 0.1, "15 august", "fifteen august"], ["December Boys", 0.1], ["Tuesday (2023)", 0.05, "tuesday"]],
+    hints: { "independence day": "No weekday or month in that title — guess again!", "groundhog day": "Groundhog Day is a day, but not a weekday or month!", "valentines day": "A special day, but not a weekday or month!", "christmas": "Christmas is a day, but not a weekday or month!", "halloween": "A day, but not a weekday or month!", "the weekend": "'Weekend' isn't the name of a day!", "weekend": "'Weekend' isn't the name of a day!", "holiday": "Holiday isn't a weekday or month!", "500 days of summer": "Summer's a season (and a girl), not a month!" } },
+
+  { p: "Name a movie or TV show where one actor plays two roles (twins, lookalikes or a double role).", know: 0.75, strip: ["the", "movie", "film"], a: [
+    ["Judwaa", 12, "judwaa 2", "judwa", "judwa 2"], ["Seeta Aur Geeta", 8, "sita aur gita", "seeta or geeta"], ["The Parent Trap", 6, "parent trap"], ["Don", 5, "don 1978", "don 2006"], ["Jawan", 5],
+    ["Chaalbaaz", 4, "chalbaaz", "chaalbaz"], ["Dhoom 3", 4, "dhoom three"], ["Baahubali", 4, "bahubali", "baahubali 2"], ["Ram Aur Shyam", 3], ["Fan (2016)", 3, "fan"],
+    ["Krrish", 3, "krish", "krrish 3"], ["Angoor", 2], ["Kishen Kanhaiya", 2, "kishan kanhaiya"], ["Duplicate (1998)", 2, "duplicate"], ["Om Shanti Om", 2],
+    ["Humshakals", 2, "hamshakals", "humshakal"], ["Robot / Enthiran", 2, "robot", "enthiran", "endhiran"], ["Lamhe", 1], ["Golmaal (1979)", 1, "golmaal"], ["Gemini Man", 1],
+    ["Bade Miyan Chote Miyan (1998)", 1, "bade miyan chote miyan"], ["Aankhen (1993)", 1, "aankhen"], ["Dasavathaaram", 1, "dasavatharam"], ["Ra.One", 0.5, "raone", "ra one"], ["Paheli", 0.5],
+    ["Aradhana", 0.5], ["Indian (1996)", 0.5, "indian", "hindustani"], ["Magadheera", 0.5], ["Mersal", 0.5], ["Kaththi", 0.3, "kathi"],
+    ["Bigil", 0.3], ["Hello Brother", 0.2], ["Sharmeelee", 0.2], ["Do Kaliyan", 0.1], ["The Social Network", 1, "social network"],
+    ["Us (2019)", 1, "us"], ["Legend (2015)", 0.5, "legend"], ["Jack and Jill", 0.5], ["The Nutty Professor", 0.5, "nutty professor"], ["The Man in the Iron Mask", 0.5, "man in the iron mask"],
+    ["Moon (2009)", 0.3, "moon"], ["Dead Ringers", 0.2], ["Orphan Black", 0.3], ["The Vampire Diaries", 0.3, "vampire diaries"], ["Back to the Future Part II", 0.2, "back to the future 2"],
+    ["Multiplicity", 0.1], ["Coming to America", 0.2], ["Enemy (2013)", 0.1, "enemy"], ["Adaptation", 0.1]],
+    hints: { "twins": "Schwarzenegger and DeVito are two different actors!", "harry potter": "Fred and George are played by two real twins!", "rab ne bana di jodi": "Same man in a disguise — not two roles!", "mrs doubtfire": "Same man in a disguise — not two roles!", "anniyan": "Split personality, one role — guess again!", "aparichit": "Split personality, one role — guess again!", "karan arjun": "Reborn brothers, but two different actors!", "fight club": "Two personalities, two actors — guess again!" } }
+]);
+
 BANKX.music = [
   { p: "Name a musical instrument.", know: 0.98, strip: ["the"], a: [
     ["Guitar", 28, "acoustic guitar", "electric guitar", "gitar"], ["Piano", 22, "grand piano"], ["Violin", 10, "fiddle", "voilin"], ["Drums", 9, "drum", "drum kit", "drum set"], ["Flute", 6], ["Trumpet", 3], ["Saxophone", 3, "sax"], ["Tabla", 2], ["Sitar", 1.5], ["Cello", 1.5], ["Harmonium", 1], ["Keyboard", 1.5], ["Ukulele", 1, "uke"], ["Harp", 1], ["Clarinet", 0.8], ["Bass Guitar", 0.6, "bass", "electric bass"], ["Veena", 0.5, "saraswati veena"], ["Harmonica", 0.5, "mouth organ"], ["Accordion", 0.4], ["Trombone", 0.4], ["Tuba", 0.3], ["French Horn", 0.3, "horn"], ["Oboe", 0.2], ["Bassoon", 0.1], ["Piccolo", 0.1], ["Viola", 0.2], ["Double Bass", 0.2, "contrabass", "upright bass", "string bass"], ["Banjo", 0.3], ["Mandolin", 0.3], ["Xylophone", 0.5], ["Glockenspiel", 0.1], ["Marimba", 0.1], ["Vibraphone", 0.05], ["Triangle", 0.3], ["Tambourine", 0.3], ["Cymbals", 0.2, "cymbal"], ["Organ", 0.3, "pipe organ"], ["Synthesizer", 0.2, "synth"], ["Recorder", 0.2], ["Bagpipes", 0.2, "bagpipe"], ["Bongos", 0.1, "bongo"], ["Conga", 0.05, "congas"], ["Djembe", 0.1], ["Timpani", 0.05, "kettle drum", "kettledrum"], ["Snare Drum", 0.05, "snare"], ["Castanets", 0.05], ["Maracas", 0.1], ["Cowbell", 0.03], ["Gong", 0.05], ["Lute", 0.05], ["Lyre", 0.05], ["Zither", 0.02], ["Dulcimer", 0.02], ["Sarod", 0.1], ["Santoor", 0.2, "santur"], ["Shehnai", 0.2, "shehnai"], ["Bansuri", 0.2], ["Mridangam", 0.2, "mridanga"], ["Dhol", 0.3], ["Dholak", 0.2, "dholki"], ["Ghatam", 0.03], ["Nadaswaram", 0.03, "nagaswaram"], ["Sarangi", 0.05], ["Ektara", 0.05], ["Tanpura", 0.05, "tambura", "tambora"], ["Pakhawaj", 0.02], ["Kanjira", 0.01, "khanjira"], ["Morsing", 0.01], ["Damru", 0.05, "damaru"], ["Manjira", 0.02, "manjeera"], ["Kartal", 0.01], ["Jal Tarang", 0.01, "jaltarang"], ["Thavil", 0.01], ["Chenda", 0.02], ["Nagara", 0.01, "nagada"], ["Erhu", 0.02], ["Koto", 0.02], ["Shamisen", 0.02], ["Guzheng", 0.01], ["Didgeridoo", 0.05], ["Kalimba", 0.05, "thumb piano"], ["Ocarina", 0.05], ["Pan Flute", 0.03, "pan pipes", "panpipes"], ["Steel Drum", 0.03, "steel pan", "steelpan"], ["Cajón", 0.03, "cajon"], ["Euphonium", 0.02], ["Cornet", 0.02], ["Bugle", 0.05], ["Flugelhorn", 0.01], ["Sousaphone", 0.01], ["Harpsichord", 0.05], ["Celesta", 0.01], ["Theremin", 0.02], ["Melodica", 0.02], ["Kazoo", 0.03], ["Handbells", 0.02, "bells", "bell"], ["Tubular Bells", 0.01, "chimes", "wind chimes"], ["Balalaika", 0.02], ["Bouzouki", 0.01], ["Oud", 0.02], ["Kora", 0.01], ["Shakuhachi", 0.01], ["Bodhrán", 0.01, "bodhran"], ["Hurdy-Gurdy", 0.01, "hurdy gurdy"], ["Mbira", 0.01], ["Clavichord", 0.01], ["Keytar", 0.02], ["Rabab", 0.01, "rubab"], ["Esraj", 0.01], ["Dilruba", 0.01], ["Sackbut", 0.005], ["Charango", 0.005]],
@@ -9453,6 +9703,150 @@ BANKX.music = [
     ["Yellow", 18], ["Viva la Vida", 15, "viva la vida"], ["Fix You", 12], ["The Scientist", 10, "scientist"], ["Paradise", 8], ["A Sky Full of Stars", 8, "sky full of stars"], ["Hymn for the Weekend", 7], ["Something Just Like This", 5], ["Clocks", 5], ["Adventure of a Lifetime", 3], ["My Universe", 3], ["Higher Power", 1], ["Trouble", 1], ["Shiver", 0.4], ["In My Place", 0.6], ["Speed of Sound", 0.4], ["Talk", 0.3], ["Violet Hill", 0.4], ["Lovers in Japan", 0.2], ["Every Teardrop Is a Waterfall", 0.4], ["Charlie Brown", 0.4], ["Princess of China", 0.4], ["Magic", 0.4], ["Midnight", 0.2], ["True Love", 0.1], ["Up&Up", 0.3, "up and up"], ["Orphans", 0.2], ["Let Somebody Go", 0.1], ["Feelslikeimfallinginlove", 0.3, "feels like im falling in love"], ["We Pray", 0.2], ["Life in Technicolor", 0.1], ["Strawberry Swing", 0.2], ["Lost!", 0.1, "lost"], ["42", 0.05], ["Cemeteries of London", 0.03], ["Don't Panic", 0.1, "dont panic"], ["Sparks", 0.3], ["Everglow", 0.2], ["Birds", 0.05], ["Up in Flames", 0.03], ["Ink", 0.05], ["O", 0.03], ["Daddy", 0.03], ["Champion of the World", 0.02], ["Arabesque", 0.02], ["Christmas Lights", 0.1], ["Swallowed in the Sea", 0.03], ["Warning Sign", 0.05], ["Green Eyes", 0.03], ["God Put a Smile upon Your Face", 0.05], ["Politik", 0.03], ["White Shadows", 0.02], ["Square One", 0.02], ["Atlas", 0.1], ["Moving to Mars", 0.01], ["Hurts Like Heaven", 0.1], ["Us Against the World", 0.03], ["Up with the Birds", 0.01], ["Major Minus", 0.01], ["Moon Music", 0.05], ["Jupiter", 0.05], ["Good Feelings", 0.05], ["All My Love", 0.1], ["iAAM", 0.02], ["Aeterna", 0.02], ["Coloratura", 0.02], ["Biutyful", 0.02], ["Humankind", 0.05], ["Music of the Spheres", 0.03], ["Infinity Sign", 0.01], ["Miracles (Someone Special)", 0.03, "miracles"], ["Amazing Day", 0.05], ["Army of One", 0.02], ["A Head Full of Dreams", 0.1, "head full of dreams"], ["Ghost Story", 0.01], ["Oceans", 0.02], ["Always in My Head", 0.02], ["Another's Arms", 0.01, "anothers arms"], ["Spies", 0.02], ["Parachutes", 0.03], ["High Speed", 0.01], ["We Never Change", 0.01], ["Daylight", 0.03], ["Amsterdam", 0.03], ["A Rush of Blood to the Head", 0.03, "rush of blood to the head"], ["The Hardest Part", 0.05, "hardest part"], ["Low", 0.01], ["X&Y", 0.03, "x and y"], ["What If", 0.05], ["Yes", 0.01], ["Glass of Water", 0.01], ["Brothers & Sisters", 0.01, "brothers and sisters"], ["Til Kingdom Come", 0.03, "till kingdom come"]],
     hints: { "photograph": "Photograph is by Ed Sheeran.", "perfect": "Perfect is by Ed Sheeran.", "believer": "Believer is by Imagine Dragons.", "counting stars": "Counting Stars is by OneRepublic.", "closer": "Closer is by The Chainsmokers (they featured on Something Just Like This, though)." } }
 ];
+
+BANKX.music = (BANKX.music || []).concat([
+  { p: "Name a song with a colour in its title (any language).", know: 0.85, strip: ["the", "song"], a: [
+    ["Yellow", 14], ["Kesariya", 8, "kesariya tera ishq hai piya"], ["Kala Chashma", 8, "kaala chashma"], ["Blue (Da Ba Dee)", 5, "blue", "blue da ba dee", "im blue"], ["Purple Rain", 4],
+    ["Brown Munde", 4], ["Back to Black", 3], ["Paint It Black", 3], ["Yellow Submarine", 3], ["Black or White", 3],
+    ["Brown Rang", 3], ["Blue Eyes", 3], ["Gerua", 3], ["Golden", 3], ["Red", 2],
+    ["Golden Hour", 2], ["Pink Venom", 2], ["Back in Black", 2], ["Laal Ishq", 1, "lal ishq"], ["Gulabi Aankhen", 1, "gulabi ankhen", "gulabi aankhein"],
+    ["Pink Lips", 1], ["Rang De Basanti", 1], ["Blue Hai Paani Paani", 1, "blue hai pani pani"], ["Gold Digger", 1], ["Black Magic", 1],
+    ["Black Hole Sun", 1], ["Mr. Blue Sky", 1, "mr blue sky"], ["Behind Blue Eyes", 1], ["Blue Suede Shoes", 1], ["Lady in Red", 1, "the lady in red"],
+    ["Red Red Wine", 1], ["Purple Haze", 1], ["White Christmas", 1], ["Blue Bird", 0.5, "bluebird"], ["Blackbird", 0.5],
+    ["Blue Jeans", 0.5], ["Green Light", 0.5], ["A Whiter Shade of Pale", 0.5, "whiter shade of pale"], ["Pink Pony Club", 0.5], ["Brown Eyed Girl", 0.5],
+    ["Mohe Rang Do Laal", 0.5, "mohe rang do lal"], ["Gulaabi", 0.5, "gulabi"], ["Neele Neele Ambar Par", 0.5, "neele neele ambar"], ["Kaali Kaali Aankhen", 0.5, "kali kali aankhen", "kaali kaali ankhen"], ["Lal Dupatta", 0.5, "laal dupatta"],
+    ["White Wedding", 0.3], ["Black Widow", 0.3], ["Black Beatles", 0.3], ["Black Magic Woman", 0.3], ["Golden Brown", 0.2],
+    ["Pink + White", 0.2, "pink and white"], ["Black Mamba", 0.2], ["Green Onions", 0.1]],
+    hints: { "rang barse": "Rang means colour — but which colour? Guess again!", "colors": "That's colours in general, not one colour!", "colours": "That's colours in general, not one colour!", "viva la vida": "No colour in that one — try another Coldplay song!", "fix you": "No colour in that one — try another Coldplay song!" } },
+
+  { p: "Name a song with a number in its title (any language; ordinals like 'first' count too).", know: 0.85, strip: ["the", "song"], a: [
+    ["Ek Do Teen", 8, "ek do teen chaar", "1 2 3"], ["7 Rings", 6, "seven rings"], ["One Dance", 5], ["Chaar Botal Vodka", 5, "char botal vodka", "4 botal vodka"], ["Summer of '69", 4, "summer of 69", "summer of sixty nine"],
+    ["Dus Bahane", 4, "dus bahaane", "10 bahane", "dus bahane karke le gaye dil"], ["Seven Nation Army", 3, "7 nation army"], ["Seven", 3, "7"], ["22", 3, "twenty two"], ["A Thousand Years", 3, "thousand years", "1000 years"],
+    ["Saat Samundar Paar", 3, "saat samundar", "7 samundar paar"], ["Ek Ladki Ko Dekha To Aisa Laga", 3, "ek ladki ko dekha"], ["7 Years", 2, "seven years"], ["Eight Days a Week", 2, "8 days a week"], ["Mambo No. 5", 2, "mambo number 5", "mambo no 5", "mambo number five"],
+    ["Three Little Birds", 2, "3 little birds"], ["A Thousand Miles", 2, "thousand miles", "1000 miles"], ["One Kiss", 2], ["Ek Pal Ka Jeena", 2, "1 pal ka jeena"], ["2002", 1, "two thousand and two"],
+    ["Pehla Nasha", 1], ["Pehli Nazar Mein", 1], ["First Class", 1], ["Do Pal", 1, "2 pal"], ["Do Dil Mil Rahe Hain", 1],
+    ["Ek Pyar Ka Nagma Hai", 1, "ek pyaar ka nagma hai"], ["5 Taara", 1, "panj taara", "5 tara", "five taara"], ["One", 1], ["One Love", 1], ["One More Time", 1],
+    ["One Call Away", 1], ["9 to 5", 1, "nine to five"], ["21 Guns", 1, "twenty one guns"], ["24K Magic", 1, "24 karat magic", "twenty four karat magic"], ["99 Problems", 1, "ninety nine problems"],
+    ["500 Miles (I'm Gonna Be)", 1, "500 miles", "five hundred miles", "im gonna be"], ["When I'm Sixty-Four", 0.5, "when im 64", "when im sixty four"], ["Million Reasons", 0.5], ["One Last Time", 0.5], ["4 Minutes", 0.5, "four minutes"],
+    ["Solah Baras Ki Bali Umar", 0.5, "solah baras ki"], ["Ek Main Aur Ekk Tu", 0.5, "ek main aur ek tu"], ["Ek Ajnabee Haseena Se", 0.5, "ek ajnabi haseena se"], ["Ek Tarfa", 0.5], ["Sau Tarah Ke", 0.3],
+    ["Love Potion No. 9", 0.3, "love potion number 9", "love potion no 9"], ["Two Princes", 0.3, "2 princes"], ["50 Ways to Leave Your Lover", 0.3, "fifty ways to leave your lover"], ["Three Lions", 0.3, "3 lions"], ["Eleven", 0.3, "11"],
+    ["1999", 0.3, "nineteen ninety nine"], ["Two of Us", 0.3], ["One Thing", 0.3]],
+    hints: { "one direction": "That's a band, not a song!", "maroon 5": "That's a band — name a song!", "blink 182": "That's a band — name a song!", "u2": "That's a band — name a song!" } },
+
+  { p: "Name a song with a real place (city, state, region or country) in its title.", know: 0.75, strip: ["the", "song"], a: [
+    ["Hotel California", 10], ["London Thumakda", 8], ["Havana", 6], ["Dilli Wali Girlfriend", 5, "delhi wali girlfriend"], ["Africa", 4],
+    ["Gangnam Style", 4], ["New York, New York", 3, "new york new york", "theme from new york new york"], ["Empire State of Mind", 3], ["Born in the U.S.A.", 3, "born in the usa"], ["Kashmir Main Tu Kanyakumari", 3, "kashmir mein tu kanyakumari"],
+    ["Lahore", 3], ["Goa Wale Beach Pe", 3, "goa beach"], ["Manali Trance", 2], ["Patiala Peg", 2], ["Paris", 2],
+    ["Party in the U.S.A.", 2, "party in the usa"], ["Sweet Home Alabama", 2], ["California Gurls", 2, "california girls"], ["Welcome to New York", 1], ["Englishman in New York", 1],
+    ["Californication", 1], ["Viva Las Vegas", 1], ["Waterloo", 1], ["Penny Lane", 1], ["Galway Girl", 1],
+    ["Tokyo Drift", 1], ["Chandigarh Mein", 0.5], ["Bombay Theme", 0.5, "bombay"], ["Bombay Se Aaya Mera Dost", 0.5], ["Yeh Hai Bombay Meri Jaan", 0.5, "ye hai bombay meri jaan"],
+    ["Delhi-6", 0.3, "dilli 6", "delhi 6"], ["Istanbul (Not Constantinople)", 0.5, "istanbul"], ["Copacabana", 0.5], ["Miami", 0.5], ["Malibu", 0.5],
+    ["Kashmir", 0.5], ["London Calling", 0.5], ["Georgia on My Mind", 0.5], ["Tennessee Whiskey", 0.5], ["I Took a Pill in Ibiza", 0.5],
+    ["Walking in Memphis", 0.3], ["Barcelona", 0.3], ["London Bridge", 0.3, "london bridge is falling down"], ["Detroit Rock City", 0.2], ["Panama", 0.2],
+    ["Rio", 0.2], ["Living in America", 0.2]],
+    hints: { "take me home country roads": "West Virginia's in the lyrics, not the title!", "country roads": "West Virginia's in the lyrics, not the title!", "sweet caroline": "Caroline's a person, not a place!", "american idiot": "'American' isn't the place itself — guess again!", "despacito": "No place in that title — guess again!", "chennai express": "That's a film, not a song!" } },
+
+  { p: "Name a song with a woman's or girl's first name in its title (like 'Jolene').", know: 0.85, strip: ["the", "song"], a: [
+    ["Sheila Ki Jawani", 15, "sheila"], ["Munni Badnaam Hui", 12, "munni badnaam", "munni", "munni badnam hui"], ["Billie Jean", 12], ["Laila Main Laila", 5, "laila", "laila o laila"], ["Chikni Chameli", 5, "chameli"],
+    ["Jolene", 4], ["Radha (Student of the Year)", 2, "radha", "radha teri chunri"], ["Radha Kaise Na Jale", 2], ["Anarkali Disco Chali", 2, "anarkali"], ["Barbie Girl", 2],
+    ["Roxanne", 2], ["Layla", 2], ["Sweet Caroline", 2], ["Hey There Delilah", 2, "delilah"], ["Michelle", 1],
+    ["Eleanor Rigby", 1], ["Lucy in the Sky with Diamonds", 1], ["Maria", 1, "maria maria"], ["Iris", 1], ["Valerie", 1],
+    ["Diana", 1], ["Jenny from the Block", 1], ["Stacy's Mom", 1, "stacys mom"], ["Gulaabo", 0.5, "gulabo"], ["Chandni O Meri Chandni", 0.5, "chandni"],
+    ["Bebo Main Bebo", 0.5, "bebo"], ["Mrs. Robinson", 0.5, "mrs robinson"], ["Rosanna", 0.5], ["Gloria", 0.5], ["Angie", 0.5],
+    ["Proud Mary", 0.5], ["Anjali Anjali", 0.3], ["Ms. Jackson", 0.3, "ms jackson"], ["Peggy Sue", 0.3], ["Annie's Song", 0.3, "annies song"],
+    ["Lola", 0.3], ["Cecilia", 0.3], ["Ruby", 0.3], ["Mandy", 0.3], ["Rhiannon", 0.3],
+    ["Julia", 0.2], ["Martha My Dear", 0.2], ["Polly", 0.2], ["Sara", 0.2]],
+    hints: { "hey jude": "Jude's a boy!", "jessies girl": "Jessie's a guy in that song!", "fernando": "Fernando's a man's name!", "alejandro": "Alejandro's a man's name!", "bella ciao": "Bella means 'beautiful' there, not a name!", "uptown girl": "A girl, but no name!", "rasputin": "Rasputin was a man!", "mamma mia": "Mamma isn't a name!" } },
+
+  { p: "Name a song with a weather word (rain, sun, snow, wind, storm, thunder…) in its title — any language.", know: 0.8, strip: ["the", "song"], a: [
+    ["Tip Tip Barsa Paani", 10, "tip tip barsa pani", "tip tip"], ["Here Comes the Sun", 8], ["Baarish", 5, "barish"], ["Purple Rain", 3], ["Singin' in the Rain", 3, "singing in the rain", "singin in the rain"],
+    ["Barso Re", 3], ["Hawayein", 3, "hawaien", "hawayien"], ["Set Fire to the Rain", 2], ["November Rain", 2], ["Let It Snow", 2, "let it snow let it snow let it snow"],
+    ["Thunder", 2], ["Rain on Me", 2], ["Heat Waves", 2, "heatwaves"], ["Somewhere Over the Rainbow", 2, "over the rainbow"], ["Rimjhim Gire Sawan", 2, "rim jhim gire sawan"],
+    ["Hawa Hawai", 2, "hawa hawaii"], ["Toofan", 2, "toofan kgf"], ["Sawan Aaya Hai", 2], ["Sooraj Hua Maddham", 2, "suraj hua maddham"], ["It's Raining Men", 1, "its raining men"],
+    ["Rain Over Me", 1], ["Have You Ever Seen the Rain", 1], ["Thunderstruck", 1], ["Walking on Sunshine", 1], ["You Are My Sunshine", 1],
+    ["Ain't No Sunshine", 1, "aint no sunshine"], ["Snowman", 1], ["Bijlee Bijlee", 1, "bijli bijli"], ["Baarish Ban Jaana", 1, "barish ban jana"], ["Baarishein", 1, "barishein"],
+    ["Riders on the Storm", 0.5], ["Blowin' in the Wind", 0.5, "blowing in the wind", "blowin in the wind"], ["Candle in the Wind", 0.5], ["Wind of Change", 0.5], ["Hurricane", 0.5],
+    ["Raindrops Keep Fallin' on My Head", 0.5, "raindrops keep falling on my head"], ["Rim Jhim Rim Jhim", 0.5, "rimjhim rimjhim"], ["Baadal Pe Paon Hai", 0.5, "badal pe paon hai"], ["Hawa Banke", 0.5], ["Stormy Weather", 0.3],
+    ["Why Does It Always Rain on Me?", 0.3, "why does it always rain on me"], ["Sunny", 0.3], ["Snow (Hey Oh)", 0.3, "snow hey oh"], ["Megha Re Megha", 0.3], ["Barsaat Mein", 0.3],
+    ["Weather with You", 0.2], ["Fire and Rain", 0.2], ["Sunshine of Your Love", 0.2], ["Thunder Road", 0.2], ["Lightning Crashes", 0.1]],
+    hints: { "umbrella": "Rain gear, not the weather itself — guess again!", "sunflower": "A flower, not the weather!", "cruel summer": "Summer's a season, not weather!", "ice ice baby": "Ice isn't weather — guess again!", "mr blue sky": "Sky isn't weather — guess again!", "fireflies": "Bugs, not weather!" } },
+
+  { p: "Name a song whose title repeats a word back-to-back (like 'Bye Bye Bye').", know: 0.8, strip: ["the", "song"], a: [
+    ["Chaiyya Chaiyya", 12, "chhaiyya chhaiyya", "chaiya chaiya", "chal chaiyya chaiyya"], ["Naatu Naatu", 10, "natu natu"], ["Tauba Tauba", 8, "touba touba"], ["Bang Bang", 6, "bang bang my baby shot me down"], ["Tip Tip Barsa Paani", 6, "tip tip barsa pani", "tip tip"],
+    ["Bye Bye Bye", 4], ["Jimmy Jimmy Aaja Aaja", 4, "jimmy jimmy", "jimmy jimmy jimmy aaja"], ["Ice Ice Baby", 3], ["Dheere Dheere", 3, "dheere dheere se meri zindagi"], ["Kabhi Kabhi Aditi", 3],
+    ["Money, Money, Money", 2, "money money money"], ["Pal Pal Dil Ke Paas", 2], ["Chamma Chamma", 2], ["Saami Saami", 2, "sami sami"], ["Zara Zara", 2, "zara zara behekta hai", "zara zara bahekta hai"],
+    ["Sugar, Sugar", 1, "sugar sugar"], ["Tamma Tamma Loge", 1, "tamma tamma", "tamma tamma again"], ["Chunari Chunari", 1], ["Sunny Sunny", 1], ["Gali Gali", 1],
+    ["Hauli Hauli", 1], ["Haule Haule", 1], ["Dum Maro Dum", 1], ["Bum Bum Bole", 1], ["Jai Jai Shivshankar", 1, "jai jai shiv shankar"],
+    ["Chalte Chalte", 1], ["Kabhi Kabhie Mere Dil Mein", 1, "kabhi kabhi mere dil mein"], ["Gimme! Gimme! Gimme!", 1, "gimme gimme gimme"], ["New York, New York", 1, "new york new york"], ["Que Sera, Sera", 0.5, "que sera sera", "whatever will be will be"],
+    ["Tadap Tadap", 0.5, "tadap tadap ke"], ["Thoda Thoda Pyaar", 0.5], ["Dheeme Dheeme", 0.5], ["Tum Tum", 0.5], ["Bills, Bills, Bills", 0.5, "bills bills bills"],
+    ["Bam Bam", 0.5], ["Louie Louie", 0.3], ["Dance, Dance", 0.3, "dance dance"], ["Na Na Hey Hey Kiss Him Goodbye", 0.3], ["Bling-Bang-Bang-Born", 0.3, "bling bang bang born"],
+    ["Blah Blah Blah", 0.3], ["Rebel Rebel", 0.2], ["Monday, Monday", 0.2, "monday monday"], ["Mony Mony", 0.2], ["Bad, Bad Leroy Brown", 0.2, "bad bad leroy brown"],
+    ["Ring Ring", 0.2], ["Na Na Na", 0.2], ["Mmm Mmm Mmm Mmm", 0.2]],
+    hints: { "baby shark": "Doo-doo-doo… but the title itself doesn't repeat!", "mamma mia": "Mamma and Mia aren't the same word!", "mo money mo problems": "The Mos aren't back-to-back!", "kajra re": "Kajra Re only repeats in the lyrics, not the title!", "gangnam style": "Oppa repeats, but the title doesn't!" } },
+
+  { p: "Name a song from a Disney or Pixar movie.", know: 0.85, strip: ["the", "song"], a: [
+    ["Let It Go", 25], ["Hakuna Matata", 10], ["A Whole New World", 7, "whole new world"], ["Under the Sea", 6], ["How Far I'll Go", 5, "how far ill go"],
+    ["We Don't Talk About Bruno", 5, "we dont talk about bruno", "bruno"], ["Circle of Life", 4], ["Can You Feel the Love Tonight", 3], ["You've Got a Friend in Me", 3, "youve got a friend in me"], ["Do You Want to Build a Snowman?", 3, "do you want to build a snowman", "build a snowman"],
+    ["You're Welcome", 3, "youre welcome"], ["Be Our Guest", 2], ["Beauty and the Beast (Tale as Old as Time)", 2, "beauty and the beast", "tale as old as time"], ["Into the Unknown", 2], ["Part of Your World", 2],
+    ["I'll Make a Man Out of You", 2, "ill make a man out of you", "make a man out of you"], ["The Bare Necessities", 2, "bare necessities"], ["Remember Me", 2], ["Friend Like Me", 1], ["I Just Can't Wait to Be King", 1, "i just cant wait to be king"],
+    ["Kiss the Girl", 1], ["Colors of the Wind", 1, "colours of the wind"], ["Reflection", 1], ["I Wan'na Be Like You", 1, "i wanna be like you", "i wan na be like you"], ["Un Poco Loco", 1],
+    ["Surface Pressure", 1], ["Go the Distance", 1], ["I See the Light", 1], ["Bibbidi-Bobbidi-Boo", 1, "bibbidi bobbidi boo"], ["When You Wish Upon a Star", 1],
+    ["Heigh-Ho", 1, "heigh ho", "hi ho"], ["Supercalifragilisticexpialidocious", 1], ["Prince Ali", 1], ["Love Is an Open Door", 1], ["For the First Time in Forever", 1],
+    ["Life Is a Highway", 1], ["Try Everything", 1], ["Zero to Hero", 0.5], ["When Will My Life Begin", 0.5], ["Mother Knows Best", 0.5],
+    ["Almost There", 0.5], ["A Dream Is a Wish Your Heart Makes", 0.5], ["Whistle While You Work", 0.5], ["A Spoonful of Sugar", 0.5, "spoonful of sugar"], ["Speechless", 0.5],
+    ["Gaston", 0.5], ["Poor Unfortunate Souls", 0.5], ["Be Prepared", 0.5], ["You'll Be in My Heart", 0.5, "youll be in my heart"], ["Belle", 0.3],
+    ["Friends on the Other Side", 0.3], ["Hawaiian Roller Coaster Ride", 0.3], ["Arabian Nights", 0.3], ["Shiny", 0.3], ["Show Yourself", 0.3],
+    ["This Wish", 0.3], ["What Else Can I Do?", 0.3, "what else can i do"], ["Cruella de Vil", 0.3, "cruella de ville"], ["Someday My Prince Will Come", 0.3], ["Real Gone", 0.2],
+    ["Lava", 0.2], ["Dos Oruguitas", 0.2], ["Waiting on a Miracle", 0.2], ["Where You Are", 0.2], ["Strangers Like Me", 0.2],
+    ["Out There", 0.2], ["Everybody Wants to Be a Cat", 0.2], ["Trust in Me", 0.2], ["Let's Go Fly a Kite", 0.2, "lets go fly a kite"], ["Chim Chim Cher-ee", 0.2, "chim chim cheree"],
+    ["God Help the Outcasts", 0.1], ["The Siamese Cat Song", 0.1, "siamese cat song"], ["Bella Notte", 0.1], ["He Mele No Lilo", 0.1]],
+    hints: { "all star": "That's DreamWorks' Shrek, not Disney!", "im a believer": "That's DreamWorks' Shrek, not Disney!", "happy": "That's from Despicable Me — Illumination, not Disney!", "cant stop the feeling": "That's DreamWorks' Trolls, not Disney!", "golden": "KPop Demon Hunters is Sony/Netflix, not Disney!", "my heart will go on": "Titanic isn't a Disney film!" } },
+
+  { p: "Name a song with an animal in its title (any language).", know: 0.8, strip: ["the", "song"], a: [
+    ["Eye of the Tiger", 12], ["Baby Shark", 8], ["Who Let the Dogs Out", 6], ["Kabootar Ja Ja Ja", 4, "kabutar ja ja ja", "kabootar ja"], ["Hound Dog", 3],
+    ["Morni Banke", 3, "morni"], ["Jhooth Bole Kauwa Kaate", 3, "jhoot bole kauwa kaate", "jhooth bole kauva kaate"], ["Titliyan", 3, "titliaan", "titliyaan"], ["What Does the Fox Say?", 3, "what does the fox say", "the fox"], ["Three Little Birds", 2],
+    ["The Lion Sleeps Tonight", 2, "lion sleeps tonight", "wimoweh"], ["Naagin", 2, "nagin"], ["Machli Jal Ki Rani Hai", 2, "machli jal ki rani"], ["Mockingbird", 2], ["Main Nagin Tu Sapera", 1, "nagin tu sapera"],
+    ["Chal Chal Chal Mere Haathi", 1, "chal chal chal mere hathi"], ["Mor Bani Thanghat Kare", 1], ["Sher Khul Gaye", 1], ["Blackbird", 1], ["Free Bird", 1, "freebird"],
+    ["Crocodile Rock", 1], ["Karma Chameleon", 1], ["She Wolf", 1], ["Butterfly", 1], ["Animals", 1],
+    ["Koyal Si Teri Boli", 0.5], ["Hungry Like the Wolf", 0.5], ["Wild Horses", 0.5], ["A Horse with No Name", 0.5, "horse with no name"], ["When Doves Cry", 0.5],
+    ["Surfin' Bird", 0.5, "surfin bird", "surfing bird"], ["Pony", 0.5], ["Dog Days Are Over", 0.5], ["Blue Bird", 0.5, "bluebird"], ["Rockin' Robin", 0.3, "rockin robin"],
+    ["Tota Maina Ki Kahani", 0.3, "tota maina"], ["Chidiya", 0.3], ["Black Dog", 0.3], ["Little Lion Man", 0.3], ["Fly Like an Eagle", 0.3],
+    ["Bat Out of Hell", 0.3], ["Octopus's Garden", 0.3, "octopuss garden", "octopus garden"], ["Black Swan", 0.3], ["Everybody Wants to Be a Cat", 0.2], ["Stray Cat Strut", 0.2],
+    ["Bulls on Parade", 0.1], ["Rocky Raccoon", 0.1]],
+    hints: { "roar": "A tiger roars — but no animal in the title!", "gangnam style": "Horse dance, but no horse in the title!", "lakdi ki kaathi": "The ghoda's in the lyrics, not the title!", "bad bunny": "That's a singer, not a song!", "jungle": "A jungle isn't an animal!", "arctic monkeys": "That's a band — name a song!" } },
+
+  { p: "Name a music festival (a recurring or famous one, anywhere in the world).", know: 0.65, strip: ["the", "festival", "fest"], a: [
+    ["Coachella", 15], ["Sunburn", 12], ["Tomorrowland", 12], ["Lollapalooza", 6, "lollapalooza india", "lolla"], ["Glastonbury", 5, "glasto"],
+    ["Woodstock", 5], ["NH7 Weekender", 4, "bacardi nh7 weekender", "nh7"], ["Ultra Music Festival", 2, "ultra"], ["Burning Man", 2], ["Electric Daisy Carnival", 1, "edc"],
+    ["Rolling Loud", 1], ["Hornbill Festival", 1, "hornbill"], ["VH1 Supersonic", 1, "supersonic"], ["Ziro Festival of Music", 0.5, "ziro"], ["Zomaland", 0.5],
+    ["Rock in Rio", 0.5], ["Reading and Leeds", 0.5, "reading", "leeds", "reading festival", "leeds festival"], ["Live Aid", 0.5], ["Magnetic Fields", 0.3], ["Bandland", 0.3],
+    ["Primavera Sound", 0.3, "primavera"], ["Download Festival", 0.3, "download"], ["Montreux Jazz Festival", 0.3, "montreux"], ["Isle of Wight Festival", 0.3, "isle of wight"], ["Bonnaroo", 0.3],
+    ["SXSW", 0.3, "south by southwest"], ["Newport Jazz / Folk Festival", 0.2, "newport", "newport jazz", "newport folk"], ["Fuji Rock", 0.2], ["Roskilde", 0.2], ["Sziget", 0.2],
+    ["Austin City Limits", 0.2, "acl"], ["Wireless", 0.2], ["Creamfields", 0.2], ["Warped Tour", 0.2, "vans warped tour"], ["Echoes of Earth", 0.2],
+    ["Mahindra Blues Festival", 0.2, "mahindra blues"], ["Kala Ghoda Arts Festival", 0.2, "kala ghoda"], ["Sawai Gandharva Bhimsen Mahotsav", 0.2, "sawai gandharva"], ["Exit Festival", 0.1, "exit"], ["Parklife", 0.1],
+    ["Mysteryland", 0.1], ["Defqon.1", 0.1, "defqon", "defqon 1"], ["Awakenings", 0.1], ["Monterey Pop", 0.1, "monterey pop festival"], ["Lilith Fair", 0.1],
+    ["Ozzfest", 0.1], ["Sónar", 0.1, "sonar"], ["Summer Sonic", 0.1], ["Splendour in the Grass", 0.1], ["Governors Ball", 0.1, "gov ball"],
+    ["Outside Lands", 0.1], ["Stagecoach", 0.1]],
+    hints: { "mood indigo": "That's a college fest — name a music festival!", "holi": "Holi has music, but it's not a music festival!", "jaipur literature": "That's books, not music!", "grammys": "That's an awards show, not a festival!", "grammy": "That's an awards show, not a festival!", "eurovision": "That's a song contest, not a festival — guess again!" } },
+
+  { p: "Name a professional singer or rapper who has also acted in a movie or TV show (voice roles count).", know: 0.75, strip: [], a: [
+    ["Diljit Dosanjh", 12, "diljit"], ["Lady Gaga", 6, "gaga"], ["Will Smith", 4], ["Elvis Presley", 3, "elvis"], ["Beyoncé", 3, "beyonce"],
+    ["Rihanna", 3], ["Ariana Grande", 3, "ariana"], ["Selena Gomez", 3, "selena"], ["Miley Cyrus", 3, "miley", "hannah montana"], ["Justin Timberlake", 3],
+    ["Harry Styles", 3], ["Jennifer Lopez", 3, "jlo", "j lo"], ["Kishore Kumar", 3], ["Himesh Reshammiya", 3, "himesh"], ["Taylor Swift", 2],
+    ["Eminem", 2], ["Drake", 2], ["Whitney Houston", 2], ["Zendaya", 2], ["Ammy Virk", 2],
+    ["Farhan Akhtar", 2], ["Ayushmann Khurrana", 2, "ayushman khurana", "ayushmann"], ["Ice Cube", 1], ["50 Cent", 1, "fifty cent"], ["Queen Latifah", 1],
+    ["Snoop Dogg", 1, "snoop"], ["Tupac Shakur", 1, "tupac", "2pac"], ["Frank Sinatra", 1, "sinatra"], ["Cher", 1], ["Madonna", 1],
+    ["Mandy Moore", 1], ["Hilary Duff", 1], ["Demi Lovato", 1], ["Jennifer Hudson", 1], ["Dolly Parton", 1],
+    ["Donald Glover (Childish Gambino)", 1, "donald glover", "childish gambino"], ["Ludacris", 1], ["Jack Black", 1], ["Nick Jonas", 1], ["Sonu Nigam", 1],
+    ["Guru Randhawa", 1], ["Yo Yo Honey Singh", 1, "honey singh"], ["Gippy Grewal", 1], ["Jassie Gill", 1, "jassi gill"], ["Harrdy Sandhu", 1, "hardy sandhu"],
+    ["Shruti Haasan", 1, "shruti hassan"], ["Aditya Narayan", 1], ["Ali Zafar", 1], ["Bad Bunny", 0.5], ["Mark Wahlberg", 0.5, "marky mark"],
+    ["Sidhu Moose Wala", 0.5, "sidhu moosewala", "sidhu"], ["Lucky Ali", 0.5], ["Atif Aslam", 0.5], ["Ed Sheeran", 0.5], ["David Bowie", 0.5, "bowie"],
+    ["Lisa (Blackpink)", 0.5, "lisa", "lalisa", "lalisa manobal"], ["Jisoo", 0.5, "kim jisoo"], ["IU", 0.5, "lee ji eun"], ["Cha Eun-woo", 0.5, "cha eunwoo"], ["Mika Singh", 0.3],
+    ["K. L. Saigal", 0.3, "kl saigal", "saigal"], ["Bing Crosby", 0.3], ["Doris Day", 0.3], ["Prince", 0.3], ["Common", 0.3],
+    ["Justin Bieber", 0.3, "bieber"], ["Badshah", 0.3], ["Mukesh", 0.2], ["Shakira", 0.2], ["Bruno Mars", 0.2],
+    ["Adnan Sami", 0.2], ["Asha Bhosle", 0.5, "asha bhonsle"], ["Lata Mangeshkar", 0.3, "lata"], ["Noor Jehan", 0.2, "noor jahan"], ["Suraiya", 0.2], ["Sting", 0.1], ["Mick Jagger", 0.1], ["Kris Kristofferson", 0.1]],
+    hints: { "amitabh bachchan": "Big B sings, but he's an actor first — name a singer who acts!", "shah rukh khan": "An actor, not a professional singer!", "priyanka chopra": "She's sung, but she's an actress first — guess again!" } }
+]);
 
 BANKX.sports = [
   { p: "Name a sport that is (or has been) part of the Summer Olympics.", know: 0.97, strip: ["the", "olympic", "olympics"], a: [
@@ -9689,6 +10083,140 @@ BANKX.sports = [
     ["Darkrai", 0.05], ["Suicune", 0.05], ["Entei", 0.05], ["Raikou", 0.05], ["Latios", 0.05], ["Latias", 0.05], ["Riolu", 0.05], ["Gible", 0.03]],
     hints: { "ash": "Ash is the trainer, not a Pokemon!", "ash ketchum": "Ash is the trainer, not a Pokemon!", "misty": "Misty is a trainer, not a Pokemon.", "brock": "Brock is a trainer, not a Pokemon.", "team rocket": "Team Rocket are villains — though they travel with Meowth!", "agumon": "Agumon is a Digimon, not a Pokemon.", "digimon": "That's a different franchise!" } }
 ];
+
+BANKX.sports = (BANKX.sports || []).concat([
+  { p: "Name a sport played on ice.", know: 0.95, strip: ["the", "a", "an"], a: [
+    ["Ice hockey", 40, "hockey", "nhl"], ["Figure skating", 18, "skating", "ice skating", "ice dancing", "ice dance", "pairs skating", "synchronized skating", "synchronised skating"],
+    ["Curling", 10], ["Speed skating", 6, "short track", "short track speed skating", "long track speed skating"],
+    ["Bobsleigh", 5, "bobsled", "bobsledding", "bobsleighing", "bob"], ["Luge", 3, "luging"], ["Skeleton", 2, "skeleton sled"],
+    ["Bandy", 1], ["Ringette", 0.5], ["Broomball", 0.5], ["Ice stock sport", 0.3, "eisstock", "ice stock", "bavarian curling"],
+    ["Ice racing", 0.5, "ice speedway", "motorcycle ice racing", "car ice racing"], ["Ice climbing", 1], ["Ice cross downhill", 0.3, "crashed ice", "red bull crashed ice"],
+    ["Para ice hockey", 0.5, "sledge hockey", "ice sledge hockey", "sled hockey"], ["Ice yachting", 0.3, "ice sailing", "iceboating"],
+    ["Ice fishing", 1], ["Ice polo", 0.2], ["Ice golf", 0.2], ["Ice cricket", 0.3]],
+    hints: { "skiing": "Skiing is on snow, not ice — think slipperier!", "snowboarding": "That's snow, not ice — think slipperier!", "ski jumping": "Snow and air, not ice!", "biathlon": "Skis on snow, not ice!", "roller skating": "Wheels on concrete — swap them for blades on ice!" } },
+
+  { p: "Name a sport with a net that isn't tennis.", know: 0.92, strip: ["the", "a", "an"], a: [
+    ["Badminton", 25, "shuttle"], ["Volleyball", 20, "beach volleyball", "sitting volleyball"], ["Table tennis", 12, "ping pong", "tt"],
+    ["Football", 8, "soccer", "futsal", "beach soccer"], ["Basketball", 5, "wheelchair basketball", "3x3 basketball"], ["Hockey", 4, "field hockey", "ice hockey"],
+    ["Netball", 4], ["Water polo", 2], ["Handball", 2], ["Throwball", 2], ["Pickleball", 2], ["Sepak takraw", 1.5, "takraw", "kick volleyball"],
+    ["Lacrosse", 1], ["Padel", 1, "padel tennis", "paddle tennis"], ["Ball badminton", 0.5], ["Tennikoit", 0.5, "ring tennis", "deck tennis"],
+    ["Footvolley", 0.5], ["Roundnet", 0.5, "spikeball"], ["Floorball", 0.3, "unihockey"], ["Bandy", 0.2], ["Teqball", 0.3], ["Fistball", 0.2, "faustball"],
+    ["Tchoukball", 0.1], ["Gaelic football", 0.3], ["Hurling", 0.3, "camogie"], ["Beach tennis", 0.2], ["Bossaball", 0.1], ["Soft tennis", 0.1]],
+    hints: { "tennis": "Tennis is the one we ruled out — any other net will do!", "lawn tennis": "Tennis is the one we ruled out — any other net will do!", "squash": "Squash has a tin at the bottom of the wall, but no net!", "cricket": "Cricketers practise in nets, but there's no net in a match!", "kabaddi": "Kabaddi just needs a court and lots of breath — no net!", "golf": "Driving ranges have nets, but a round of golf doesn't!" } },
+
+  { p: "Name a sport or game where you hit something with a bat, racket, stick or club.", know: 0.97, strip: ["the", "a", "an"], a: [
+    ["Cricket", 30], ["Tennis", 12, "lawn tennis"], ["Badminton", 10], ["Hockey", 8, "field hockey"], ["Golf", 8, "mini golf", "crazy golf"],
+    ["Baseball", 6], ["Table tennis", 6, "ping pong", "tt"], ["Ice hockey", 3], ["Squash", 2], ["Polo", 2, "elephant polo", "horse polo"],
+    ["Snooker", 2], ["Pool", 1.5, "8 ball pool", "eight ball", "nine ball"], ["Billiards", 1], ["Gilli danda", 2, "gulli danda", "guli danda", "gilli", "viti dandu", "kitti pullu", "chinni dandu"],
+    ["Softball", 1.5], ["Pickleball", 1], ["Padel", 0.5, "padel tennis", "paddle tennis"], ["Lacrosse", 1], ["Croquet", 0.5], ["Hurling", 0.5],
+    ["Camogie", 0.2], ["Shinty", 0.2], ["Rounders", 0.5], ["Racquetball", 0.3], ["Jai alai", 0.2, "basque pelota", "pelota"], ["Floorball", 0.3, "unihockey"],
+    ["Bandy", 0.2], ["Kilikiti", 0.1], ["Stoolball", 0.1], ["Pesapallo", 0.1], ["Polocrosse", 0.1], ["Ball badminton", 0.3], ["Beach tennis", 0.1],
+    ["Underwater hockey", 0.1, "octopush"], ["Roller hockey", 0.2, "rink hockey", "inline hockey"], ["Para ice hockey", 0.1, "sledge hockey", "sled hockey"],
+    ["Real tennis", 0.1, "royal tennis", "court tennis"], ["Pinata", 0.2], ["Uriyadi", 0.1, "uri adi", "matka phod", "pot breaking"], ["Whack-a-mole", 0.1],
+    ["Knattleikr", 0.05], ["Chole", 0.05], ["Tee-ball", 0.1, "t ball"], ["Wiffle ball", 0.1, "whiffle ball"], ["Lapta", 0.05]],
+    hints: { "carrom": "In carrom you flick the striker with a finger — no bat, stick or club!", "football": "Feet don't count — we need a bat, racket, stick or club!", "volleyball": "Volleyball is all hands — no racket!", "boxing": "Fists aren't bats!", "curling": "Curlers sweep with brooms but never hit the stone!", "bowling": "You roll the ball by hand — no bat needed!" } },
+
+  { p: "Name a sport played in, on or under water.", know: 0.96, strip: ["the", "a", "an"], a: [
+    ["Swimming", 30, "swim", "backstroke", "breaststroke", "butterfly stroke", "freestyle swimming"], ["Water polo", 10], ["Surfing", 8, "surf"], ["Diving", 6, "high diving", "cliff diving", "platform diving", "springboard diving"],
+    ["Rowing", 6, "sculling"], ["Sailing", 4, "yachting", "yacht racing"], ["Kayaking", 3, "kayak", "whitewater kayaking"], ["Canoeing", 3, "canoe", "canoe slalom", "canoe sprint"],
+    ["Water skiing", 2], ["Wakeboarding", 1], ["Kitesurfing", 1, "kiteboarding"], ["Windsurfing", 1, "boardsailing"],
+    ["Artistic swimming", 1.5, "synchronized swimming", "synchronised swimming", "synchro"], ["Scuba diving", 2, "scuba"], ["Snorkelling", 0.5, "snorkeling"],
+    ["Freediving", 0.5, "apnea"], ["Rafting", 2, "white water rafting", "river rafting"], ["Dragon boat racing", 0.5, "dragon boat"],
+    ["Vallam kali", 1, "snake boat race", "snake boat racing", "nehru trophy boat race"], ["Powerboat racing", 0.5, "boat racing", "boat race", "powerboating", "f1 powerboat"],
+    ["Jet skiing", 1, "jet ski"], ["Stand-up paddleboarding", 0.5, "sup", "paddleboarding"], ["Underwater hockey", 0.2, "octopush"],
+    ["Underwater rugby", 0.1], ["Canoe polo", 0.1, "kayak polo"], ["Fishing", 1, "angling", "sport fishing"], ["Spearfishing", 0.2],
+    ["Bodyboarding", 0.3, "boogie boarding"], ["Triathlon", 0.5, "aquathlon"], ["Open water swimming", 1, "marathon swimming", "channel swimming"],
+    ["Water aerobics", 0.2, "aqua aerobics", "aquarobics"], ["Parasailing", 0.3], ["Flyboarding", 0.1], ["Lifesaving", 0.1, "surf lifesaving"], ["Finswimming", 0.1],
+    ["Kneeboarding", 0.1], ["Water volleyball", 0.1], ["Aqua jogging", 0.05, "water running"], ["Swimrun", 0.05], ["Rowing (coastal)", 0.05, "coastal rowing"]],
+    hints: { "fishing net": "That's a tool, not a sport — name the sport!", "boating": "Too vague — name a sport like rowing or sailing!" } },
+
+  { p: "Name a sport played while riding an animal (horse, camel, elephant…).", know: 0.9, strip: ["the", "a", "an"], a: [
+    ["Horse racing", 25, "horse race", "racing", "steeplechase", "flat racing", "point to point", "pony racing", "derby"], ["Polo", 25, "horse polo"],
+    ["Show jumping", 6, "jumping"], ["Dressage", 4], ["Eventing", 2, "three day eventing", "horse trials"],
+    ["Equestrian", 5, "horse riding", "horseback riding", "riding", "equestrianism"], ["Rodeo", 4, "bull riding", "bronc riding", "saddle bronc", "bareback riding", "barrel racing"],
+    ["Camel racing", 3, "camel race"], ["Elephant polo", 1], ["Tent pegging", 1], ["Buzkashi", 1, "kokpar", "kokboru", "ulak tartysh"],
+    ["Horseball", 0.2], ["Polocrosse", 0.2], ["Endurance riding", 0.3, "endurance"], ["Equestrian vaulting", 0.2, "vaulting"], ["Jousting", 1],
+    ["Pato", 0.1], ["Mounted archery", 0.5, "horseback archery", "yabusame"], ["Ostrich racing", 0.3], ["Camel polo", 0.1], ["Yak racing", 0.1, "yak polo"],
+    ["Reining", 0.1], ["Cutting", 0.05], ["Gymkhana", 0.2, "mounted games"], ["Chovgan", 0.05], ["Elephant racing", 0.1], ["Fox hunting", 0.2, "hunting"],
+    ["Sagol kangjei", 0.2, "manipuri polo"], ["Team roping", 0.05, "roping", "calf roping"], ["Harness racing", 0.1, "trotting"]],
+    hints: { "kambala": "In Kambala the farmer runs behind the buffaloes — nobody's riding!", "hobby horse": "Cute, but a hobby horse isn't a real animal!", "hobby horsing": "Cute, but a hobby horse isn't a real animal!", "cycling": "A bicycle isn't an animal!", "motocross": "Dirt bikes aren't animals!" } },
+
+  { p: "Name a sport where players or athletes usually wear a helmet.", know: 0.95, strip: ["the", "a", "an"], a: [
+    ["Cricket", 25], ["American football", 8, "nfl", "gridiron"], ["Ice hockey", 6, "nhl"], ["Cycling", 8, "bmx", "mountain biking", "road cycling", "track cycling", "tour de france", "biking"],
+    ["Motor racing", 8, "formula 1", "f1", "formula one", "motorsport", "car racing", "nascar", "rally", "rallying", "karting", "go karting"],
+    ["Motorcycle racing", 4, "motogp", "bike racing", "motocross", "superbike", "speedway", "supercross"], ["Baseball", 3], ["Softball", 0.5],
+    ["Horse racing", 3, "jockey"], ["Polo", 2], ["Equestrian", 1, "show jumping", "horse riding", "eventing", "dressage"], ["Skiing", 2, "alpine skiing", "downhill skiing", "ski jumping", "freestyle skiing"],
+    ["Snowboarding", 1], ["Bobsleigh", 1, "bobsled"], ["Luge", 1], ["Skeleton", 0.5], ["Skateboarding", 1], ["Rock climbing", 0.5, "climbing", "mountaineering", "ice climbing"],
+    ["Hurling", 0.5], ["Camogie", 0.1], ["Lacrosse", 0.5], ["Boxing", 3, "amateur boxing"], ["Taekwondo", 0.5], ["Kickboxing", 0.3], ["Fencing", 2],
+    ["Kayaking", 0.3, "whitewater kayaking", "canoe slalom", "rafting", "white water rafting"], ["Skydiving", 0.3], ["Paragliding", 0.3, "hang gliding"],
+    ["Speed skating", 0.3, "short track"], ["Roller derby", 0.1], ["Field hockey", 0.5, "hockey"], ["Bull riding", 0.1, "rodeo"], ["Quad racing", 0.05, "atv racing"],
+    ["Inline skating", 0.1, "roller skating"], ["Caving", 0.05, "spelunking"], ["Bandy", 0.05], ["Shinty", 0.05]],
+    hints: { "football": "Soccer players go bare-headed — try American football!", "soccer": "Soccer players go bare-headed — try American football!", "rugby": "Rugby players might wear soft scrum caps, but not helmets!", "swimming": "Just a swim cap — no helmet!", "tennis": "A cap or a headband at most!", "kabaddi": "No helmets in kabaddi — just raw courage!" } },
+
+  { p: "Name a traditional Indian sport or childhood street game.", know: 0.85, strip: ["the", "a", "an"], a: [
+    ["Kabaddi", 25, "kabbadi", "kabadi", "chedugudu", "hu tu tu", "sadugudu"], ["Kho kho", 18], ["Gilli danda", 15, "gulli danda", "guli danda", "dandi biyo", "viti dandu", "kitti pullu", "chinni dandu", "gilli"],
+    ["Lagori", 6, "pithu", "pittu", "pitthu", "sitoliya", "satoliya", "seven stones", "lagoori", "dabba kali", "yedu penkulata"], ["Kancha", 4, "marbles", "goli", "golli", "kanche", "goti"],
+    ["Hopscotch", 2, "stapu", "kith kith", "ekhat dukhat", "kunte bille", "nondi", "paandi", "tipri"], ["Langdi", 0.5], ["Mallakhamb", 2, "mallakhamba"],
+    ["Kushti", 2, "pehlwani", "dangal", "mud wrestling", "indian wrestling"], ["Kalaripayattu", 2, "kalari", "kalaripayat"], ["Silambam", 0.5], ["Gatka", 0.5],
+    ["Thang-ta", 0.3, "huyen langlon"], ["Kambala", 1, "buffalo race"], ["Jallikattu", 2, "eru thazhuvuthal", "manju virattu"], ["Vallam kali", 0.5, "snake boat race"],
+    ["Atya patya", 0.3], ["Lattu", 2, "top", "spinning top", "bambaram", "lattoo"], ["Kite flying", 3, "patang", "patangbazi", "kite fighting", "pench"],
+    ["Chaupar", 0.5, "chausar", "pachisi", "chaupad"], ["Pallanguzhi", 0.3, "pallankuzhi", "alaguli mane", "ali guli mane", "vamanguntalu"], ["Chaturanga", 0.5],
+    ["Snakes and ladders", 2, "saanp seedhi", "moksha patam", "gyan chaupar", "paramapadam"], ["Antakshari", 1, "antakshri"],
+    ["Chor police", 1, "chor sipahi", "raja mantri chor sipahi", "raja rani chor sipahi"], ["Oonch neech", 0.5, "oonch neech ka papda"], ["Vish amrit", 0.3, "vish amrut"],
+    ["Pakdam pakdai", 2, "catch catch", "chain"], ["Hide and seek", 1, "chhupan chhupai", "lukka chuppi", "aankh micholi", "ice pice", "icy spicy"],
+    ["Sagol kangjei", 0.3, "manipuri polo"], ["Yubi lakpi", 0.1], ["Mukna", 0.1], ["Thoda", 0.1], ["Insuknawr", 0.05], ["Rekla race", 0.1, "bullock cart race", "bullock cart racing"],
+    ["Dahi handi", 1], ["Uriyadi", 0.1, "uri adi"], ["Tent pegging", 0.2], ["Carrom", 3, "carom"], ["Ball badminton", 0.3], ["Polo", 0.3],
+    ["Dog and the bone", 0.3, "dog and bone"], ["Gutte", 0.5, "gitte", "five stones", "anchu kallu", "kallu"], ["Rumal chor", 0.5, "rumaal chor", "kokla chhapaki", "kokla chapaki"],
+    ["Chidiya ud", 0.1, "chiriya ud", "bird fly"], ["Aadu puli attam", 0.1, "bagh chal", "bagh bakri", "goats and tigers", "lambs and tigers"]],
+    hints: { "ludo": "Ludo is the British boxed version — its Indian ancestor (Pachisi) is the answer!", "chess": "Chess grew out of India's Chaturanga — name that ancestor instead!", "cricket": "Cricket came from England — think older and more desi!", "pubg": "Too new — think gully, not gaming!" } },
+
+  { p: "Name a sport, game format or race with a number in its name (like T20).", know: 0.85, strip: ["the", "a", "an"], a: [
+    ["T20", 25, "twenty20", "t20 cricket", "t20 world cup"], ["Formula 1", 25, "f1", "formula one"], ["One Day International", 5, "one day", "odi", "one day cricket", "50 over", "fifty over"],
+    ["The Hundred", 2, "hundred", "100 ball cricket"], ["T10", 2, "t10 cricket"], ["Formula 2", 2, "f2", "formula two"], ["Formula 3", 1, "f3", "formula three"], ["Formula 4", 0.3, "f4", "formula four"],
+    ["Moto2", 0.5], ["Moto3", 0.5], ["Ten-pin bowling", 3, "ten pin", "10 pin bowling", "10 pin"], ["Five-pin bowling", 0.1, "5 pin bowling"], ["Nine-pin bowling", 0.1, "ninepins", "9 pin bowling"],
+    ["Eight-ball pool", 3, "8 ball pool", "8 ball", "eight ball"], ["Nine-ball", 1, "9 ball", "nine ball pool"], ["Ten-ball", 0.1, "10 ball"], ["Six-red snooker", 0.1, "6 red", "6 red snooker"],
+    ["3x3 basketball", 1, "3x3", "3 on 3", "three on three"], ["Five-a-side football", 2, "5 a side", "five a side", "5s football"], ["Seven-a-side football", 0.5, "7 a side", "seven a side"],
+    ["Rugby sevens", 2, "sevens", "7s rugby", "rugby 7s"], ["Rugby league nines", 0.2, "nines", "rugby nines"], ["Hong Kong Sixes", 0.3, "sixes", "cricket sixes", "sixes cricket"],
+    ["Fives", 0.1, "eton fives", "rugby fives"], ["Four square", 0.3, "4 square"], ["24 Hours of Le Mans", 0.5, "le mans 24", "le mans 24 hours", "24h le mans"],
+    ["Indianapolis 500", 0.5, "indy 500", "indianapolis 500 miles"], ["Daytona 500", 0.3],
+    ["A track or pool race by distance", 8, "100m", "100 metres", "100 meters", "100m sprint", "200m", "400m", "800m", "1500m", "5000m", "10000m", "10k", "5k", "4x100", "4x100 relay", "4x400", "110m hurdles", "400m hurdles", "3000m steeplechase", "50m freestyle", "100m freestyle"],
+    ["Decathlon (and other -athlons)", 3, "heptathlon", "pentathlon", "modern pentathlon", "triathlon", "biathlon", "duathlon", "tetrathlon"],
+    ["Twenty-one", 0.3, "21"], ["Uno", 0.5], ["Connect Four", 1, "connect 4"], ["2048", 0.5], ["Crazy Eights", 0.2, "crazy 8s", "crazy 8"], ["Nine Men's Morris", 0.1],
+    ["Twenty-nine", 0.5, "29", "29 card game"], ["Teen Patti", 1, "teen pathi", "3 patti", "three card poker", "three card brag"], ["Do Teen Paanch", 0.2, "2 3 5", "do teen panch"],
+    ["Ironman 70.3", 0.1, "70.3"], ["Three-legged race", 1, "3 legged race"], ["Seven stones", 0.5, "7 stones"], ["Nine-dart finish", 0.05, "9 dart finish"],
+    ["Three-cushion billiards", 0.05, "3 cushion", "three cushion"], ["Four-day cricket", 0.1, "4 day cricket", "four day test"], ["Five-day Test", 0.2, "5 day test"]],
+    hints: { "test cricket": "No number in 'Test' — but the five-day Test has one!", "formula e": "E isn't a number — try Formula 1, 2, 3 or 4!", "marathon": "No number in the name — but a 100m race has one!", "ipl": "No number there — but T20 has one!" } },
+
+  { p: "Name a sport where athletes regularly flip or go upside down.", know: 0.92, strip: ["the", "a", "an"], a: [
+    ["Gymnastics", 30, "artistic gymnastics", "floor exercise", "rhythmic gymnastics", "vault", "beam", "balance beam", "uneven bars", "parallel bars", "rings", "pommel horse"],
+    ["Diving", 12, "high diving", "cliff diving", "platform diving", "springboard diving"], ["Trampolining", 6, "trampoline"], ["Pole vault", 4, "pole vaulting"],
+    ["Freestyle skiing", 2, "aerials", "aerial skiing", "ski aerials", "freeski"], ["Snowboarding", 3, "snowboard", "halfpipe", "slopestyle", "big air"],
+    ["Skateboarding", 4], ["BMX freestyle", 2, "bmx"], ["Breaking", 3, "breakdancing", "breakdance", "b boying"], ["Mallakhamb", 2, "mallakhamba"],
+    ["Cheerleading", 2, "cheer"], ["Parkour", 2, "freerunning"], ["Wakeboarding", 0.5], ["Freestyle motocross", 1, "fmx", "motocross", "dirt bike"],
+    ["Aerobatics", 0.5, "aerobatic flying", "red bull air race"], ["Figure skating", 1, "ice skating"], ["Artistic swimming", 1, "synchronized swimming", "synchronised swimming"],
+    ["Capoeira", 0.5], ["Pole sport", 0.3, "pole fitness", "pole dancing"], ["Aerial silks", 0.2, "aerial hoop", "aerial acrobatics", "circus"], ["Acrobatics", 1, "acrobatic gymnastics", "tumbling", "acro"],
+    ["Skydiving", 0.5], ["Kitesurfing", 0.3, "kiteboarding"], ["Surfing", 0.3], ["Acrobatic rock and roll", 0.1], ["Tricking", 0.2, "martial arts tricking"],
+    ["Wushu", 0.3, "kung fu"], ["Slacklining", 0.1, "slackline"], ["High jump", 0.5, "fosbury flop"], ["Water skiing", 0.2], ["Mountain biking", 0.3, "mtb", "freeride"],
+    ["Freestyle scootering", 0.1, "scootering", "scooter"], ["Aggressive inline skating", 0.1, "inline skating"], ["Judo", 0.3], ["Wrestling", 0.3, "suplex"]],
+    hints: { "ski jumping": "Ski jumpers fly face-down and stay upright — no flips allowed!", "football": "A bicycle kick is upside-down, but it's hardly regular — try again!", "swimming": "Tumble turns are flips, but swimmers mostly stay the right way up — try diving!", "long jump": "Front flips were tried — and banned! Long jumpers stay upright." } },
+
+  { p: "Name a sports trophy or cup by its name (like the Ranji Trophy).", know: 0.9, strip: ["the", "a", "an"], a: [
+    ["FIFA World Cup", 20, "world cup", "football world cup", "fifa world cup trophy"], ["Cricket World Cup", 10, "icc world cup", "odi world cup", "icc cricket world cup"], ["T20 World Cup", 3, "icc t20 world cup", "t20 wc"],
+    ["Champions Trophy", 3, "icc champions trophy"], ["The Ashes", 8, "ashes", "ashes urn"], ["Ranji Trophy", 6, "ranji"], ["Duleep Trophy", 1], ["Irani Cup", 1, "irani trophy"],
+    ["Vijay Hazare Trophy", 1], ["Syed Mushtaq Ali Trophy", 0.5], ["Deodhar Trophy", 0.3], ["Cooch Behar Trophy", 0.1], ["Border-Gavaskar Trophy", 4, "bgt", "border gavaskar"],
+    ["Anderson-Tendulkar Trophy", 0.5, "anderson tendulkar", "pataudi trophy"], ["Freedom Trophy", 0.2, "gandhi mandela trophy"], ["Frank Worrell Trophy", 0.2], ["Richards-Botham Trophy", 0.1, "wisden trophy"],
+    ["Chappell-Hadlee Trophy", 0.1], ["Asia Cup", 2], ["IPL trophy", 2, "indian premier league trophy"], ["Stanley Cup", 3], ["Larry O'Brien Trophy", 0.5, "larry obrien"], ["Vince Lombardi Trophy", 0.5, "lombardi trophy", "super bowl trophy"],
+    ["Commissioner's Trophy", 0.1], ["Grey Cup", 0.1], ["Davis Cup", 2], ["Billie Jean King Cup", 0.3, "fed cup"], ["Thomas Cup", 1], ["Uber Cup", 0.5], ["Sudirman Cup", 0.3],
+    ["Hopman Cup", 0.1], ["Laver Cup", 0.3], ["Ryder Cup", 1], ["Solheim Cup", 0.1], ["Walker Cup", 0.05], ["Claret Jug", 0.5], ["Venus Rosewater Dish", 0.2, "rosewater dish"],
+    ["Wimbledon trophy", 0.3, "gentlemens singles trophy"], ["Coupe des Mousquetaires", 0.1, "musketeers cup"], ["Suzanne Lenglen Cup", 0.1], ["Norman Brookes Challenge Cup", 0.1], ["Daphne Akhurst Memorial Cup", 0.05],
+    ["Webb Ellis Cup", 0.5, "rugby world cup"], ["Calcutta Cup", 0.3], ["Bledisloe Cup", 0.2], ["Jules Rimet Trophy", 0.5, "jules rimet"], ["Henri Delaunay Trophy", 0.1, "euro trophy", "euros trophy"],
+    ["Champions League trophy", 2, "champions league", "ucl trophy", "european cup", "big ears", "old big ears"], ["FA Cup", 3], ["Premier League trophy", 1, "premier league", "epl trophy"],
+    ["Copa America", 1], ["Copa del Rey", 0.5], ["League Cup", 0.5, "efl cup", "carabao cup"], ["Community Shield", 0.2, "charity shield"], ["Durand Cup", 2], ["Santosh Trophy", 1],
+    ["IFA Shield", 0.5], ["Subroto Cup", 0.3], ["Federation Cup", 0.3], ["Rovers Cup", 0.1], ["Beighton Cup", 0.1], ["Sultan Azlan Shah Cup", 0.3, "azlan shah cup"],
+    ["Maulana Abul Kalam Azad Trophy", 0.3, "maka trophy"], ["America's Cup", 0.5], ["Ballon d'Or", 2, "golden ball"], ["Golden Boot", 0.5],
+    ["Heisman Trophy", 0.2], ["Borg-Warner Trophy", 0.05], ["Melbourne Cup", 0.2], ["Cheltenham Gold Cup", 0.1], ["Kabaddi World Cup", 0.1], ["Hockey World Cup", 0.3, "fih hockey world cup"], ["Women's Premier League trophy", 0.1, "wpl trophy"]],
+    hints: { "green jacket": "It's iconic, but it's a jacket, not a trophy or cup!", "arjuna award": "That's a national award, not a trophy you win in a competition!", "khel ratna": "That's a national award, not a trophy you win in a competition!", "gold medal": "A medal's not a trophy or cup — think bigger and shinier!", "olympic gold medal": "A medal's not a trophy or cup — think bigger and shinier!" } }
+]);
 
 BANKX.art = [
   { p: "Name a Greek god or goddess.", know: 0.92, strip: ["the", "god", "goddess", "of"], a: [
@@ -9980,6 +10508,83 @@ BANKX.art = [
     ["Pictures from Italy", 0.01], ["The Signal-Man", 0.05, "signal man", "signalman", "the signalman"], ["The Uncommercial Traveller", 0.01], ["The Life of Our Lord", 0.01]],
     hints: { "pride and prejudice": "That's by Jane Austen.", "jane eyre": "That's by Charlotte Brontë.", "wuthering heights": "That's by Emily Brontë.", "les miserables": "That's by Victor Hugo.", "treasure island": "That's by Robert Louis Stevenson.", "frankenstein": "That's by Mary Shelley.", "scrooge": "Scrooge is a character — name the book he's from!", "tom sawyer": "That's by Mark Twain." } }
 ];
+
+BANKX.art = (BANKX.art || []).concat([
+  { p: "Name a book, play or story that was turned into an Indian film (Bollywood or any Indian language) — the book or the film title both count.", know: 0.6, strip: ["a", "an", "the"], a: [
+    ["Five Point Someone", 15, "3 idiots", "three idiots"], ["Devdas", 10], ["2 States", 8, "two states"], ["The 3 Mistakes of My Life", 5, "3 mistakes of my life", "three mistakes of my life", "kai po che"], ["Half Girlfriend", 4], ["Hamlet", 4, "haider"], ["Romeo and Juliet", 4, "ram leela", "goliyon ki raasleela ram leela", "goliyon ki rasleela"], ["Ponniyin Selvan", 4, "ps1", "ps2"], ["Macbeth", 3, "maqbool"], ["Othello", 3, "omkara"],
+    ["One Night @ the Call Center", 2, "one night at the call center", "one night at the call centre", "hello"], ["Guide", 2], ["Parineeta", 2], ["Pather Panchali", 2], ["Calling Sehmat", 2, "raazi"], ["Mafia Queens of Mumbai", 2, "gangubai kathiawadi", "gangubai"], ["The Comedy of Errors", 1, "angoor"], ["Umrao Jaan", 1, "umrao jaan ada"], ["Shatranj Ke Khilari", 1, "the chess players"], ["Pinjar", 1],
+    ["The Namesake", 1], ["The White Tiger", 1], ["Black Friday", 1], ["The Accidental Prime Minister", 1], ["The Blue Umbrella", 1], ["Kabuliwala", 1], ["Aadujeevitham", 1, "goat life", "the goat life"], ["Byomkesh Bakshi", 1, "detective byomkesh bakshy", "byomkesh"], ["Mahabharata", 1, "mahabharat"], ["Ramayana", 1, "ramayan", "adipurush"],
+    ["Godaan", 0.5], ["Tamas", 0.5], ["Train to Pakistan", 0.5], ["Midnight's Children", 0.5], ["The Zoya Factor", 0.5], ["Susanna's Seven Husbands", 0.5, "7 khoon maaf", "saat khoon maaf"], ["Great Expectations", 0.5, "fitoor"], ["Emma", 0.5, "aisha"], ["Pride and Prejudice", 0.5, "bride and prejudice"], ["Chokher Bali", 0.5],
+    ["Sahib Bibi Aur Ghulam", 0.5, "saheb bibi golam"], ["Chemmeen", 0.5], ["Feluda", 0.5, "sonar kella", "joi baba felunath"], ["A Flight of Pigeons", 0.3, "junoon"], ["Sense and Sensibility", 0.3, "kandukondain kandukondain"], ["White Nights", 0.3, "saawariya"], ["Rudaali", 0.3], ["Ghare Baire", 0.3, "the home and the world"], ["Abhijnana Shakuntalam", 0.3, "shakuntala", "shakuntalam"], ["Hajar Churashir Maa", 0.2, "hazaar chaurasi ki maa", "mother of 1084"],
+    ["Nastanirh", 0.2, "charulata"], ["Mare Gaye Gulfam", 0.2, "teesri kasam"], ["Samskara", 0.2]],
+    hints: { "slumdog millionaire": "Based on Vikas Swarup's novel 'Q & A' — but the film is British (Danny Boyle).", "life of pi": "Yann Martel's novel — but the film is a Hollywood one, by Ang Lee.", "baahubali": "An original screenplay — the books came AFTER the films!" } },
+
+  { p: "Name a famous painting that has water in it — sea, river, lake, pond or waterfall (even just in the background).", know: 0.55, strip: ["a", "an", "the"], a: [
+    ["The Great Wave off Kanagawa", 15, "great wave", "the wave"], ["Water Lilies", 12, "nympheas", "monet water lilies"], ["The Birth of Venus", 10], ["Mona Lisa", 8, "la gioconda", "la joconde"], ["The Scream", 6], ["Impression, Sunrise", 3, "impression soleil levant"], ["The Persistence of Memory", 3, "melting clocks"], ["Starry Night Over the Rhône", 2, "starry night over the rhone"], ["The Raft of the Medusa", 2, "raft of medusa"], ["Washington Crossing the Delaware", 2],
+    ["Ophelia", 2], ["The Hay Wain", 1], ["The Fighting Temeraire", 1], ["A Sunday Afternoon on the Island of La Grande Jatte", 1, "sunday afternoon on the island of la grande jatte", "la grande jatte", "a sunday on la grande jatte"], ["The Lady of Shalott", 1], ["Thirty-six Views of Mount Fuji", 0.5, "36 views of mount fuji"], ["Luncheon of the Boating Party", 0.5], ["Le Déjeuner sur l'herbe", 0.5, "dejeuner sur lherbe", "luncheon on the grass"], ["The Garden of Earthly Delights", 0.5], ["Bridge over a Pond of Water Lilies", 0.5, "japanese footbridge", "the japanese footbridge"],
+    ["Bathers at Asnières", 0.5, "bathers at asnieres"], ["The Ninth Wave", 0.5], ["The Storm on the Sea of Galilee", 0.5], ["Christ of Saint John of the Cross", 0.3], ["Virgin of the Rocks", 0.3], ["Narcissus", 0.3], ["Triumph of Galatea", 0.3], ["Watson and the Shark", 0.3], ["Rain, Steam and Speed", 0.3], ["The Slave Ship", 0.3],
+    ["The Sea of Ice", 0.3, "das eismeer", "the wreck of hope"], ["Hylas and the Nymphs", 0.2], ["Snow Storm: Steam-Boat off a Harbour's Mouth", 0.2, "snow storm"]],
+    hints: { "starry night": "Village, hills, a cypress, swirling sky — but no water! (Try his 'Starry Night Over the Rhône'.)", "wanderer above the sea of fog": "That 'sea' is fog over mountains — no actual water.", "girl with a pearl earring": "Just a girl and a dark background — no water.", "american gothic": "A farmhouse and a pitchfork — no water." } },
+
+  { p: "Name a famous book that has been BANNED somewhere (by a country, state or school) at some point.", know: 0.6, strip: ["a", "an", "the"], a: [
+    ["Harry Potter", 20, "harry potter series"], ["The Satanic Verses", 10], ["1984", 8, "nineteen eighty four"], ["Animal Farm", 6], ["To Kill a Mockingbird", 5], ["Mein Kampf", 4], ["The Catcher in the Rye", 4], ["Lolita", 3], ["Lady Chatterley's Lover", 3, "lady chatterley"], ["The Da Vinci Code", 3],
+    ["The Diary of a Young Girl", 3, "diary of anne frank", "anne frank", "anne franks diary"], ["Ulysses", 2], ["Brave New World", 2], ["Fahrenheit 451", 2], ["Adventures of Huckleberry Finn", 2, "huckleberry finn", "huck finn"], ["Alice's Adventures in Wonderland", 1, "alice in wonderland"], ["Of Mice and Men", 1], ["Lord of the Flies", 1], ["The Kite Runner", 1], ["The Hunger Games", 1],
+    ["Lajja", 1], ["The Bible", 1, "bible", "holy bible"], ["Gulliver's Travels", 0.5], ["Uncle Tom's Cabin", 0.5], ["The Grapes of Wrath", 0.5], ["Doctor Zhivago", 0.5, "dr zhivago"], ["The Hindus: An Alternative History", 0.5, "the hindus"], ["The Color Purple", 0.5, "the colour purple"], ["The Handmaid's Tale", 0.5], ["Captain Underpants", 0.5],
+    ["The Gulag Archipelago", 0.3], ["Nine Hours to Rama", 0.3], ["Jinnah: India, Partition, Independence", 0.3, "jinnah"], ["Beloved", 0.3], ["Twilight", 0.3], ["The Perks of Being a Wallflower", 0.3], ["Slaughterhouse-Five", 0.3, "slaughterhouse 5"], ["Charlie and the Chocolate Factory", 0.3], ["A Clockwork Orange", 0.3], ["Great Soul", 0.2],
+    ["Shame", 0.2], ["Rangila Rasul", 0.2], ["The Absolutely True Diary of a Part-Time Indian", 0.2]] },
+
+  { p: "Name a famous fictional character who is an orphan (lost both parents).", know: 0.85, strip: ["a", "an", "the"], a: [
+    ["Harry Potter", 25, "harry"], ["Batman", 12, "bruce wayne"], ["Spider-Man", 8, "peter parker"], ["Superman", 6, "clark kent", "kal el"], ["Oliver Twist", 5, "oliver"], ["Mowgli", 4], ["Frodo Baggins", 3, "frodo"], ["Cinderella", 3], ["Tarzan", 3], ["Annie", 2, "little orphan annie"],
+    ["Elsa", 2], ["Naruto Uzumaki", 2, "naruto"], ["Anna (Frozen)", 1, "anna"], ["Anne Shirley", 1, "anne of green gables"], ["Jane Eyre", 1], ["Heidi", 1], ["Tom Sawyer", 1], ["Dorothy Gale", 1, "dorothy"], ["Iron Man", 1, "tony stark"], ["Luke Skywalker", 1, "luke"],
+    ["Tanjiro Kamado", 1, "tanjiro"], ["Pip", 0.5, "philip pirrip"], ["James Henry Trotter", 0.5, "james and the giant peach", "james trotter"], ["The Baudelaire orphans", 0.5, "baudelaires", "violet baudelaire", "klaus baudelaire", "sunny baudelaire"], ["Robin (Dick Grayson)", 0.5, "robin", "dick grayson"], ["Captain America", 0.5, "steve rogers"], ["Jon Snow", 0.5], ["Daenerys Targaryen", 0.5, "daenerys", "khaleesi"], ["Goku", 0.5, "son goku", "kakarot"], ["Paddington Bear", 0.5, "paddington"],
+    ["Sophie (The BFG)", 0.3, "sophie"], ["Mary Lennox", 0.3], ["Rey", 0.3], ["Heathcliff", 0.2], ["Gamora", 0.2]],
+    hints: { "huckleberry finn": "Huck's Pap is alive for most of the book — not an orphan (yet).", "simba": "His mother Sarabi survives — Simba isn't an orphan.", "bambi": "Bambi's father, the Great Prince, is alive.", "matilda": "Matilda's parents are alive — just awful." } },
+
+  { p: "Name a book series with at least FIVE books in it.", know: 0.8, strip: ["a", "an", "the"], a: [
+    ["Harry Potter", 25], ["Percy Jackson", 8, "percy jackson and the olympians"], ["Famous Five", 6], ["Diary of a Wimpy Kid", 6, "wimpy kid"], ["Chronicles of Narnia", 6, "narnia"], ["Hardy Boys", 4], ["Nancy Drew", 4], ["Goosebumps", 4], ["A Song of Ice and Fire", 4, "game of thrones", "asoiaf"], ["Secret Seven", 3],
+    ["Geronimo Stilton", 3], ["Sherlock Holmes", 3], ["Tintin", 3, "adventures of tintin"], ["Asterix", 2, "asterix and obelix"], ["Amar Chitra Katha", 2], ["The Hunger Games", 2, "hunger games"], ["Twilight", 2, "twilight saga"], ["Malory Towers", 1], ["The Hitchhiker's Guide to the Galaxy", 1, "hitchhikers guide"], ["Discworld", 1],
+    ["The Wheel of Time", 1], ["Alex Rider", 1], ["Artemis Fowl", 1], ["Captain Underpants", 1], ["Hercule Poirot", 1, "poirot"], ["A Series of Unfortunate Events", 1, "lemony snicket", "unfortunate events"], ["The Lord of the Rings", 1, "lord of the rings", "lotr"], ["Magic Tree House", 0.5], ["The Baby-Sitters Club", 0.5], ["Animorphs", 0.5],
+    ["Dune", 0.5], ["Foundation", 0.5], ["Jack Reacher", 0.5], ["Wings of Fire", 0.5], ["Warriors", 0.5, "warrior cats"], ["The Maze Runner", 0.5], ["The Mortal Instruments", 0.5, "shadowhunters"], ["The Witcher", 0.5], ["Feluda", 0.5], ["Mr. Men", 0.5, "mr men"],
+    ["Heroes of Olympus", 0.3], ["Jeeves and Wooster", 0.3, "jeeves"], ["Byomkesh Bakshi", 0.3, "byomkesh"], ["Miss Marple", 0.3], ["Little House on the Prairie", 0.3, "little house"], ["Anne of Green Gables", 0.3], ["Throne of Glass", 0.3], ["Redwall", 0.2], ["The Railway Series", 0.2, "thomas the tank engine"], ["Paddington", 0.2, "paddington bear"],
+    ["Ramona", 0.2], ["Junie B. Jones", 0.2], ["Keeper of the Lost Cities", 0.2], ["Sweet Valley High", 0.2]],
+    hints: { "divergent": "Three novels (plus the side-book 'Four') — not five.", "shiva trilogy": "It's a trilogy — three books.", "inheritance cycle": "Only four books (Eragon, Eldest, Brisingr, Inheritance)." } },
+
+  { p: "Name a famous statue or monument that shows a REAL person (not a god or a fictional character).", know: 0.65, strip: ["a", "an", "the"], a: [
+    ["Statue of Unity", 25, "sardar patel statue"], ["Mount Rushmore", 6], ["Christ the Redeemer", 6, "cristo redentor"], ["Lincoln Memorial", 5, "abraham lincoln statue"], ["Thiruvalluvar Statue", 3, "thiruvalluvar"], ["Gandhi statue", 3, "mahatma gandhi statue"], ["David (Michelangelo)", 3, "david", "statue of david"], ["Statue of Equality", 2, "ramanuja statue", "ramanujacharya statue"], ["Ambedkar statue", 2, "statue of social justice", "br ambedkar statue"], ["Gommateshwara", 1, "bahubali statue", "shravanabelagola"],
+    ["Leshan Giant Buddha", 1, "leshan buddha"], ["Tian Tan Buddha", 1, "big buddha"], ["Netaji statue at India Gate", 1, "netaji statue", "subhas chandra bose statue"], ["Shivaji statue", 1, "shivaji maharaj statue"], ["Nelson's Column", 1], ["Churchill statue", 1, "winston churchill statue"], ["Great Buddha of Kamakura", 0.5, "kamakura daibutsu"], ["Spring Temple Buddha", 0.5], ["Statue of Prosperity", 0.5, "kempegowda statue"], ["Crazy Horse Memorial", 0.5],
+    ["Lenin statue", 0.5], ["Queen Victoria statue", 0.5], ["Bronze Horseman", 0.3, "peter the great statue"], ["Nelson Mandela statue", 0.3, "mandela statue"], ["Rani Lakshmibai statue", 0.3, "jhansi ki rani statue"], ["Buddha Statue of Hyderabad", 0.3, "hussain sagar buddha"], ["Cristiano Ronaldo statue", 0.3, "ronaldo statue", "ronaldo bust"], ["Joan of Arc statue", 0.2], ["Marcus Aurelius statue", 0.2], ["Freddie Mercury statue", 0.2],
+    ["Bruce Lee statue", 0.2]],
+    hints: { "statue of liberty": "She's Libertas, a Roman goddess — not a real person.", "rocky statue": "Rocky Balboa is fictional!", "little mermaid": "A fairy-tale character, not a real person.", "statue of belief": "That's Lord Shiva — a god.", "sphinx": "A mythical creature (though the face may be a pharaoh's — scholars disagree!)." } },
+
+  { p: "Name a fictional character who is (or becomes) a KING or QUEEN — princes and princesses don't count!", know: 0.85, strip: ["a", "an", "the"], a: [
+    ["Simba", 15, "lion king"], ["Elsa", 12, "queen elsa"], ["Mufasa", 6], ["Black Panther", 5, "tchalla"], ["Queen of Hearts", 4], ["Scar", 3], ["Baahubali", 3, "mahendra baahubali", "amarendra baahubali", "bahubali"], ["Aragorn", 3, "king elessar"], ["Thor", 3], ["Daenerys Targaryen", 3, "daenerys", "khaleesi"],
+    ["The Evil Queen", 3, "evil queen", "queen grimhilde", "wicked queen"], ["King Lear", 2, "lear"], ["Macbeth", 2], ["Joffrey Baratheon", 2, "joffrey"], ["King Julien", 2], ["Bowser", 2, "king koopa"], ["Bhallaladeva", 2], ["Anna (Frozen)", 1, "anna", "queen anna"], ["King Triton", 1, "triton"], ["The White Witch", 1, "jadis"],
+    ["King Arthur", 1], ["Cersei Lannister", 1, "cersei"], ["Robert Baratheon", 0.5], ["Lady Macbeth", 0.5], ["Claudius", 0.5], ["Gertrude", 0.3], ["Oberon", 0.3], ["Titania", 0.3], ["Duncan", 0.3, "king duncan"], ["Théoden", 0.3, "theoden"],
+    ["Aquaman", 1, "arthur curry"], ["Namor", 0.3], ["Doctor Doom", 0.3], ["Sivagami", 0.5, "shivagami", "rajamata sivagami"], ["Nala", 0.5], ["Queen Amidala", 0.3, "padme", "padme amidala"], ["King Louie", 0.5], ["King Dedede", 0.3], ["King Candy", 0.2], ["King Harold", 0.2],
+    ["Queen Elinor", 0.2], ["King Stefan", 0.2], ["The Snow Queen", 0.3, "snow queen"], ["Guinevere", 0.2], ["King Midas", 0.3, "midas"], ["Odin", 0.5]],
+    hints: { "king kong": "Just a name — he's a giant ape, not a king!", "lord farquaad": "He only WANTED to be king — he never got the crown.", "shrek": "He turned down the throne in Shrek the Third!", "prince john": "He only ruled as a prince-regent while Richard was away.", "burger king": "A fast-food mascot — try a character from a story!" } },
+
+  { p: "Name a famous book with a NUMBER in its title (as a word or as digits).", know: 0.75, strip: ["a", "an", "the"], a: [
+    ["1984", 20, "nineteen eighty four"], ["Fahrenheit 451", 6], ["Around the World in Eighty Days", 6, "around the world in 80 days"], ["Catch-22", 5], ["A Tale of Two Cities", 5], ["Five Point Someone", 5], ["2 States", 5, "two states"], ["One Hundred Years of Solitude", 4, "100 years of solitude"], ["Twenty Thousand Leagues Under the Sea", 3, "20000 leagues under the sea", "20 000 leagues under the sea"], ["The Three Musketeers", 3],
+    ["The 3 Mistakes of My Life", 3, "3 mistakes of my life", "three mistakes of my life"], ["The 7 Habits of Highly Effective People", 3, "seven habits of highly effective people", "7 habits"], ["The 48 Laws of Power", 3, "48 laws of power"], ["A Thousand Splendid Suns", 3], ["One Night @ the Call Center", 2, "one night at the call center", "one night at the call centre"], ["The Famous Five", 2], ["The Secret Seven", 2], ["The Two Towers", 2], ["Thirteen Reasons Why", 2, "13 reasons why"], ["The Seven Husbands of Evelyn Hugo", 2],
+    ["The 5 AM Club", 2, "5am club"], ["Three Men in a Boat", 1], ["The Five People You Meet in Heaven", 1], ["2001: A Space Odyssey", 1, "2001"], ["12 Rules for Life", 1, "twelve rules for life"], ["Slaughterhouse-Five", 1, "slaughterhouse 5"], ["One Indian Girl", 1], ["Revolution 2020", 1], ["The Girl in Room 105", 1], ["One Flew Over the Cuckoo's Nest", 1],
+    ["Ready Player One", 1], ["The Thirty-Nine Steps", 0.5, "the 39 steps"], ["The Sign of Four", 0.5, "sign of the four"], ["Twelfth Night", 0.5], ["The 4-Hour Workweek", 0.3, "4 hour work week", "four hour workweek"], ["The Four Agreements", 0.3], ["Seven Years in Tibet", 0.3], ["Three Cups of Tea", 0.3], ["The Hundred-Year-Old Man Who Climbed Out of the Window and Disappeared", 0.3, "the hundred year old man"], ["One Day", 0.3],
+    ["The 39 Clues", 0.3], ["The Hundred-Foot Journey", 0.2], ["Nine Stories", 0.2]],
+    hints: { "number the stars": "Sneaky — it has the WORD 'number' but no actual number!", "half girlfriend": "'Half' is a fraction — we're after a whole number here." } },
+
+  { p: "Name a famous painting or artwork that has been STOLEN at some point.", know: 0.5, strip: ["a", "an", "the"], a: [
+    ["Mona Lisa", 40, "la gioconda", "la joconde"], ["The Scream", 15], ["Ghent Altarpiece", 1, "adoration of the mystic lamb", "the just judges"], ["The Concert (Vermeer)", 1, "the concert"], ["The Storm on the Sea of Galilee", 1], ["Portrait of Adele Bloch-Bauer I", 0.5, "woman in gold", "adele bloch bauer"], ["The Amber Room", 0.5], ["Madonna (Munch)", 0.5], ["Golden toilet (America)", 0.5, "golden toilet", "gold toilet"], ["Benin Bronzes", 0.3],
+    ["Elgin Marbles", 0.5, "parthenon marbles"], ["Nativity with St Francis and St Lawrence", 0.5, "caravaggio nativity"], ["Portrait of the Duke of Wellington (Goya)", 0.3, "duke of wellington"], ["Poppy Flowers (Van Gogh)", 0.3, "poppy flowers", "vase and flowers"], ["View of the Sea at Scheveningen", 0.3], ["Madonna of the Yarnwinder", 0.3], ["Portrait of a Lady (Klimt)", 0.3, "portrait of a lady"], ["The Parsonage Garden at Nuenen", 0.3], ["Jacob de Gheyn III (Rembrandt)", 0.2, "jacob de gheyn"], ["Chez Tortoni (Manet)", 0.2, "chez tortoni"],
+    ["Pigeon with Green Peas (Picasso)", 0.2, "pigeon with green peas"], ["Charing Cross Bridge (Monet)", 0.2, "charing cross bridge"], ["Saliera (Cellini salt cellar)", 0.1, "saliera", "cellini salt cellar"]],
+    hints: { "starry night": "Safe and sound in MoMA, New York — never stolen.", "girl with a pearl earring": "Never stolen — though a Vermeer WAS taken in the Gardner heist ('The Concert')." } },
+
+  { p: "Name a villain who FIRST appeared in a book or play (not a film, comic or game).", know: 0.7, strip: ["a", "an", "the"], a: [
+    ["Lord Voldemort", 25, "voldemort", "tom riddle", "you know who"], ["Dracula", 8, "count dracula"], ["Professor Moriarty", 4, "moriarty"], ["Captain Hook", 4, "hook"], ["Sauron", 3], ["Miss Trunchbull", 2, "trunchbull", "agatha trunchbull"], ["Pennywise", 2, "it"], ["Cruella de Vil", 2, "cruella"], ["Shere Khan", 2, "sher khan"], ["Dolores Umbridge", 2, "umbridge"],
+    ["Bellatrix Lestrange", 2, "bellatrix"], ["Iago", 1], ["Count Olaf", 1], ["The White Witch", 1, "jadis"], ["Hannibal Lecter", 1], ["Draco Malfoy", 1, "malfoy"], ["Gollum", 1, "smeagol"], ["Smaug", 1], ["Saruman", 1], ["Mr Hyde", 1, "hyde", "edward hyde"],
+    ["Severus Snape", 1, "snape"], ["President Snow", 1, "coriolanus snow"], ["The Queen of Hearts", 1, "queen of hearts"], ["The Wicked Witch of the West", 1, "wicked witch"], ["Long John Silver", 0.5], ["Fagin", 0.5], ["Bill Sikes", 0.5], ["The Grand High Witch", 0.5, "grand high witch"], ["Frankenstein's monster", 0.5, "frankensteins creature", "frankenstein", "the creature"], ["Lady Macbeth", 0.5],
+    ["Big Brother", 0.5], ["Claudius", 0.3], ["Annie Wilkes", 0.3], ["Peter Pettigrew", 0.3, "wormtail"], ["Lucius Malfoy", 0.3], ["Jack Torrance", 0.3], ["Mrs Coulter", 0.3], ["Mrs Danvers", 0.2], ["Grendel", 0.2]],
+    hints: { "lord farquaad": "Farquaad isn't in William Steig's 'Shrek!' book — the film invented him.", "scar": "Created for the film The Lion King.", "ursula": "Andersen's sea witch had no name — 'Ursula' was born in the Disney film.", "kaa": "In Kipling's book, Kaa is actually one of the good guys!", "joker": "He first appeared in a comic (Batman #1).", "gabbar singh": "Born in the film Sholay — not a book." } }
+]);
 
 BANKX.brands = [
   { p: "Name a car brand.", know: 0.98, strip: ["a", "an", "the", "car", "cars", "motors", "motor", "company", "brand"], a: [
@@ -11153,6 +11758,148 @@ BANKX.fiction = [
     hints: { "captain haddock": "Captain Haddock is a sea captain, not a pirate — blistering barnacles!", "haddock": "Captain Haddock is a sea captain, not a pirate — blistering barnacles!", "black pearl": "That's the ship, not the pirate!", "jolly roger": "That's the flag (or Hook's ship) — name a pirate!", "captain america": "He's a captain, but no pirate!" } }
 ];
 
+BANKX.fiction = (BANKX.fiction || []).concat([
+  { p: "Name a villain who wears a mask (or a face-hiding helmet).", know: 0.88, strip: ["the", "a", "an"], a: [
+    ["Darth Vader", 30, "vader", "anakin skywalker", "anakin"], ["Bane", 8], ["The Joker", 5, "joker"], ["Kylo Ren", 5, "ben solo"], ["Jason Voorhees", 4, "jason"], ["Ghostface", 4, "scream killer"],
+    ["Doctor Doom", 4, "dr doom", "victor von doom"], ["Michael Myers", 3], ["Green Goblin", 3, "norman osborn"], ["Phantom of the Opera", 2, "the phantom", "erik"],
+    ["Shredder", 2], ["Deathstroke", 1.5, "slade wilson"], ["Scarecrow", 1.5, "jonathan crane"], ["Black Mask", 0.5, "roman sionis"], ["Hobgoblin", 0.3],
+    ["Mysterio", 1, "quentin beck"], ["Taskmaster", 0.5], ["Baron Zemo", 0.5, "zemo", "helmut zemo"], ["Winter Soldier", 0.5, "bucky barnes", "bucky"], ["Crossbones", 0.2],
+    ["Destro", 0.2], ["Cobra Commander", 0.3], ["Leatherface", 1], ["Jigsaw", 1, "john kramer", "billy the puppet"], ["Hannibal Lecter", 1, "hannibal"],
+    ["Death Eaters", 1, "death eater"], ["The Front Man", 1, "front man", "squid game guards", "squid game front man", "pink guards"], ["Stormtroopers", 1, "stormtrooper"],
+    ["Boba Fett", 1, "jango fett"], ["General Grievous", 0.3, "grievous"], ["Darth Revan", 0.1, "revan"], ["Obito Uchiha", 1, "obito", "tobi"], ["Char Aznable", 0.1],
+    ["Scorpion", 0.5], ["Sub-Zero", 0.3], ["Noob Saibot", 0.1], ["Reaper", 0.2], ["Pyramid Head", 0.2], ["The Riddler", 0.5, "riddler"], ["Red Hood", 0.3, "jason todd"],
+    ["Hush", 0.2, "tommy elliot"], ["Mr. Freeze", 0.5, "mister freeze"], ["Venom", 1], ["Carnage", 0.3], ["Dorian Tyrell", 0.2, "the mask"], ["Sauron", 0.5],
+    ["Witch-king of Angmar", 0.3, "witch king", "nazgul", "ringwraith", "ringwraiths"], ["Red Skull", 0.3], ["Ghost", 0.1, "ava starr"]],
+    hints: { "magneto": "Magneto's helmet leaves his face on show — that's not a mask!", "loki": "Loki's horned helmet doesn't hide his face!", "thanos": "Thanos shows his face — a helmet now and then doesn't count!",
+      "gabbar": "Gabbar Singh's face was all beard, no mask!", "darth maul": "Darth Maul's face is tattooed, not masked!", "zorro": "Zorro wears a mask — but he's the hero!",
+      "v": "V wears a mask — but he's the hero of V for Vendetta!", "batman": "Batman's mask is famous — but he's the hero!", "spider man": "Spidey's masked — but he's the hero!" } },
+
+  { p: "Name a superhero who can fly (by their own power, a suit or a cape).", know: 0.95, strip: ["the", "a", "an"], a: [
+    ["Superman", 30, "clark kent", "kal el"], ["Iron Man", 15, "tony stark"], ["Thor", 8, "jane foster", "mighty thor"], ["Captain Marvel", 5, "carol danvers"], ["Shazam", 1, "billy batson"],
+    ["Shaktimaan", 6, "shaktiman", "gangadhar"], ["Krrish", 5, "krish", "krishna mehra"], ["Wonder Woman", 3, "diana prince"], ["Supergirl", 2, "kara zor el", "kara danvers"],
+    ["Storm", 1.5, "ororo munroe"], ["Vision", 1.5], ["Doctor Strange", 2, "dr strange", "stephen strange"], ["Falcon", 1.5, "sam wilson"], ["Hawkman", 0.3], ["Hawkgirl", 0.3],
+    ["Angel", 0.3, "archangel", "warren worthington"], ["Silver Surfer", 1], ["Martian Manhunter", 0.5, "jonn jonzz"], ["Green Lantern", 1, "hal jordan", "john stewart"],
+    ["Star-Lord", 0.3, "peter quill"], ["War Machine", 1, "james rhodes", "rhodey"], ["Black Adam", 0.5], ["Homelander", 1], ["Human Torch", 0.5, "johnny storm"], ["Nova", 0.2, "richard rider"],
+    ["Rescue", 0.1, "pepper potts"], ["Invincible", 0.5, "mark grayson"], ["Omni-Man", 0.3, "nolan grayson"], ["Jean Grey", 0.5, "phoenix", "dark phoenix"], ["Scarlet Witch", 0.5, "wanda maximoff", "wanda"],
+    ["Wasp", 0.3, "janet van dyne", "hope van dyne"], ["Captain Planet", 0.3], ["Powerpuff Girls", 1, "blossom", "bubbles", "buttercup", "powerpuff girl"], ["Danny Phantom", 0.3, "danny fenton"],
+    ["Ben 10", 0.5, "ben tennyson", "jetray", "big chill"], ["Goku", 1, "son goku"], ["Astro Boy", 0.3, "atom"], ["A Flying Jatt", 0.5, "flying jatt"], ["Parmanu", 0.1],
+    ["Superboy", 0.3, "conner kent"], ["Power Girl", 0.1], ["Starfire", 0.5, "koriandr"], ["Raven", 0.3], ["Beast Boy", 0.2], ["Ikaris", 0.3], ["Sentry", 0.1], ["Mighty Mouse", 0.2],
+    ["Underdog", 0.1], ["Ironheart", 0.2, "riri williams"], ["Static Shock", 0.1, "static"], ["Black Bolt", 0.05], ["Captain Atom", 0.05]],
+    hints: { "spider man": "Spider-Man swings — he can't actually fly!", "batman": "Batman glides and pilots the Batwing — but he can't fly on his own!", "hulk": "Hulk leaps for miles, but he can't fly!",
+      "mr incredible": "Mr. Incredible is super strong, but he can't fly!", "mr india": "Mr. India turns invisible — he can't fly!", "flash": "The Flash runs — fast, but on the ground!", "captain america": "Cap jumps out of planes — but can't fly himself!" } },
+
+  { p: "Name a fictional medical doctor (a character who treats patients).", know: 0.8, strip: ["the", "a", "an"], a: [
+    ["Dr. Gregory House", 14, "house", "gregory house", "dr house", "house md"], ["Doctor Strange", 12, "dr strange", "stephen strange", "strange"], ["Dr. Watson", 10, "watson", "john watson", "dr john watson"],
+    ["Dr. Jekyll", 6, "jekyll", "henry jekyll", "dr jekyll and mr hyde", "jekyll and hyde"], ["Kabir Singh", 6, "dr kabir singh"], ["Arjun Reddy", 2, "dr arjun reddy"],
+    ["Dr. Dolittle", 4, "doctor dolittle", "dolittle", "john dolittle"], ["Meredith Grey", 4, "meredith", "dr grey", "dr meredith grey"], ["Derek Shepherd", 2, "mcdreamy", "dr shepherd"],
+    ["Cristina Yang", 1, "dr yang"], ["Miranda Bailey", 0.5, "dr bailey"], ["Mark Sloan", 0.3, "mcsteamy"], ["Alex Karev", 0.3, "karev"], ["George O'Malley", 0.1], ["Izzie Stevens", 0.1],
+    ["Hannibal Lecter", 3, "hannibal", "dr lecter"], ["Dr. Zhivago", 1.5, "zhivago", "yuri zhivago"], ["Dr. Hathi", 3, "hansraj hathi", "dr hansraj hathi"], ["Dr. Mashoor Gulati", 1, "mashoor gulati", "dr gulati"],
+    ["Dr. Bhaskar Banerjee", 0.5, "babu moshai", "bhaskar banerjee"], ["Dr. Uday Gupta", 0.2, "doctor g", "uday gupta"], ["Dr. Armaan Mallik", 0.1, "armaan mallik", "dr armaan"], ["Dr. Riddhima Gupta", 0.1, "riddhima"],
+    ["Dr. Aziz", 0.2, "aziz"], ["Dr. Leonard McCoy", 1, "bones", "mccoy", "bones mccoy"], ["Beverly Crusher", 0.2, "dr crusher"], ["J.D.", 1, "john dorian", "dr dorian"], ["Turk", 0.3, "chris turk"],
+    ["Dr. Cox", 0.3, "perry cox"], ["Doug Ross", 0.2], ["John Carter", 0.1, "dr carter"], ["Doc Martin", 0.3, "martin ellingham"], ["Shaun Murphy", 1, "the good doctor", "dr murphy", "dr shaun murphy"],
+    ["Lisa Cuddy", 0.3, "cuddy"], ["James Wilson", 0.2, "dr wilson"], ["Eric Foreman", 0.1, "foreman"], ["Allison Cameron", 0.1], ["Robert Chase", 0.1], ["Dr. Hibbert", 0.5, "julius hibbert"],
+    ["Dr. Nick Riviera", 0.3, "dr nick"], ["Dr. Zoidberg", 0.5, "zoidberg"], ["Doc McStuffins", 0.5], ["Dr. Drake Ramoray", 0.3, "drake ramoray"], ["Dr. Evil", 0.5],
+    ["Dr. Frankenstein", 2, "frankenstein", "victor frankenstein", "frederick frankenstein"], ["Dr. Livesey", 0.1, "livesey"], ["Dr. Manette", 0.1, "alexandre manette"], ["Dr. Rieux", 0.05, "bernard rieux"],
+    ["Dr. Seward", 0.1, "john seward"], ["Van Helsing", 0.5, "abraham van helsing"], ["Dr. Moreau", 0.2, "moreau"], ["Dr. Kildare", 0.1], ["Dr. Quinn", 0.1, "dr quinn medicine woman"], ["Dr. Lydgate", 0.05, "lydgate"]],
+    hints: { "doctor octopus": "Doc Ock is a scientist, not a medic!", "doc ock": "Doc Ock is a scientist, not a medic!", "doctor who": "The Doctor isn't that kind of doctor!", "munna bhai": "Munna Bhai only pretended — he never earned that MBBS!",
+      "doc brown": "Doc Brown is an inventor, not a medic!", "ross geller": "Ross is a doctor of dinosaurs, not people!", "sheldon": "Sheldon is a physicist — he'd correct you himself!",
+      "doctor doom": "Doom never finished his studies — that 'Doctor' is just for show!", "bruce banner": "Bruce Banner is a physicist, not a medic!", "eggman": "Eggman's a mad scientist, not a medic!",
+      "strangelove": "Dr. Strangelove builds bombs, not bandages!", "dr seuss": "Dr. Seuss was a real author — and not a medic either!" } },
+
+  { p: "Name a fictional twin (or pair of twins).", know: 0.8, strip: ["the", "a", "an"], a: [
+    ["Fred and George Weasley", 30, "fred weasley", "george weasley", "fred", "george", "weasley twins", "fred and george"], ["Luke and Leia", 6, "luke skywalker", "leia", "princess leia", "leia organa", "luke"],
+    ["Parvati and Padma Patil", 3, "parvati patil", "padma patil", "parvati", "padma", "patil twins"], ["Tweedledum and Tweedledee", 4, "tweedledum", "tweedledee"],
+    ["Jaime and Cersei Lannister", 4, "jaime lannister", "cersei lannister", "cersei", "jaime"], ["The Grady twins", 2, "grady twins", "shining twins"],
+    ["Seeta and Geeta", 4, "seeta", "geeta", "seeta aur geeta", "sita aur gita", "sita", "gita"], ["Ram and Shyam", 3, "ram aur shyam", "ram", "shyam"], ["Anju and Manju", 1, "chaalbaaz", "anju", "manju"],
+    ["Raja and Prem", 3, "judwaa", "raja", "prem", "judwaa 2"], ["Sahir and Samar", 1, "dhoom 3", "sahir", "samar"], ["Kishen and Kanhaiya", 0.3, "kishen kanhaiya", "kishen", "kanhaiya"],
+    ["Nakula and Sahadeva", 3, "nakula", "sahadeva", "nakul", "sahdev"], ["Lava and Kusha", 2, "lava", "kusha", "luv kush", "luv", "kush", "lav kush"], ["Lakshmana and Shatrughna", 0.5, "lakshmana", "shatrughna", "lakshman", "shatrughan"],
+    ["Patty and Selma", 0.5, "patty bouvier", "selma bouvier", "patty", "selma"], ["Sherri and Terri", 0.2], ["Dipper and Mabel", 1, "dipper pines", "mabel pines", "dipper", "mabel"],
+    ["Phil and Lil", 0.3, "phil deville", "lil deville"], ["Elizabeth and Jessica Wakefield", 0.2, "wakefield twins", "sweet valley twins", "sweet valley high"], ["The Bobbsey Twins", 0.1, "bobbsey"],
+    ["Wanda and Pietro", 2, "scarlet witch", "quicksilver", "wanda maximoff", "pietro maximoff", "wanda", "pietro"], ["Castor and Pollux", 0.5, "castor", "pollux", "gemini"], ["Romulus and Remus", 1, "romulus", "remus"],
+    ["Jacob and Esau", 0.5, "jacob", "esau"], ["Apollo and Artemis", 0.3, "apollo", "artemis"], ["Viola and Sebastian", 0.5, "viola", "sebastian", "twelfth night"],
+    ["Antipholus and Dromio", 0.3, "antipholus", "dromio", "comedy of errors", "angoor"], ["Hallie and Annie", 1, "parent trap", "hallie parker", "annie james", "hallie", "annie"], ["Lisa and Lottie", 0.2, "lottie", "lisa"],
+    ["Zack and Cody", 1, "zack martin", "cody martin", "zack", "cody", "suite life"], ["Tia and Tamera", 0.3, "sister sister", "tia", "tamera"], ["Jim and Tim Possible", 0.1, "tweebs"],
+    ["Wonder Twins", 0.2, "zan", "jayna", "zan and jayna"], ["Mario and Luigi", 1, "mario", "luigi"], ["Thing One and Thing Two", 0.3, "thing 1", "thing 2", "thing one", "thing two"],
+    ["Elladan and Elrohir", 0.05, "elladan", "elrohir"], ["Gopi and Kishan", 0.1, "gopi kishan"]],
+    hints: { "huey": "Huey, Dewey and Louie are triplets — so close!", "karan arjun": "Karan and Arjun are brothers born years apart — not twins!", "tom and jerry": "Cat and mouse — definitely not twins!",
+      "hansel": "Brother and sister, but not twins!", "sam and dean": "The Winchesters are brothers, four years apart!", "olsen": "Real people! We want fictional twins.", "chip and dale": "Chip 'n' Dale are pals, not twins!" } },
+
+  { p: "Name a fictional scientist or inventor.", know: 0.88, strip: ["the", "a", "an"], a: [
+    ["Doc Brown", 8, "emmett brown", "doc", "dr emmett brown"], ["Tony Stark", 8, "iron man", "stark"], ["Dexter", 8, "dexters laboratory"], ["Bruce Banner", 5, "banner", "hulk", "dr banner"],
+    ["Sheldon Cooper", 6, "sheldon"], ["Leonard Hofstadter", 1, "leonard"], ["Amy Farrah Fowler", 0.3, "amy"], ["Raj Koothrappali", 0.5, "raj", "rajesh koothrappali"], ["Howard Wolowitz", 0.5, "howard"],
+    ["Victor Frankenstein", 5, "frankenstein", "dr frankenstein"], ["Jimmy Neutron", 2, "jimmy"], ["Rick Sanchez", 3, "rick", "rick and morty"], ["Dr. Jekyll", 1, "jekyll", "henry jekyll"],
+    ["Professor Calculus", 1, "cuthbert calculus", "calculus"], ["Professor Utonium", 0.5, "utonium"], ["Gyro Gearloose", 0.3, "gyro"], ["Q", 2, "major boothroyd"], ["Wallace", 1, "wallace and gromit"],
+    ["Doctor Octopus", 2, "doc ock", "otto octavius"], ["Dr. Vaseegaran", 2, "vaseegaran", "vasigaran", "enthiran"], ["Dr. Bohra", 0.2, "bohra"], ["Professor Shonku", 2, "shonku", "trilokeshwar shonku", "professor shanku"],
+    ["Rohit Mehra", 1, "rohit"], ["Dr. Siddhant Arya", 0.1, "siddhant arya"], ["Kaal", 0.3], ["Professor Sinha", 0.5, "prof sinha"], ["Professor Farnsworth", 0.5, "hubert farnsworth", "farnsworth"],
+    ["Professor Frink", 0.5, "frink"], ["Professor X", 0.2, "charles xavier"], ["Dr. Eggman", 1, "eggman", "dr robotnik", "robotnik"], ["Dr. Doofenshmirtz", 1, "doofenshmirtz", "heinz doofenshmirtz"],
+    ["Dr. Nefario", 0.5, "nefario"], ["Flint Lockwood", 0.5, "flint"], ["Hiro Hamada", 0.5, "hiro", "tadashi", "tadashi hamada"], ["Professor Oak", 0.5, "oak"], ["Captain Nemo", 0.2, "nemo"],
+    ["Willy Wonka", 1, "wonka"], ["Caractacus Potts", 0.1], ["Dr. Manhattan", 0.3, "jon osterman"], ["Reed Richards", 1, "mister fantastic", "mr fantastic"], ["Hank Pym", 0.5, "pym"],
+    ["Peter Parker", 0.5, "spider man"], ["Shuri", 1], ["Lucius Fox", 0.3], ["Dr. Strangelove", 0.2, "strangelove"], ["Dr. Moreau", 0.1, "moreau"], ["The Invisible Man", 0.2, "invisible man", "griffin"],
+    ["Dr. Henry Wu", 0.2, "henry wu"], ["Ian Malcolm", 0.2], ["Alan Grant", 0.2], ["Ross Geller", 0.5, "ross"], ["Mark Watney", 0.3], ["Ellie Arroway", 0.1],
+    ["Phineas and Ferb", 1, "phineas", "ferb"], ["Bulma", 0.3], ["Senku Ishigami", 0.3, "senku"], ["Gadget Hackwrench", 0.05], ["Arnim Zola", 0.05, "zola"]],
+    hints: { "einstein": "A real scientist — we want a made-up one!", "newton": "A real scientist — we want a made-up one!", "tesla": "A real inventor — we want a made-up one!",
+      "edison": "A real inventor — we want a made-up one!", "kalam": "A real scientist — we want a made-up one!", "doraemon": "Doraemon is the gadget-filled robot, not the inventor!" } },
+
+  { p: "Name a fictional character who is invisible or can turn invisible.", know: 0.85, strip: ["the", "a", "an"], a: [
+    ["Mr. India", 25, "arun verma", "arun"], ["The Invisible Man", 15, "invisible man", "griffin", "jack griffin"], ["Invisible Woman", 8, "sue storm", "susan storm", "invisible girl"],
+    ["Harry Potter", 10, "harry", "invisibility cloak"], ["Frodo Baggins", 5, "frodo"], ["Bilbo Baggins", 3, "bilbo"], ["Gollum", 2, "smeagol"], ["Sam Gamgee", 0.3, "sam", "samwise"], ["Isildur", 0.2],
+    ["Violet Parr", 4, "violet"], ["Cheshire Cat", 3, "cheshire"], ["Casper", 2, "casper the friendly ghost"], ["Danny Phantom", 0.5], ["Martian Manhunter", 0.3], ["Predator", 1, "yautja"],
+    ["Miles Morales", 1, "miles"], ["Gayab", 0.5, "vishnu"], ["Mr. X", 0.3], ["Hollow Man", 0.3, "sebastian caine"], ["Perseus", 0.2], ["Hades", 0.2], ["Alberich", 0.05], ["Gyges", 0.05, "ring of gyges"],
+    ["Dumbledore", 0.3, "albus dumbledore"], ["Demiguise", 0.1], ["The Shadow", 0.1, "lamont cranston"], ["Invisible Boy", 0.05], ["Boo", 0.1, "king boo"],
+    ["Indrajit", 0.3, "meghnad", "meghanada"], ["Bhoothnath", 0.2, "bhootnath"], ["Ghost", 0.05, "ava starr"]],
+    hints: { "wonder woman": "Her jet is invisible — she isn't!", "emperors new clothes": "It's his 'clothes' that are invisible — the emperor's very visible!", "kitty pryde": "Kitty walks through walls, but you can still see her!",
+      "mystique": "Mystique shape-shifts — she doesn't vanish!", "shaktimaan": "Shaktimaan spins and flies — but you can always see him!" } },
+
+  { p: "Name a fictional character who has a famous scar.", know: 0.85, strip: ["the", "a", "an"], a: [
+    ["Harry Potter", 35, "harry", "lightning scar"], ["Scar", 15, "scar from lion king"], ["Zuko", 3, "prince zuko"], ["Tony Montana", 2, "scarface"], ["The Joker", 4, "joker"], ["Two-Face", 2, "harvey dent"],
+    ["Kakashi Hatake", 2, "kakashi"], ["Monkey D. Luffy", 2, "luffy"], ["Roronoa Zoro", 1, "zoro"], ["Kenshin Himura", 0.5, "kenshin", "rurouni kenshin"], ["Guts", 0.3], ["Jon Snow", 1],
+    ["Tyrion Lannister", 0.5, "tyrion"], ["The Hound", 1, "sandor clegane", "hound"], ["Frankenstein's monster", 2, "frankenstein", "frankenstein monster"], ["Freddy Krueger", 1.5, "freddy"],
+    ["Darth Vader", 1, "vader"], ["Deadpool", 2, "wade wilson"], ["Bill Weasley", 0.3], ["Mad-Eye Moody", 0.5, "moody", "alastor moody"], ["Remus Lupin", 0.3, "lupin"], ["Odysseus", 0.3, "ulysses"],
+    ["Le Chiffre", 0.3], ["Blofeld", 0.5, "ernst stavro blofeld"], ["Alec Trevelyan", 0.1, "trevelyan", "006"], ["Raoul Silva", 0.1, "silva"], ["Indiana Jones", 0.5, "indy"], ["Yamcha", 0.2],
+    ["Tanjiro Kamado", 1, "tanjiro"], ["Sanemi Shinazugawa", 0.1, "sanemi"], ["Levi Ackerman", 0.1, "levi"], ["Iruka Umino", 0.1, "iruka"], ["Squall Leonhart", 0.1, "squall"], ["Kratos", 0.5],
+    ["Geralt of Rivia", 0.3, "geralt"], ["Shere Khan", 0.5, "sher khan"]],
+    hints: { "simba": "Simba's scar-free — it's his uncle who's named Scar!", "voldemort": "Voldemort gave Harry the scar — he hasn't got a famous one himself!", "wolverine": "Wolverine heals too fast to keep a scar!" } },
+
+  { p: "Name a fictional character who is famously bald.", know: 0.92, strip: ["the", "a", "an"], a: [
+    ["Professor X", 10, "charles xavier", "professor charles xavier", "xavier"], ["Gru", 10], ["Shrek", 8], ["Chhota Bheem", 8, "bheem", "chota bheem"], ["Lex Luthor", 5, "lex"],
+    ["Lord Voldemort", 5, "voldemort", "tom riddle", "he who must not be named"], ["Mogambo", 4], ["Saitama", 4, "one punch man"], ["Thanos", 4], ["Aang", 3, "avatar aang"], ["Homer Simpson", 3, "homer"],
+    ["Walter White", 2, "heisenberg"], ["Caillou", 2], ["Mr. Clean", 2, "mr proper", "mister clean"], ["Dr. Eggman", 1.5, "eggman", "robotnik", "dr robotnik"], ["Agent 47", 1, "hitman"], ["Kratos", 1],
+    ["Jean-Luc Picard", 1, "picard", "captain picard"], ["Megamind", 1], ["Mr. Burns", 0.5, "montgomery burns"], ["Charlie Brown", 1], ["Krillin", 1], ["Tien Shinhan", 0.2, "tien", "tenshinhan"],
+    ["Piccolo", 0.5], ["Frieza", 0.5, "freeza"], ["Martian Manhunter", 0.2], ["Dr. Evil", 1], ["Mr. Freeze", 0.5], ["Uncle Fester", 0.5, "fester", "fester addams"], ["Count Orlok", 0.5, "nosferatu", "orlok"],
+    ["Daddy Warbucks", 0.1, "oliver warbucks"], ["The Ancient One", 0.5, "ancient one"], ["Nebula", 0.5], ["Drax", 0.5, "drax the destroyer"], ["Dr. Manhattan", 0.3, "doctor manhattan"],
+    ["Tommy Pickles", 0.5, "tommy"], ["Humpty Dumpty", 0.3], ["Yoda", 1], ["Mike Wazowski", 0.5, "mike"], ["Shakaal", 1], ["Kancha Cheena", 1, "kancha"], ["Dobby", 1], ["Gollum", 0.5, "smeagol"],
+    ["Kojak", 0.3, "theo kojak"], ["Kingpin", 0.5, "wilson fisk"], ["Hank Schrader", 0.3, "hank"], ["Mr. Magoo", 0.3, "magoo"], ["Elmer Fudd", 0.5, "elmer"], ["Brainiac", 0.3],
+    ["Silver Surfer", 0.2], ["Vision", 0.2]],
+    hints: { "mr incredible": "Mr. Incredible's hair is thinning, not gone!", "vin diesel": "That's a real actor — name a character!", "the rock": "That's a real wrestler-actor — name a character!",
+      "dwayne johnson": "That's a real actor — name a character!", "gandhi": "A real person — we want a fictional character!" } },
+
+  { p: "Name a fictional ghost (or spirit).", know: 0.85, strip: ["the", "a", "an"], a: [
+    ["Casper", 25, "casper the friendly ghost"], ["Nearly Headless Nick", 6, "nick", "sir nicholas"], ["Moaning Myrtle", 6, "myrtle"], ["Peeves", 3], ["The Bloody Baron", 1, "bloody baron"],
+    ["The Grey Lady", 0.5, "grey lady", "helena ravenclaw"], ["The Fat Friar", 0.3, "fat friar"], ["Professor Binns", 0.3, "binns"], ["Ghost of Hamlet's father", 1, "king hamlet", "hamlets father"],
+    ["Ghost of Christmas Past", 1, "christmas past"], ["Ghost of Christmas Present", 0.5, "christmas present"], ["Ghost of Christmas Yet to Come", 0.5, "christmas future", "ghost of christmas future", "christmas yet to come"],
+    ["Jacob Marley", 1, "marley"], ["The Canterville Ghost", 1, "canterville ghost", "sir simon"], ["Danny Phantom", 0.5], ["Slimer", 1],
+    ["Blinky, Pinky, Inky and Clyde", 2, "blinky", "pinky", "inky", "clyde", "pac man ghosts"], ["Boo", 1, "king boo"], ["Bhoothnath", 4, "bhootnath"], ["Sam Wheat", 0.5, "sam"],
+    ["Beetlejuice", 1.5, "betelgeuse"], ["Adam and Barbara Maitland", 0.2, "maitlands", "barbara maitland", "adam maitland"], ["Headless Horseman", 2], ["Bloody Mary", 1], ["Banquo's ghost", 0.3, "banquo"],
+    ["Obi-Wan Kenobi", 0.5, "obi wan", "force ghost"], ["Mufasa", 0.5], ["Stree", 2], ["Manjulika", 2, "bhool bhulaiyaa"], ["Chandramukhi", 0.5], ["Samara", 1, "samara morgan", "sadako", "the ring"],
+    ["Kayako", 0.3, "the grudge"], ["Hector", 0.3], ["The Flying Dutchman", 0.3, "flying dutchman"], ["Emily", 0.3, "corpse bride"], ["Ghost Rider", 0.5], ["Captain Gregg", 0.05]],
+    hints: { "ghostbusters": "They catch ghosts — they aren't ghosts!", "phantom of the opera": "Not a ghost — just a man in a mask!", "ghostface": "Ghostface is a person in a mask — no ghost at all!",
+      "genie": "A genie isn't a ghost!", "dementor": "Dementors are soul-suckers, not ghosts!", "dracula": "A vampire, not a ghost!" } },
+
+  { p: "Name a fictional character famous for their hat (or cap, or turban).", know: 0.9, strip: ["the", "a", "an"], a: [
+    ["Indiana Jones", 8, "indy"], ["Sherlock Holmes", 8, "sherlock", "holmes"], ["Mad Hatter", 6, "hatter"], ["The Cat in the Hat", 6, "cat in the hat"], ["Monkey D. Luffy", 5, "luffy", "straw hat", "straw hat luffy"],
+    ["Mario", 5, "super mario"], ["Luigi", 1], ["Ash Ketchum", 4, "ash"], ["Woody", 3, "sheriff woody"], ["Jessie", 0.3], ["Gandalf", 3], ["Dumbledore", 1, "albus dumbledore"], ["Merlin", 0.5],
+    ["Professor McGonagall", 0.3, "mcgonagall"], ["Sorting Hat", 2], ["The Tramp", 2, "charlie chaplin", "little tramp", "chaplin"], ["Oddjob", 0.5], ["Freddy Krueger", 0.5, "freddy"],
+    ["Jughead", 0.5, "jughead jones"], ["Paddington Bear", 2, "paddington"], ["Willy Wonka", 2, "wonka"], ["Uncle Sam", 0.5], ["Mary Poppins", 0.5], ["Tin Man", 0.3, "tin woodman"],
+    ["Where's Wally", 1, "waldo", "wally", "wheres waldo"], ["Santa Claus", 2, "santa", "father christmas"], ["The Grinch", 0.3, "grinch"], ["Scrooge McDuck", 1, "uncle scrooge"], ["Donald Duck", 1, "donald"],
+    ["Popeye", 1], ["Pinocchio", 0.5], ["Robin Hood", 1], ["Peter Pan", 1], ["Link", 0.5], ["Captain Hook", 1, "hook"], ["Jack Sparrow", 2, "captain jack sparrow"],
+    ["The Smurfs", 1, "papa smurf", "smurf", "smurfette"], ["Mr. Peanut", 0.3], ["Rich Uncle Pennybags", 0.3, "monopoly man", "mr monopoly"], ["Carmen Sandiego", 0.3], ["Inspector Gadget", 0.5],
+    ["Raju", 1, "raj kapoor", "shree 420", "laal topi"], ["Chacha Chaudhary", 2, "chacha chaudhry"], ["Captain Haddock", 0.5, "haddock"], ["Thomson and Thompson", 0.5, "thomson", "thompson", "dupond et dupont"],
+    ["Puss in Boots", 1.5, "puss"], ["Zorro", 1], ["Dick Tracy", 0.2], ["Leprechaun", 0.3], ["Wicked Witch of the West", 0.5, "wicked witch", "elphaba"], ["Tony Tony Chopper", 0.5, "chopper"],
+    ["Detective Pikachu", 0.3], ["Yosemite Sam", 0.3], ["Elmer Fudd", 0.3], ["Goofy", 0.5], ["Sorcerer Mickey", 0.5, "mickey mouse", "mickey"], ["Frosty the Snowman", 0.5, "frosty"],
+    ["Jiminy Cricket", 0.3], ["Heisenberg", 1, "walter white"], ["Abu", 0.1], ["Professor Layton", 0.1]],
+    hints: { "tintin": "Tintin's famous for his quiff, not a hat!", "michael jackson": "A real star — we want a fictional character!", "abraham lincoln": "A real president — we want a fictional character!" } }
+]);
+
 BANKX.wordplay = [
   { p: "Name an animal whose name is also a verb (like 'to duck').", know: 0.85, strip: ["to", "a", "an", "out", "up", "around", "on", "away"], a: [
     ["Duck", 22], ["Bear", 12], ["Fish", 12], ["Bug", 8], ["Dog", 5], ["Fly", 3], ["Badger", 3], ["Ferret", 3], ["Hound", 3], ["Crow", 3],
@@ -11295,6 +12042,99 @@ BANKX.wordplay = [
     hints: { "mouse": "One mouse, two MICE. Guess again!", "goose": "One goose, two GEESE. Guess again!", "child": "One child, two CHILDREN. Guess again!", "ox": "One ox, two OXEN. Guess again!", "tooth": "One tooth, two TEETH. Guess again!", "cattle": "There's no 'one cattle' — no singular at all. Guess again!", "news": "There's no singular 'new'. Guess again!", "money": "Not quite — 'monies' exists. Guess again!", "information": "Uncountable, not plural. Guess again!" } }
 ];
 
+BANKX.wordplay = (BANKX.wordplay || []).concat([
+  { p: "Name a word with NO A, E, I, O or U in it (like 'rhythm' or 'sky').", know: 0.85, strip: [], a: [
+    ["Rhythm", 14, "rhythms"], ["Sky", 10], ["Fly", 8], ["Gym", 7, "gyms"], ["Why", 6], ["My", 6], ["Try", 5], ["Cry", 5], ["Dry", 4], ["Myth", 4, "myths"],
+    ["By", 3], ["Shy", 2.5], ["Spy", 2.5], ["Fry", 2], ["Sly", 1.5], ["Pry", 1], ["Ply", 0.5], ["Sty", 0.5], ["Wry", 0.5], ["Thy", 0.5],
+    ["Spry", 0.3], ["Lynx", 1.5], ["Hymn", 1.5, "hymns"], ["Crypt", 1.5, "crypts"], ["Nymph", 1, "nymphs"], ["Lymph", 0.5], ["Glyph", 0.5, "glyphs"], ["Myrrh", 0.5], ["Psych", 0.5], ["Synth", 0.5],
+    ["Sync", 0.8, "synch"], ["Cyst", 0.5], ["Tryst", 0.5], ["Pygmy", 0.5], ["Gypsy", 0.5], ["Syzygy", 0.5], ["Sylph", 0.2], ["Lynch", 0.2], ["Sphynx", 0.2], ["Crwth", 0.05],
+    ["Cwm", 0.1], ["Nth", 0.1], ["Dryly", 0.3], ["Shyly", 0.3], ["Slyly", 0.2], ["Spryly", 0.1], ["Wryly", 0.1], ["Flyby", 0.3], ["Hmm", 1, "hm", "hmmm"], ["Shh", 1, "sh", "shhh"],
+    ["Brr", 0.5], ["Psst", 0.5], ["Tsk", 0.3, "tsktsk"], ["Pfft", 0.2], ["Grr", 0.3], ["Zzz", 0.3], ["Fyrd", 0.02], ["Glycyl", 0.02], ["Xylyl", 0.02]],
+    hints: {"strength": "Strength has an E hiding in it! Guess again!", "you": "Y-O-U has an O and a U! Guess again!", "hymnal": "Hymnal has an A in it! Guess again!", "rhythmic": "Rhythmic has an I! Guess again!"} },
+
+  { p: "Name a real country, city, town or island whose name is also an ordinary English word (like Turkey, Nice or Reading).", know: 0.7, strip: [], a: [
+    ["Turkey", 24], ["China", 15], ["Nice", 7], ["Reading", 5], ["Bath", 4], ["Java", 4], ["Jersey", 4], ["Mobile", 3], ["Phoenix", 3], ["Buffalo", 3],
+    ["Orange", 2.5], ["Chad", 2], ["Guinea", 2], ["Japan", 1], ["Champagne", 2], ["Cheddar", 1.5], ["Panama", 1.5], ["Mocha", 1.5], ["Darjeeling", 1.5], ["Assam", 1],
+    ["Sandwich", 1], ["Cardigan", 0.8], ["Split", 1], ["Cork", 1], ["Wellington", 1], ["Marathon", 1], ["Rugby", 1], ["Derby", 1], ["Oxford", 0.8], ["Mecca", 1],
+    ["Chile", 0.8], ["Spa", 0.5], ["Fez", 0.5], ["Shanghai", 0.5], ["Limerick", 0.8], ["Bikini", 0.8], ["Cologne", 0.8], ["Cayenne", 0.3], ["Tabasco", 0.5], ["Tequila", 0.3],
+    ["Badminton", 0.5], ["Ascot", 0.3], ["Balaclava", 0.3], ["Sedan", 0.3], ["Landau", 0.1], ["Hackney", 0.1], ["Chesterfield", 0.2], ["Paisley", 0.2], ["Magenta", 0.2], ["Madras", 0.5],
+    ["Ceylon", 0.3], ["Bordeaux", 0.3], ["Burgundy", 0.5], ["Chablis", 0.1], ["Cognac", 0.3], ["Madeira", 0.3], ["Marsala", 0.2], ["Gouda", 0.3], ["Edam", 0.2], ["Brie", 0.3],
+    ["Camembert", 0.1], ["Roquefort", 0.1], ["Stilton", 0.1], ["Bologna", 0.2], ["Tuxedo", 0.1], ["Bermuda", 0.3], ["Waterloo", 0.3], ["Sale", 0.2], ["Deal", 0.2], ["Hull", 0.2],
+    ["Wells", 0.2], ["Batman", 0.5], ["Mandi", 0.3], ["Jodhpur", 0.3]],
+    hints: {"hamburger": "The city is Hamburg — not spelled like the burger! Guess again!", "frankfurter": "The city is Frankfurt — not quite the same word! Guess again!", "paris": "Paris isn't an ordinary English word. Guess again!", "india": "India's not an ordinary English word. Guess again!", "kashmir": "Close, but the wool is spelled 'cashmere'! Guess again!"} },
+
+  { p: "Name a word of 6+ letters whose letters are in alphabetical order (like 'almost': A-L-M-O-S-T).", know: 0.5, strip: [], a: [
+    ["Almost", 25], ["Biopsy", 10], ["Chimps", 6], ["Chintz", 3], ["Begins", 6], ["Abhors", 2], ["Accent", 4], ["Access", 5], ["Accept", 5], ["Accost", 1],
+    ["Adders", 1], ["Bellow", 3], ["Billow", 3], ["Billowy", 1], ["Beefily", 0.2], ["Cellos", 1], ["Chills", 2], ["Chilly", 3], ["Choosy", 1.5], ["Choppy", 1.5],
+    ["Floppy", 2], ["Floors", 2], ["Flossy", 0.5], ["Glossy", 2], ["Effort", 3], ["Efflux", 0.3], ["Afflux", 0.1], ["Knotty", 1], ["Abbess", 0.3], ["Bijoux", 0.3],
+    ["Chinos", 0.5], ["Dimpsy", 0.05], ["Aegilops", 0.05], ["Beknot", 0.02], ["Dhikrs", 0.02], ["Begirt", 0.02]],
+    hints: {"first": "First is in order — but only 5 letters! We need 6+. Guess again!", "abbey": "Only 5 letters! Guess again!", "ghost": "Only 5 letters — and we need 6+. Guess again!", "alphabet": "Ironically, 'alphabet' isn't in alphabetical order! Guess again!", "abcdef": "Not a real word! Guess again!"} },
+
+  { p: "Name a word of 3+ letters you can make from the letters of PLANET (each letter used at most once).", know: 0.9, strip: [], a: [
+    ["Plant", 12], ["Plane", 12], ["Plate", 8], ["Pant", 5], ["Tap", 4], ["Pen", 4], ["Ant", 4], ["Eat", 4], ["Net", 4], ["Ten", 4],
+    ["Pet", 3], ["Tea", 3], ["Pan", 3], ["Pat", 2], ["Tan", 2], ["Lap", 2], ["Nap", 2], ["Ape", 2], ["Ate", 1.5], ["Pal", 1.5],
+    ["Pea", 1.5], ["Let", 1.5], ["Panel", 2], ["Petal", 2], ["Pleat", 0.8], ["Leapt", 0.8], ["Penal", 0.8], ["Leant", 0.3], ["Tepal", 0.1], ["Platen", 0.3],
+    ["Late", 1.5], ["Lane", 1.5], ["Lean", 1], ["Leap", 1], ["Lent", 0.8], ["Neat", 1], ["Pale", 1], ["Pane", 0.8], ["Peal", 0.5], ["Peat", 0.5],
+    ["Pelt", 0.5], ["Pent", 0.3], ["Plan", 1.5], ["Plat", 0.2], ["Plea", 0.5], ["Tale", 1], ["Tape", 1], ["Teal", 0.5], ["Pate", 0.2], ["Nape", 0.3],
+    ["Neap", 0.1], ["Ante", 0.3], ["Elan", 0.1], ["Ale", 0.8], ["Alp", 0.2], ["Alt", 0.2], ["Apt", 0.5], ["Eta", 0.1], ["Lat", 0.1], ["Lea", 0.1]],
+    hints: {"planet": "That's the word itself! Rearrange it into something new. Guess again!", "planets": "There's no S in PLANET! Guess again!", "apple": "Only one P in PLANET! Guess again!", "paper": "Only one P — and no R! Guess again!", "letter": "Only one T and one E! Guess again!", "talent": "Only one T in PLANET! Guess again!", "planter": "No R in PLANET! Guess again!"} },
+
+  { p: "Name a word or name with a Q that is NOT followed by a U (like 'Qatar' or 'Iraq').", know: 0.55, strip: [], a: [
+    ["Qatar", 25], ["Iraq", 20], ["Iraqi", 4], ["QWERTY", 8], ["Qawwali", 4], ["Burqa", 4], ["Niqab", 2], ["Qi", 2], ["Qantas", 2], ["Iqbal", 3],
+    ["Tariq", 2], ["Farooq", 1.5, "faruq"], ["Rafiq", 1, "rafeeq"], ["Shafiq", 0.5, "shafeeq"], ["Ishaq", 0.5], ["Qasim", 0.8, "qasem"], ["Qadir", 0.5], ["Qamar", 0.5], ["Qazi", 0.5], ["Aqsa", 0.5, "al aqsa"],
+    ["Saqib", 0.3], ["Naqvi", 0.3], ["Aqeel", 0.2, "aqil"], ["Iqra", 0.3], ["Nastaliq", 0.2], ["Qigong", 0.5], ["Qing", 0.5], ["Qin", 0.3], ["Qom", 0.2], ["Qinghai", 0.1],
+    ["Qingdao", 0.2], ["Aqaba", 0.2], ["Iqaluit", 0.1], ["Qadi", 0.1], ["Qanat", 0.1], ["Qat", 0.2], ["Qintar", 0.05], ["Qoph", 0.05], ["Sheqel", 0.05], ["Faqir", 0.1],
+    ["Tranq", 0.05], ["Qdoba", 0.05], ["Qasr", 0.05], ["Qila", 0.1], ["Qalam", 0.1], ["Qissa", 0.1]],
+    hints: {"queen": "Q-U! The U sneaked in. Guess again!", "quiz": "That Q is followed by a U! Guess again!", "quran": "Q-U-R... there's a U right after! Guess again!", "qureshi": "That Q is followed by a U! Guess again!", "siddiqui": "Q-U at the end! Guess again!", "mosque": "Q-U again! Guess again!"} },
+
+  { p: "Name a word with a planet's name hidden inside it (like 'hEARTH' or 'MARShmallow'; Pluto counts).", know: 0.65, strip: [], a: [
+    ["Hearth", 12], ["Marshmallow", 12], ["Saturday", 12], ["Earthquake", 10], ["Marsh", 8], ["Earthworm", 5], ["Marshal", 4, "marshall"], ["Plutonium", 4], ["Unearth", 4, "unearthed"], ["Dearth", 3],
+    ["Earthly", 2, "unearthly"], ["Earthling", 2], ["Earthy", 1.5], ["Earthen", 1], ["Earthenware", 1], ["Earthbound", 0.5], ["Marshy", 1], ["Marshland", 0.8], ["Marsupial", 2], ["Plutocrat", 0.5, "plutocracy"],
+    ["Plutonic", 0.2], ["Saturnine", 0.2], ["Saturnalia", 0.2], ["Neptunium", 0.5], ["Venusian", 0.3], ["Neptunian", 0.1], ["Grammars", 0.3], ["Hearthstone", 0.3], ["Earthrise", 0.1], ["Earthshine", 0.1],
+    ["Earthmover", 0.1], ["Earthwork", 0.1, "earthworks"], ["Marshes", 0.3], ["Earthing", 0.1], ["Down-to-earth", 0.3, "downtoearth"], ["Earthed", 0.1]],
+    hints: {"sunday": "The Sun's a star, not a planet! Guess again!", "monday": "The Moon isn't a planet! Guess again!", "moonlight": "The Moon isn't a planet! Guess again!", "martian": "Mart-ian — the S is missing, so no 'Mars'! Guess again!", "mercurial": "So close — 'mercury' isn't spelled out in full! Guess again!", "uranium": "Uran-ium — 'Uranus' isn't spelled in full! Guess again!", "jovial": "Named after Jupiter (Jove), but 'Jupiter' isn't hidden in it. Guess again!"} },
+
+  { p: "Name a word containing 'OUGH' (any pronunciation — though, cough, through, rough…).", know: 0.9, strip: [], a: [
+    ["Though", 12, "tho"], ["Through", 10], ["Tough", 9], ["Rough", 8], ["Enough", 8], ["Cough", 7], ["Thought", 7], ["Dough", 5], ["Bought", 4], ["Brought", 4],
+    ["Thorough", 3], ["Although", 3], ["Fought", 2], ["Ought", 2], ["Sought", 1.5], ["Plough", 1.5], ["Bough", 1], ["Trough", 1], ["Drought", 1.5], ["Borough", 1],
+    ["Doughnut", 1.5], ["Throughout", 1], ["Thoughtful", 1], ["Nought", 0.8], ["Wrought", 0.5], ["Overwrought", 0.2], ["Hiccough", 0.3], ["Slough", 0.3], ["Lough", 0.1], ["Sough", 0.05],
+    ["Breakthrough", 0.5], ["Afterthought", 0.3], ["Forethought", 0.1], ["Sourdough", 0.5], ["Walkthrough", 0.2], ["Playthrough", 0.05], ["Thoroughly", 0.3], ["Thoroughfare", 0.2], ["Thoroughbred", 0.2], ["Roughage", 0.2],
+    ["Roughly", 0.3], ["Toughen", 0.1], ["Roughen", 0.05], ["Toughness", 0.1], ["Roughness", 0.05], ["Ploughman", 0.1], ["Doughty", 0.05], ["Besought", 0.02], ["Loughborough", 0.1], ["Scarborough", 0.1],
+    ["Coughing", 0.1, "coughed", "coughs"], ["Toughest", 0.05, "tougher"], ["Rougher", 0.05, "roughest"], ["Thoughtless", 0.1], ["Ploughed", 0.05, "ploughing"], ["Boughs", 0.05], ["Troughs", 0.05], ["Droughts", 0.05], ["Thoughts", 0.2]],
+    hints: {"tuff": "That's the sound — but where's the OUGH? Guess again!", "thru": "Spelled the lazy way — no OUGH! Guess again!", "donut": "The American spelling drops the OUGH! Guess again!", "plow": "The American spelling drops the OUGH! Guess again!"} },
+
+  { p: "Name a word with a double Z in it (like 'pizza').", know: 0.95, strip: [], a: [
+    ["Pizza", 18], ["Puzzle", 10], ["Buzz", 8], ["Jazz", 7], ["Fizz", 5], ["Dizzy", 5], ["Fuzzy", 4], ["Drizzle", 3], ["Sizzle", 3], ["Blizzard", 3],
+    ["Dazzle", 3], ["Nozzle", 2], ["Muzzle", 2], ["Grizzly", 2], ["Mozzarella", 2], ["Jacuzzi", 1.5], ["Paparazzi", 1.5], ["Buzzer", 1], ["Buzzard", 1], ["Fizzy", 1],
+    ["Jazzy", 1], ["Quizzes", 1, "quizzed", "quizzing"], ["Whizz", 0.5, "whizzed"], ["Frizz", 0.5, "frizzy"], ["Snazzy", 0.5], ["Guzzle", 0.5], ["Nuzzle", 0.5], ["Frazzle", 0.3, "frazzled"], ["Razzmatazz", 0.3], ["Pizzazz", 0.5, "pizazz"],
+    ["Embezzle", 0.3, "embezzlement"], ["Puzzled", 0.5, "puzzling"], ["Tizzy", 0.2], ["Fuzz", 0.5], ["Mezzanine", 0.3], ["Mezzo", 0.1], ["Intermezzo", 0.1], ["Piazza", 0.3], ["Palazzo", 0.2], ["Pizzeria", 0.5],
+    ["Grizzled", 0.1], ["Swizzle", 0.1], ["Twizzler", 0.1], ["Bedazzle", 0.2, "bedazzled"], ["Dazzling", 0.3], ["Drizzly", 0.05], ["Sozzled", 0.05], ["Schnozz", 0.05], ["Scuzzy", 0.05], ["Zizz", 0.02],
+    ["Fizzle", 0.3], ["Razzle", 0.1, "razzle dazzle"], ["Buzzing", 0.2, "buzzed"], ["Jazzed", 0.1], ["Sizzler", 0.1], ["Mizzle", 0.02]],
+    hints: {"bizarre": "Sneaky one — bizarre has just one Z! Guess again!", "zoo": "That's a double O, not a double Z! Guess again!", "zigzag": "Two Zs, but not side by side! Guess again!"} },
+
+  { p: "Name a word ending in '-OLOGY' (like 'biology').", know: 0.95, strip: [], a: [
+    ["Biology", 18], ["Zoology", 7], ["Geology", 6], ["Psychology", 8], ["Sociology", 4], ["Technology", 7], ["Mythology", 3], ["Astrology", 4], ["Theology", 2], ["Ecology", 2],
+    ["Anthropology", 2], ["Archaeology", 2, "archeology"], ["Criminology", 2], ["Cardiology", 2], ["Neurology", 2], ["Dermatology", 1.5], ["Radiology", 1], ["Oncology", 1], ["Pathology", 1.5], ["Physiology", 1],
+    ["Ideology", 1], ["Terminology", 1], ["Methodology", 1], ["Chronology", 0.8], ["Apology", 1.5], ["Anthology", 0.8], ["Tautology", 0.3], ["Etymology", 0.5], ["Entomology", 0.5], ["Ornithology", 0.5],
+    ["Seismology", 0.5], ["Meteorology", 1], ["Climatology", 0.2], ["Toxicology", 0.3], ["Virology", 0.5], ["Immunology", 0.3], ["Gynaecology", 0.8, "gynecology"], ["Urology", 0.2], ["Nephrology", 0.2], ["Haematology", 0.2, "hematology"],
+    ["Ophthalmology", 0.3], ["Audiology", 0.1], ["Phonology", 0.1], ["Morphology", 0.3], ["Musicology", 0.1], ["Egyptology", 0.2], ["Numerology", 0.3], ["Graphology", 0.1], ["Phrenology", 0.1], ["Kinesiology", 0.1],
+    ["Hydrology", 0.2], ["Volcanology", 0.2, "vulcanology"], ["Glaciology", 0.05], ["Herpetology", 0.1], ["Ichthyology", 0.1], ["Mycology", 0.1], ["Bacteriology", 0.1], ["Microbiology", 0.8], ["Biotechnology", 0.5], ["Nanotechnology", 0.2],
+    ["Palaeontology", 0.3, "paleontology"], ["Cosmology", 0.3], ["Gerontology", 0.1], ["Odontology", 0.05], ["Oenology", 0.05, "enology"], ["Epistemology", 0.1], ["Ontology", 0.1], ["Horology", 0.05], ["Petrology", 0.05], ["Speleology", 0.05],
+    ["Ufology", 0.05], ["Ethology", 0.05], ["Cytology", 0.05], ["Histology", 0.1], ["Embryology", 0.1], ["Endocrinology", 0.1], ["Epidemiology", 0.2], ["Pharmacology", 0.3], ["Rheumatology", 0.05], ["Pulmonology", 0.05],
+    ["Gastroenterology", 0.1], ["Primatology", 0.05], ["Cryptozoology", 0.05], ["Parapsychology", 0.05], ["Reflexology", 0.1], ["Scientology", 0.1], ["Doxology", 0.02], ["Trichology", 0.02], ["Campanology", 0.02], ["Anaesthesiology", 0.05, "anesthesiology"]],
+    hints: {"genealogy": "Sneaky — genealogy ends in -ALOGY, not -OLOGY! Guess again!", "mineralogy": "Mineralogy ends in -ALOGY! Guess again!", "analogy": "That's -ALOGY, not -OLOGY! Guess again!", "trilogy": "That's -ILOGY, not -OLOGY! Guess again!"} },
+
+  { p: "Name a rhyming 'twin' word or phrase, where the second half echoes the first (like 'hocus pocus' or 'easy peasy').", know: 0.85, strip: [], a: [
+    ["Hocus pocus", 10], ["Easy peasy", 9, "easy peasy lemon squeezy"], ["Hanky panky", 6], ["Teeny weeny", 5, "teensy weensy"], ["Itsy bitsy", 5, "itty bitty"], ["Super duper", 5], ["Okey dokey", 4, "okie dokie", "okey doke"], ["Walkie talkie", 5], ["Helter skelter", 4], ["Hustle bustle", 4, "hustle and bustle"],
+    ["Willy nilly", 3], ["Nitty gritty", 3], ["Mumbo jumbo", 3], ["Razzle dazzle", 2], ["Lovey dovey", 2], ["Hokey pokey", 1.5, "hokey cokey"], ["Roly poly", 1.5], ["Hunky dory", 1], ["Hurly burly", 0.5], ["Hoity toity", 0.5],
+    ["Fuddy duddy", 0.5], ["Namby pamby", 0.3], ["Boogie woogie", 0.5], ["Loosey goosey", 0.5], ["Hodgepodge", 0.5], ["Hotchpotch", 0.3], ["Higgledy piggledy", 0.3], ["Harum scarum", 0.1], ["Hurdy gurdy", 0.1], ["Humpty Dumpty", 2],
+    ["Hickory dickory", 0.5, "hickory dickory dock"], ["Heebie jeebies", 0.5], ["Pell mell", 0.2], ["Silly billy", 0.5], ["Handy dandy", 0.1], ["Fancy schmancy", 0.2], ["Ticky tacky", 0.05], ["Palsy walsy", 0.05], ["Hobnob", 0.3, "hob nob"], ["Powwow", 0.3],
+    ["Bow wow", 0.3, "bowwow"], ["Nitwit", 0.5], ["Ragtag", 0.3], ["Claptrap", 0.2], ["Bigwig", 0.3], ["Humdrum", 0.2], ["Hotshot", 0.2], ["Backpack", 0.5], ["Fender bender", 0.3], ["Brain drain", 0.3],
+    ["Snail mail", 0.3], ["Fat cat", 0.3], ["Double trouble", 0.5], ["Fair and square", 0.5, "fair square"], ["Wear and tear", 0.3], ["Meet and greet", 0.3], ["Culture vulture", 0.1], ["Wheeler dealer", 0.1], ["Chick flick", 0.2], ["Jeepers creepers", 0.1],
+    ["Eency weency", 0.1, "eensy weensy", "incy wincy"], ["Hippy dippy", 0.05], ["Hi-fi", 0.2, "hifi"], ["Funny bunny", 0.1]],
+    hints: {"ping pong": "That's a vowel swap (ping/pong), not a rhyme! Guess again!", "zigzag": "Vowel swap, not a rhyme! Guess again!", "flip flop": "Vowel swap, not a rhyme! Guess again!", "tick tock": "Vowel swap, not a rhyme! Guess again!", "chit chat": "Vowel swap, not a rhyme! Guess again!", "bye bye": "That's just the same word twice — we need a rhyme! Guess again!"} }
+]);
+
 BANKX.origins = [
   { p: "Name an everyday thing or word that is named after a real person (like the sandwich).", know: 0.7, strip: ["a", "an", "the"], a: [
     ["Sandwich", 20], ["Saxophone", 6, "sax"], ["Cardigan", 5], ["Guillotine", 5], ["Teddy bear", 6, "teddy"], ["Diesel", 4], ["Braille", 4], ["Leotard", 2], ["Nicotine", 2], ["Boycott", 2],
@@ -11422,6 +12262,75 @@ BANKX.origins = [
     ["Pachinko", 0.05], ["Ikigai", 0.3], ["Wabi-sabi", 0.05], ["Shiitake", 0.2]],
     hints: { "kungfu": "That one's Chinese. Guess again!", "kung fu": "That one's Chinese. Guess again!", "taekwondo": "That one's Korean. Guess again!", "kimchi": "That one's Korean. Guess again!", "dim sum": "That one's Chinese. Guess again!", "pokemon": "A brand name, not an English word. Guess again!" } }
 ];
+
+BANKX.origins = (BANKX.origins || []).concat([
+  { p: "Name a word that used to be a brand name but legally LOST its trademark somewhere (it became a plain generic word).", know: 0.5, strip: ["a", "an", "the"], a: [
+    ["Escalator", 18], ["Aspirin", 14], ["Zipper", 12, "zip"], ["Thermos", 6, "thermos flask"], ["Yo-yo", 6], ["Trampoline", 6], ["Heroin", 3], ["Linoleum", 3, "lino"], ["Kerosene", 3], ["Cellophane", 3],
+    ["Petrol", 3], ["Gramophone", 2], ["Videotape", 1], ["Dry ice", 1], ["Laundromat", 1], ["Granola", 1], ["Pilates", 1], ["Corn flakes", 1, "cornflake"], ["Celluloid", 0.5], ["Tabloid", 0.5],
+    ["Touch-tone", 0.3], ["Shredded wheat", 0.3], ["Mimeograph", 0.3], ["Lanolin", 0.3], ["Murphy bed", 0.3]],
+    hints: { "xerox": "Still a live trademark — Xerox guards it fiercely!", "google": "Still Google's trademark, however much we 'google' things.", "velcro": "Velcro still owns it (they even made a music video begging people to say 'hook and loop').", "frisbee": "Still a registered trademark (Wham-O).", "bandaid": "Still Johnson & Johnson's trademark.", "jacuzzi": "Still a live trademark.", "photoshop": "Adobe still owns that one." } },
+
+  { p: "Name an item of clothing, a saree or a fabric that is named after a PLACE (like denim, from Nîmes in France).", know: 0.6, strip: ["a", "an", "the"], a: [
+    ["Jeans", 15, "jean"], ["Denim", 10], ["Bikini", 10], ["Jersey", 8], ["Banarasi saree", 7, "banarasi", "benarasi", "banarasi silk", "banarasi sari"], ["Kanjeevaram saree", 6, "kanjeevaram", "kanjivaram", "kanchipuram", "kanchipuram saree", "kanchipuram silk", "kanjivaram saree"], ["Tuxedo", 6, "tux"], ["Cashmere", 6], ["Kolhapuri chappal", 5, "kolhapuri", "kolhapuris", "kolhapuri sandals"], ["Muslin", 3],
+    ["Jodhpurs", 3, "jodhpur pants", "jodhpuri"], ["Calico", 2], ["Dungarees", 2], ["Panama hat", 2, "panama"], ["Balaclava", 2], ["Bermuda shorts", 2, "bermudas", "bermuda"], ["Fez", 1], ["Duffel coat", 1, "duffel", "duffle", "duffle coat"], ["Paisley", 1], ["Capri pants", 1, "capris", "capri"],
+    ["Oxford shoes", 1, "oxfords", "oxford"], ["Chanderi saree", 1, "chanderi"], ["Paithani saree", 1, "paithani"], ["Mysore silk", 1, "mysore silk saree"], ["Pochampally saree", 0.5, "pochampally", "pochampalli"], ["Sambalpuri saree", 0.5, "sambalpuri"], ["Bhagalpuri silk", 0.5, "bhagalpuri"], ["Maheshwari saree", 0.5, "maheshwari"], ["Lucknowi chikankari", 0.5, "lucknowi", "lucknowi kurta"], ["Peshawari chappal", 0.5, "peshawari"],
+    ["Dhakai jamdani", 0.3, "dhakai"], ["Madras check", 0.5, "madras"], ["Angora", 0.5], ["Argyle", 0.5, "argyle socks", "argyll"], ["Damask", 0.5], ["Tulle", 0.5], ["Suede", 0.5], ["Derby shoes", 0.3, "derby"], ["Guernsey", 0.3], ["Homburg", 0.2, "homburg hat"],
+    ["Fair Isle", 0.2, "fair isle sweater"], ["Shantung", 0.2], ["Cambric", 0.2], ["Chambray", 0.2], ["Worsted", 0.2], ["Nankeen", 0.1]],
+    hints: { "nehru jacket": "Named after a person (Nehru), not a place!", "cardigan": "The Earl of Cardigan was a person — even if Cardigan is also a town, the sweater is named after him.", "pashmina": "From a Persian word for wool, not a place.", "stetson": "John B. Stetson, a hat-maker — a person.", "wellington boots": "The Duke of Wellington — a person.", "leotard": "Jules Léotard, a trapeze artist — a person.", "mackintosh": "Charles Macintosh, a chemist — a person." } },
+
+  { p: "Name a famous company that was started in a garage, a shed, a dorm room or someone's home.", know: 0.55, strip: ["a", "an", "the"], a: [
+    ["Apple", 25], ["Google", 15], ["Amazon", 10], ["Facebook", 10, "meta"], ["HP", 5, "hewlett packard", "hewlett-packard"], ["Disney", 4, "walt disney company", "walt disney studios"], ["Dell", 4], ["Infosys", 4], ["Flipkart", 4], ["Airbnb", 3],
+    ["Harley-Davidson", 2, "harley"], ["Mattel", 1], ["Lijjat Papad", 1, "lijjat"], ["Snapchat", 1, "snap"], ["eBay", 1], ["LinkedIn", 1], ["Napster", 0.5], ["Under Armour", 0.5], ["Craigslist", 0.5], ["Spanx", 0.3],
+    ["Lotus Cars", 0.3, "lotus"], ["Yankee Candle", 0.2]],
+    hints: { "microsoft": "Microsoft began in a rented office in Albuquerque — no garage!", "nike": "Phil Knight famously sold shoes from the boot of his car — not quite a garage or home.", "ben and jerrys": "Ben & Jerry's started in a converted petrol station." } },
+
+  { p: "Name an animal whose name copies the sound it makes (like the cuckoo).", know: 0.5, strip: ["a", "an", "the"], a: [
+    ["Cuckoo", 40], ["Koel", 6, "koyal", "kokila"], ["Crow", 3], ["Hoopoe", 3], ["Gecko", 3], ["Kookaburra", 2], ["Kiwi", 2], ["Owl", 1], ["Brainfever bird", 1, "brain fever bird"], ["Chiffchaff", 1],
+    ["Whip-poor-will", 1], ["Chickadee", 1], ["Bobwhite", 0.5], ["Kittiwake", 0.5], ["Curlew", 0.5], ["Peewit", 0.5], ["Katydid", 0.5], ["Tokay gecko", 0.5, "tokay"], ["Chukar", 0.5, "chakor"], ["Quail", 0.5],
+    ["Killdeer", 0.3], ["Kea", 0.3], ["Pipit", 0.3], ["Pewee", 0.2, "wood pewee"], ["Towhee", 0.2], ["Morepork", 0.2, "ruru"], ["Kaka", 0.2], ["Crake", 0.2], ["Chough", 0.2], ["Chachalaca", 0.1]],
+    hints: { "dog": "Woof is the sound — 'dog' isn't!", "cow": "Cows say moo, but 'cow' doesn't sound like a moo.", "cat": "'Cat' doesn't sound like a meow (though some languages call cats 'mao'!).", "bee": "Bees buzz — 'bee' isn't a buzz." } },
+
+  { p: "Name a festival, holiday or special day that is named after a real person (not a god).", know: 0.75, strip: ["a", "an", "the"], a: [
+    ["Gandhi Jayanti", 20, "mahatma gandhi jayanti"], ["Valentine's Day", 10, "valentines", "valentine", "saint valentines day", "st valentines day"], ["Christmas", 8, "xmas"], ["Ambedkar Jayanti", 8, "bhim jayanti"], ["Guru Nanak Jayanti", 8, "gurpurab", "guru nanak gurpurab", "guru nanak dev jayanti", "prakash parv"], ["St Patrick's Day", 4, "saint patricks day", "patricks day", "st patricks"], ["Buddha Purnima", 4, "buddha jayanti", "vesak", "buddh purnima"], ["Mahavir Jayanti", 3, "mahavira jayanti", "mahavir janma kalyanak"], ["Shivaji Jayanti", 2, "shiv jayanti"], ["Martin Luther King Jr. Day", 2, "mlk day", "martin luther king day"],
+    ["Vivekananda Jayanti", 1, "national youth day", "swami vivekananda jayanti"], ["Valmiki Jayanti", 1], ["Netaji Jayanti", 1, "parakram diwas", "subhas chandra bose jayanti"], ["Rabindra Jayanti", 1, "tagore jayanti", "pochishe boishakh"], ["Guru Gobind Singh Jayanti", 1], ["Mawlid", 1, "milad un nabi", "eid milad un nabi", "eid e milad", "milad"], ["Columbus Day", 1], ["Guy Fawkes Night", 1, "bonfire night", "guy fawkes day", "guy fawkes"], ["Sardar Patel Jayanti", 0.5, "rashtriya ekta diwas", "national unity day"], ["Kabir Jayanti", 0.3, "kabir das jayanti"],
+    ["Mandela Day", 0.3, "nelson mandela day", "nelson mandela international day"], ["St George's Day", 0.3, "saint georges day"], ["St Nicholas Day", 0.3, "saint nicholas day"], ["Washington's Birthday", 0.3, "presidents day"], ["Tulsidas Jayanti", 0.2], ["St Andrew's Day", 0.2, "saint andrews day"], ["St David's Day", 0.2, "saint davids day"], ["Lincoln's Birthday", 0.2], ["St Stephen's Day", 0.1, "saint stephens day"], ["Darwin Day", 0.1], ["Burns Night", 0.1, "burns supper"]],
+    hints: { "teachers day": "It's held on Dr Radhakrishnan's birthday — but it's named after teachers!", "childrens day": "It falls on Nehru's birthday, but it's named after children.", "engineers day": "It's Visvesvaraya's birthday, but the name is about engineers.", "janmashtami": "Krishna is a god — the prompt wants a real person.", "onam": "King Mahabali is a legend, not a historical person.", "diwali": "Diwali means 'row of lamps' — not named after anyone." } },
+
+  { p: "Name a thing (NOT an animal) whose name is misleading (like the peanut, which isn't a nut, or the pineapple — neither pine nor apple).", know: 0.6, strip: ["a", "an", "the"], a: [
+    ["Peanut", 25], ["Pineapple", 15], ["Coconut", 6], ["Strawberry", 5], ["French fries", 4, "french fry"], ["Lead pencil", 3, "pencil lead", "pencil"], ["Grapefruit", 3], ["Eggplant", 2, "egg plant"], ["Sweet potato", 2], ["Cashew", 2, "cashew nut"],
+    ["Arabic numerals", 2, "arabic numbers"], ["Tin foil", 2], ["Shooting star", 2, "falling star"], ["Greenland", 2], ["Lady finger", 1, "ladies finger", "ladyfinger"], ["Almond", 1], ["Brazil nut", 1], ["Panama hat", 1], ["Chinese checkers", 1], ["Spanish flu", 1],
+    ["Funny bone", 1], ["Black box", 1], ["Dry cleaning", 1], ["Hot dog", 1], ["Custard apple", 0.5], ["India ink", 0.5, "indian ink"], ["Fortune cookie", 0.5], ["Tin can", 0.5], ["Buffalo wings", 0.5], ["Jerusalem artichoke", 0.3],
+    ["Danish pastry", 0.3, "danish"], ["Sweetbread", 0.3, "sweetbreads"], ["Welsh rarebit", 0.3, "welsh rabbit"], ["Catgut", 0.3], ["Silverware", 0.3], ["Swedish massage", 0.2], ["Rice paper", 0.2], ["Mincemeat", 0.2], ["Head cheese", 0.1]],
+    hints: { "bombay duck": "Not a duck — it's a fish. But a fish is an animal, and animals don't count here!", "jellyfish": "True, not a fish — but it's an animal, and this one is animals-excluded.", "starfish": "Not a fish — but still an animal, which this one excludes.", "koala bear": "Not a bear — but it's an animal.", "guinea pig": "Neither from Guinea nor a pig — but it's an animal." } },
+
+  { p: "Name something (not a game or a food) that was invented or first discovered in India.", know: 0.7, strip: ["a", "an", "the"], a: [
+    ["Zero", 25, "0", "shunya"], ["Yoga", 12], ["Decimal system", 6, "decimal", "place value", "decimal number system", "hindu arabic numerals", "indian numerals"], ["Shampoo", 6, "champo"], ["Ayurveda", 6], ["Plastic surgery", 3, "rhinoplasty", "nose job"], ["Cataract surgery", 2], ["Buttons", 3, "button"], ["Raman effect", 3, "raman scattering"], ["Water on the Moon", 3, "water on moon", "moon water"],
+    ["Ruler", 1, "measuring scale"], ["Cotton cloth", 2, "cotton", "cotton fabric"], ["Diamonds", 2, "diamond mining", "diamond"], ["Crystallised sugar", 2, "sugar", "crystal sugar", "crystallized sugar"], ["Mysorean rockets", 1, "iron rockets", "tipu sultan rockets"], ["Bosons", 1, "boson", "bose einstein statistics", "bose statistics"], ["Crescograph", 1], ["Wireless / radio waves (J.C. Bose)", 0.5, "radio", "wireless"], ["Wootz steel", 0.5, "crucible steel", "damascus steel"], ["Indigo dye", 0.5, "indigo"],
+    ["Infinite series (Kerala school)", 0.3, "infinite series", "calculus"], ["Binary numbers (Pingala)", 0.3, "binary"], ["Atomic theory (Kanada)", 0.3, "atom", "atomic theory", "parmanu"], ["Muslin", 0.3], ["Chintz", 0.2]],
+    hints: { "usb": "Ajay Bhatt co-invented USB — but at Intel, in the USA!", "hotmail": "Sabeer Bhatia co-founded it — in California.", "pentium": "Vinod Dham led it at Intel, in the USA.", "fibre optics": "Narinder Kapany pioneered it in London.", "india ink": "Despite the name, it was invented in China!" } },
+
+  { p: "Name a character from a book, play, film or cartoon whose name became an everyday word (like 'a Scrooge' for a miser).", know: 0.55, strip: ["a", "an", "the"], a: [
+    ["Scrooge", 20, "ebenezer scrooge"], ["Romeo", 10], ["Sherlock", 6, "sherlock holmes"], ["Frankenstein", 4], ["Jekyll and Hyde", 3, "jekyll", "hyde", "dr jekyll"], ["Grinch", 3], ["Devdas", 3], ["Majnu", 3, "laila majnu", "majnun"], ["Don Juan", 2], ["Shylock", 2],
+    ["Cinderella", 2], ["Rambo", 2], ["Big Brother", 2], ["Muggle", 2, "muggles"], ["Pollyanna", 1], ["Mentor", 1], ["Don Quixote", 1, "quixote", "quixotic"], ["Pinocchio", 1], ["Peter Pan", 1, "peter pan syndrome"], ["Tarzan", 1],
+    ["Lothario", 0.5], ["Mrs Malaprop", 0.5, "malaprop", "malapropism"], ["Lilliputian", 0.5, "lilliput"], ["Man Friday", 0.5, "friday", "girl friday"], ["Goldilocks", 0.5], ["Goody Two-Shoes", 0.5], ["Pied Piper", 0.5], ["Svengali", 0.3], ["Yahoo", 0.3], ["Walter Mitty", 0.3, "mitty"],
+    ["Uncle Tom", 0.3], ["Gargantua", 0.2, "gargantuan"], ["Pander", 0.2, "pandarus"], ["Rip Van Winkle", 0.2], ["Mrs Grundy", 0.1], ["Pickwick", 0.1, "pickwickian"], ["Micawber", 0.1], ["Babbitt", 0.1], ["Simon Legree", 0.1, "legree"]],
+    hints: { "casanova": "Casanova was a real person — an 18th-century Venetian adventurer!", "einstein": "A real scientist, not a fictional character.", "machiavelli": "A real Italian writer, not a character.", "houdini": "A real escape artist.", "narcissus": "That's mythology — this one wants a book, play, film or cartoon character.", "catch22": "Catch-22 is the book's rule (and title), not a character." } },
+
+  { p: "Name a dance or music style that is named after a PLACE (like Odissi, from Odisha, or K-pop, from Korea).", know: 0.6, strip: ["a", "an", "the"], a: [
+    ["K-pop", 25, "korean pop"], ["Odissi", 10], ["J-pop", 6, "japanese pop"], ["Kuchipudi", 6], ["Manipuri dance", 5, "manipuri"], ["Carnatic music", 5, "carnatic"], ["Hindustani music", 4, "hindustani classical", "hindustani"], ["Bollywood music", 3, "bollywood dance", "bollywood"], ["Britpop", 3], ["Motown", 3],
+    ["Afrobeat", 3, "afrobeats"], ["Latin music", 2, "latin pop", "latin jazz", "latin dance"], ["Goa trance", 2, "goa psytrance"], ["Bhojpuri music", 2, "bhojpuri"], ["Charleston", 1], ["Cantopop", 1], ["Dixieland", 1, "dixieland jazz"], ["Chicago house", 1], ["Detroit techno", 1], ["Delta blues", 1],
+    ["Polonaise", 0.5], ["Mazurka", 0.5], ["Tarantella", 0.5], ["Habanera", 0.5], ["Highland fling", 0.5, "highland dance"], ["Memphis soul", 0.5], ["Nashville sound", 0.3], ["Madchester", 0.2], ["Jaipur gharana", 0.3, "agra gharana", "gwalior gharana", "kirana gharana", "patiala gharana", "banaras gharana", "gharana"]],
+    hints: { "bharatanatyam": "Usually explained as Bha-Ra-Ta (expression, melody, rhythm) — not named after a place.", "lindy hop": "Named after a person — the aviator Charles Lindbergh.", "foxtrot": "Named after a person — the dancer Harry Fox.", "calypso": "Named after a sea nymph from Greek myth, not a place.", "bhangra": "Not a place — possibly from 'bhang' (hemp) harvesting." } },
+
+  { p: "Name a place (country, state or city) whose name has a known meaning in English (like Punjab = 'five waters').", know: 0.6, strip: ["a", "an", "the"], a: [
+    ["Punjab", 15], ["Rajasthan", 8], ["Himachal Pradesh", 4, "himachal"], ["Meghalaya", 4], ["Uttar Pradesh", 3], ["Singapore", 3], ["Los Angeles", 3], ["Madhya Pradesh", 2], ["Pakistan", 2], ["Netherlands", 2],
+    ["Iceland", 2], ["Arunachal Pradesh", 1, "arunachal"], ["Uttarakhand", 1], ["Buenos Aires", 1], ["Costa Rica", 1], ["Montenegro", 1], ["Greenland", 1], ["Argentina", 1], ["Ecuador", 1], ["Las Vegas", 1, "vegas"],
+    ["Beijing", 1], ["Japan", 1, "nippon"], ["Hyderabad", 1], ["Maharashtra", 0.5], ["Jharkhand", 0.5], ["Bihar", 0.5], ["Kerala", 0.5], ["Lakshadweep", 0.5], ["Bangladesh", 0.5], ["Sri Lanka", 0.5],
+    ["Bengaluru", 0.5, "bangalore"], ["Islamabad", 0.5], ["Ahmedabad", 0.5], ["Jaipur", 0.5], ["Puerto Rico", 0.5], ["Sierra Leone", 0.5], ["Ivory Coast", 0.5, "cote divoire"], ["Rio de Janeiro", 0.5, "rio"], ["Hong Kong", 0.5], ["Tokyo", 0.5],
+    ["Kuala Lumpur", 0.5], ["Casablanca", 0.5], ["Philadelphia", 0.5], ["Florida", 0.5], ["Venezuela", 0.5], ["Australia", 0.5], ["Chhattisgarh", 0.3], ["Chandigarh", 0.3], ["Kanyakumari", 0.3], ["Darjeeling", 0.3],
+    ["Afghanistan", 0.3], ["Nevada", 0.3], ["Colorado", 0.3], ["Montana", 0.3], ["Austria", 0.3], ["El Salvador", 0.3], ["Mizoram", 0.2], ["Thiruvananthapuram", 0.2, "trivandrum"], ["Vermont", 0.2], ["Mesopotamia", 0.2],
+    ["Indonesia", 0.2], ["Nanjing", 0.2], ["Burkina Faso", 0.1], ["Honduras", 0.1]] }
+]);
 
 BANKX.life = [
   { p: "Name something you'd find in a junk drawer.", know: 0.96, strip: ["a", "an", "some", "old", "the", "random", "spare", "loose"], a: [

@@ -2056,7 +2056,10 @@ const metersOf = p => p ? Math.round(30 * Math.exp(p / 21.5) / 10) * 10 : 0;
 const tierOf = pop => pop >= 20 ? "common" : pop >= 8 ? "uncommon" : pop >= 2 ? "rare" : "legendary";
 
 // normalise every question once: shares sum to 100, build alias + hint lookups
+// EDITION.drop: questions removed by hand because another question already asks the same thing
+const DROP = new Set(EDITION.drop || []);
 for (const k in BANK) BANK[k] = BANK[k].filter(q => {
+  if (DROP.has(q.p)) return false;
   try {
     // published numbers (data/measure.js) replace the hand-written shares wherever they exist
     const m = MEASURED[q.p];
@@ -2149,13 +2152,18 @@ function dailySet(day) {
   });
 }
 
-// Practice: prefer questions this browser hasn't seen yet; a subject's memory resets once it's exhausted.
+// Practice: unseen questions first. When a subject runs out, it starts a new cycle with the questions
+// seen longest ago, so nothing from the last round comes straight back. `seen` keeps insertion order,
+// oldest first.
 function pickUnseen(key, count, seen) {
-  const pool = BANK[key];
-  let fresh = pool.map((_, i) => i).filter(i => !seen.has(key + ":" + i));
-  if (fresh.length < count) { pool.forEach((_, i) => seen.delete(key + ":" + i)); fresh = pool.map((_, i) => i); }
-  return shuffle(fresh, Math.floor(Math.random() * 1e9)).slice(0, count)
-    .map(qi => ({ key, label: TOPIC[key].label, short: TOPIC[key].short, q: pool[qi], qid: key + ":" + qi }));
+  const pool = BANK[key], ids = pool.map((_, i) => key + ":" + i);
+  let pick = shuffle(ids.filter(id => !seen.has(id)), Math.floor(Math.random() * 1e9)).slice(0, count);
+  if (pick.length < count) {
+    const oldest = [...seen].filter(id => id.startsWith(key + ":") && ids.includes(id));
+    pick = pick.concat(oldest.slice(0, count - pick.length));
+    ids.forEach(id => seen.delete(id));       // new cycle: only this round's picks count as seen
+  }
+  return pick.map(id => { const qi = +id.slice(key.length + 1); return { key, label: TOPIC[key].label, short: TOPIC[key].short, q: pool[qi], qid: id }; });
 }
 function practiceSet(packKey) {
   const seen = new Set(store.get(EDITION.key + ":seen") || []);
@@ -2166,6 +2174,7 @@ function practiceSet(packKey) {
     keys.sort((a, b) => TOPICS.findIndex(t => t[0] === a) - TOPICS.findIndex(t => t[0] === b));
     set = keys.flatMap(k => pickUnseen(k, 1, seen));
   }
+  store.set(EDITION.key + ":seen", [...seen]);   // save any cycle resets; markSeen adds this round
   return set;
 }
 function markSeen(set) {
